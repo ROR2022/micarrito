@@ -272,7 +272,16 @@
     },
     "Listings": {
         "title": "Browse Listings",
-        "subtitle": "Discover amazing opportunities in our marketplace"
+        "subtitle": "Discover amazing products and services from our community",
+        "viewDetails": "View Details",
+        "filters": "Filters",
+        "filtersComingSoon": "Advanced filters coming soon",
+        "searchPlaceholder": "Search listings...",
+        "search": "Search",
+        "createNew": "Create New Listing",
+        "noListings": "No listings found",
+        "loading": "Loading listings...",
+        "error": "Error loading listings"
     },
     "Cookies": {
         "title": "Cookie Policy",

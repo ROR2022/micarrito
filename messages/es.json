@@ -272,7 +272,16 @@
   },
   "Listings": {
     "title": "Explorar Anuncios",
-    "subtitle": "Descubre increíbles oportunidades en nuestro marketplace"
+    "subtitle": "Descubre increíbles productos y servicios de nuestra comunidad",
+    "viewDetails": "Ver Detalles",
+    "filters": "Filtros",
+    "filtersComingSoon": "Filtros avanzados próximamente",
+    "searchPlaceholder": "Buscar anuncios...",
+    "search": "Buscar",
+    "createNew": "Crear Nuevo Anuncio",
+    "noListings": "No se encontraron anuncios",
+    "loading": "Cargando anuncios...",
+    "error": "Error al cargar los anuncios"
   },
   "Cookies": {
     "title": "Política de Cookies",
