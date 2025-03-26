@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="800" fill="#0F172A"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="400" cy="400" r="350" stroke="#1E293B" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="400" cy="400" r="250" stroke="#1E293B" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Core components -->
+  <g transform="translate(400,400)">
+    <!-- Frontend -->
+    <rect x="-100" y="-100" width="200" height="200" rx="10" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
+    <text x="0" y="-80" text-anchor="middle" fill="#E2E8F0" font-family="system-ui" font-size="16">Frontend</text>
+    <text x="0" y="-50" text-anchor="middle" fill="#94A3B8" font-family="system-ui" font-size="12">Next.js</text>
+    
+    <!-- Backend -->
+    <rect x="-100" y="120" width="200" height="200" rx="10" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
+    <text x="0" y="140" text-anchor="middle" fill="#E2E8F0" font-family="system-ui" font-size="16">Backend</text>
+    <text x="0" y="170" text-anchor="middle" fill="#94A3B8" font-family="system-ui" font-size="12">Supabase</text>
+    
+    <!-- Database -->
+    <rect x="-250" y="10" width="200" height="200" rx="10" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
+    <text x="-150" y="30" text-anchor="middle" fill="#E2E8F0" font-family="system-ui" font-size="16">Database</text>
+    <text x="-150" y="60" text-anchor="middle" fill="#94A3B8" font-family="system-ui" font-size="12">PostgreSQL</text>
+    
+    <!-- Storage -->
+    <rect x="50" y="10" width="200" height="200" rx="10" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
+    <text x="150" y="30" text-anchor="middle" fill="#E2E8F0" font-family="system-ui" font-size="16">Storage</text>
+    <text x="150" y="60" text-anchor="middle" fill="#94A3B8" font-family="system-ui" font-size="12">S3</text>
+  </g>
+  
+  <!-- Connection lines -->
+  <g stroke="#3B82F6" stroke-width="2">
+    <line x1="300" y1="400" x2="500" y2="400"/>
+    <line x1="400" y1="300" x2="400" y2="500"/>
+    <line x1="300" y1="410" x2="500" y2="410"/>
+    <line x1="410" y1="300" x2="410" y2="500"/>
+  </g>
+</svg> 

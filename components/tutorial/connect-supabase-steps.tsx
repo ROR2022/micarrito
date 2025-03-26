@@ -35,7 +35,7 @@ export default function ConnectSupabaseSteps() {
             className="font-bold hover:underline text-foreground/80"
             rel="noreferrer"
           >
-            your Supabase project's API Settings
+            your Supabase project&apos;s API Settings
           </a>
           .
         </p>
@@ -55,6 +55,12 @@ export default function ConnectSupabaseSteps() {
         <p>
           You may need to refresh the page for Next.js to load the new
           environment variables.
+        </p>
+      </TutorialStep>
+
+      <TutorialStep title="Add Supabase URL and anon key">
+        <p className="text-sm text-muted-foreground">
+          Don&apos;t forget to add your Supabase URL and anon key to your environment variables.
         </p>
       </TutorialStep>
     </ol>

@@ -1,0 +1,551 @@
+{
+  "Common": {
+    "cookieConsent": "Utilizamos cookies para garantizar que obtengas la mejor experiencia en nuestro sitio web. Al continuar utilizando nuestro sitio, aceptas nuestra política de cookies.",
+    "cookies":{
+      "accept": "Aceptar",
+      "decline": "Rechazar",
+      "title": "Política de Cookies",
+      "message": "Utilizamos cookies para garantizar que obtengas la mejor experiencia en nuestro sitio web. Al continuar utilizando nuestro sitio, aceptas nuestra política de cookies.",
+      "learnMore": "Más información"
+    }
+  },
+  "MainNavbar": {
+    "title": "MarketFlex",
+    "listings": "Anuncios",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "login": "Iniciar Sesión",
+    "signup": "Registrarse",
+    "openMenu": "Abrir Menú",
+    "closeMenu": "Cerrar Menú",
+    "home": "Inicio",
+    "mainNavigation": "Navegación Principal"
+  },
+  "MainFooter": {
+    "title": "MarketFlex"
+  },
+  "Footer": {
+    "description": "Una plataforma de marketplace flexible para diversos nichos, ofreciendo anuncios personalizables, pagos seguros y una experiencia de usuario fluida.",
+    "quickLinks": "Enlaces Rápidos",
+    "quickLinksAriaLabel": "Enlaces de navegación rápida",
+    "listings": "Anuncios",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "legal": "Legal",
+    "legalAriaLabel": "Información legal",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "cookies": "Política de Cookies",
+    "followUs": "Síguenos",
+    "allRightsReserved": "Todos los derechos reservados.",
+    "madeWith": "Hecho con"
+  },
+  "ThemeSwitcher": {
+    "changeTheme": "Cambiar tema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "pastel": "Pastel",
+    "retro": "Retro",
+    "cyberpunk": "Ciberpunk",
+    "system": "Sistema"
+  },
+  "Contact": {
+    "title": "Contáctanos",
+    "subtitle": "¿Tienes preguntas? Nos encantaría escucharte.",
+    "email": {
+      "title": "Correo",
+      "value": "soporte@marketflex.com"
+    },
+    "phone": {
+      "title": "Teléfono",
+      "value": "+1 (555) 123-4567"
+    },
+    "address": {
+      "title": "Dirección",
+      "value": "123 Calle del Mercado, Suite 100, San Francisco, CA 94105"
+    },
+    "form": {
+      "title": "Envíanos un Mensaje",
+      "subtitle": "Completa el formulario y te responderemos lo antes posible.",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Correo",
+      "emailPlaceholder": "tu.correo@ejemplo.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "¿Sobre qué es?",
+      "message": "Mensaje",
+      "messagePlaceholder": "Tu mensaje...",
+      "submit": "Enviar Mensaje"
+    }
+  },
+  "Landing": {
+    "Hero": {
+      "badge": "Framework de Marketplace para Desarrolladores",
+      "title": "El Boilerplate Perfecto para Marketplaces Personalizados",
+      "subtitle": "MarketFlex ofrece una base de código modular y adaptable para desarrolladores para lanzar marketplaces escalables con esfuerzo mínimo. Construido con Next.js, Supabase y MercadoPago pre-integrado.",
+      "primaryCTA": "Ver Repositorio",
+      "secondaryCTA": "Ver Demo",
+      "usersCount": "Usado por más de 5,000 desarrolladores",
+      "usersAction": "que lanzaron su marketplace",
+      "imageAlt": "Vista previa del panel de MarketFlex",
+      "feature1": "Código Modular y Adaptable",
+      "feature2": "Integraciones Pre-implementadas",
+      "feature3": "APIs Extensibles y Personalizables",
+      "feature4": "Seguridad Implementada y Documentada",
+      "statusText": "En desarrollo"
+    },
+    "Features": {
+      "title": "Construido para desarrolladores",
+      "subtitle": "Minimiza el tiempo de configuración y maximiza la personalización",
+      "adaptability": {
+        "title": "Código Modular y Adaptable",
+        "description": "Estructura del proyecto diseñada para facilitar modificaciones y extensiones con patrones de diseño claros y bien documentados."
+      },
+      "payments": {
+        "title": "Integraciones Pre-implementadas",
+        "description": "Código funcional para MercadoPago listo para usar y modificar, incluyendo ejemplos de webhooks y manejo de eventos de pago."
+      },
+      "revenue": {
+        "title": "APIs Extensibles y Personalizables",
+        "description": "Endpoints RESTful bien estructurados que puedes extender o modificar según las necesidades específicas de tu proyecto."
+      },
+      "compliance": {
+        "title": "Seguridad Implementada y Documentada",
+        "description": "Ejemplos funcionales de Row Level Security (RLS) en Supabase, autenticación JWT y validación de datos que puedes adaptar a tus requisitos."
+      }
+    },
+    "Templates": {
+      "title": "Ejemplos de implementación para casos comunes",
+      "subtitle": "Código de referencia para acelerar el desarrollo de tu proyecto",
+      "automotive": {
+        "title": "Marketplace Automotriz",
+        "description": "Ejemplos de modelos, controladores y componentes UI para listings de vehículos con campos específicos del sector automotriz."
+      },
+      "realEstate": {
+        "title": "Marketplace Inmobiliario",
+        "description": "Código para búsqueda geoespacial, integración con mapas y componentes específicos para propiedades inmobiliarias."
+      },
+      "services": {
+        "title": "Plataforma de Servicios",
+        "description": "Implementación de referencia para sistema de valoraciones, gestión de disponibilidad y búsqueda por proximidad."
+      },
+      "viewDetails": "Ver Código"
+    },
+    "Pricing": {
+      "title": "Planes para cada etapa de desarrollo",
+      "subtitle": "Desde prototipado hasta producción a escala",
+      "monthly": "Mensual",
+      "yearly": "Anual",
+      "savePercent": "Ahorra 20%",
+      "basic": {
+        "title": "Código Abierto",
+        "price": "Gratis",
+        "period": "para siempre",
+        "cta": "Comenzar",
+        "description": "Para desarrolladores individuales y startups",
+        "features": [
+          "Acceso completo al código fuente",
+          "Implementación y personalización ilimitada",
+          "Soporte comunitario",
+          "Actualizaciones regulares",
+          "Documentación técnica detallada"
+        ]
+      },
+      "pro": {
+        "title": "Developer",
+        "price": "$99",
+        "period": "/mes",
+        "cta": "Comenzar",
+        "popular": "Más Popular",
+        "description": "Para proyectos en crecimiento",
+        "features": [
+          "Todo lo del plan gratuito",
+          "Componentes premium adicionales",
+          "Módulos de analítica avanzada",
+          "Soporte técnico por correo",
+          "Acceso al repositorio de componentes privados",
+          "Guías de implementación avanzadas"
+        ]
+      },
+      "enterprise": {
+        "title": "Empresarial",
+        "price": "$249",
+        "period": "/mes",
+        "cta": "Contactar",
+        "description": "Para empresas establecidas",
+        "features": [
+          "Todo lo del plan Developer",
+          "Asistencia en personalización",
+          "Soporte técnico dedicado",
+          "Configuración de CI/CD",
+          "Auditoría de seguridad del código",
+          "Optimización de rendimiento",
+          "Licencia comercial extendida"
+        ]
+      }
+    },
+    "Testimonials": {
+      "title": "Confiado por Emprendedores de Marketplaces",
+      "subtitle": "Mira lo que dicen nuestros clientes",
+      "badge": "Testimonios",
+      "trustedBy": "Confiado por Desarrolladores de Marketplaces",
+      "testimonials": [
+        {
+          "quote": "La arquitectura de MarketFlex me permitió adaptar rápidamente el código para requisitos específicos de nuestro marketplace automotriz. Los patrones de diseño son limpios y fáciles de extender.",
+          "author": "Carlos Rodríguez",
+          "role": "Full Stack Developer, AutoMarket"
+        },
+        {
+          "quote": "La estructura del proyecto y la integración con Supabase facilitan enormemente la personalización. Pude modificar los modelos de datos para nuestras necesidades inmobiliarias sin tener que reescribir la infraestructura base.",
+          "author": "María González",
+          "role": "Tech Lead, PropiedadesYa"
+        },
+        {
+          "quote": "Como desarrollador, valoro el equilibrio que ofrece MarketFlex entre código preparado y flexibilidad para personalizar. Me ahorró semanas de configuración mientras me daba libertad para implementar funcionalidades específicas.",
+          "author": "Juan Pérez",
+          "role": "Desarrollador Independiente"
+        }
+      ]
+    },
+    "FAQ": {
+      "title": "Preguntas Frecuentes",
+      "subtitle": "Todo lo que necesitas saber sobre MarketFlex",
+      "questions": [
+        {
+          "question": "¿Qué nivel de personalización permite MarketFlex?",
+          "answer": "MarketFlex está diseñado para ser completamente personalizable. Es un boilerplate que proporciona una estructura sólida y componentes funcionales, pero siempre necesitarás programar para adaptarlo a tus necesidades específicas. La ventaja es que el código está bien organizado, documentado y sigue patrones de diseño claros."
+        },
+        {
+          "question": "¿Qué stack tecnológico utiliza MarketFlex?",
+          "answer": "MarketFlex está construido con Next.js, TypeScript, Supabase (PostgreSQL, Auth, Storage), Shadcn/UI, TailwindCSS, y MercadoPago SDK. Incluye soporte para i18n con next-intl y temas con next-themes. Puedes modificar cualquier parte del stack según tus necesidades."
+        },
+        {
+          "question": "¿Qué conocimientos técnicos necesito para utilizar MarketFlex?",
+          "answer": "Necesitarás experiencia con React/Next.js, TypeScript y conocimientos básicos de PostgreSQL. Experiencia con Supabase es recomendable pero no esencial, ya que la documentación incluye guías detalladas sobre su uso en el proyecto."
+        },
+        {
+          "question": "¿Cómo puedo modificar o extender los modelos de datos?",
+          "answer": "La estructura utiliza campos JSONB para flexibilidad, pero también puedes modificar las migraciones de Supabase o añadir nuevas tablas según tus necesidades. La documentación incluye ejemplos de cómo extender el modelo de datos manteniendo la compatibilidad con actualizaciones futuras."
+        },
+        {
+          "question": "¿Puedo integrar otros procesadores de pago además de MercadoPago?",
+          "answer": "Sí, aunque viene con MercadoPago integrado, el código utiliza un patrón adaptador que te permite implementar otros procesadores como Stripe o PayPal. La documentación incluye guías para estas integraciones alternativas."
+        },
+        {
+          "question": "¿Cómo contribuyo al proyecto?",
+          "answer": "Puedes contribuir abriendo issues, enviando pull requests o mejorando la documentación. El archivo CONTRIBUTING.md contiene las pautas detalladas para contribuir correctamente al proyecto."
+        }
+      ],
+      "moreQuestions": "¿Tienes más preguntas?",
+      "contactUs": "Contáctanos"
+    },
+    "CTA": {
+      "title": "Comienza a construir tu marketplace hoy",
+      "subtitle": "Clona el repositorio, revisa la documentación y comienza a personalizar según tus necesidades.",
+      "primaryCTA": "Clonar Repositorio",
+      "secondaryCTA": "Leer Documentación"
+    },
+    "About": {
+      "badge": "Nuestra Historia",
+      "title": "Construyendo el Futuro de los Marketplaces",
+      "subtitle": "Un boilerplate potente para que los desarrolladores creen marketplaces personalizados con facilidad",
+      "mission": {
+        "title": "Nuestra Misión",
+        "description": "Nuestra misión es empoderar a los desarrolladores para construir marketplaces escalables más rápido que nunca. MarketFlex proporciona una base sólida sobre la que puedes construir, con todas las características esenciales ya implementadas.",
+        "features": {
+          "performance": {
+            "title": "Alto Rendimiento",
+            "description": "Construido con Next.js y optimizado para velocidad, asegurando que tu marketplace funcione sin problemas a escala."
+          },
+          "security": {
+            "title": "Seguridad Empresarial",
+            "description": "Implementa las mejores prácticas para autenticación, protección de datos y procesamiento de pagos."
+          }
+        }
+      },
+      "tech": {
+        "title": "Impulsado por Stack Tecnológico Moderno",
+        "description": "Construido con las últimas tecnologías para garantizar rendimiento y escalabilidad"
+      }
+    }
+  },
+  "Listings": {
+    "title": "Explorar Anuncios",
+    "subtitle": "Descubre increíbles oportunidades en nuestro marketplace"
+  },
+  "Cookies": {
+    "title": "Política de Cookies",
+    "subtitle": "Entendiendo cómo utilizamos las cookies en nuestra plataforma",
+    "whatAreCookies": {
+      "title": "¿Qué son las Cookies?",
+      "subtitle": "Entendiendo los conceptos básicos",
+      "description": "Las cookies son pequeños archivos de texto que se colocan en tu computadora o dispositivo móvil cuando visitas nuestro sitio web. Nos ayudan a proporcionarte una mejor experiencia y permiten que ciertas funciones funcionen correctamente."
+    },
+    "types": {
+      "title": "Tipos de Cookies que Utilizamos",
+      "subtitle": "Diferentes cookies para diferentes propósitos",
+      "essential": {
+        "title": "Cookies Esenciales",
+        "description": "Estas cookies son necesarias para que el sitio web funcione correctamente. Permiten funcionalidades básicas como seguridad, gestión de red y accesibilidad.",
+        "required": true
+      },
+      "analytics": {
+        "title": "Cookies Analíticas",
+        "description": "Estas cookies nos ayudan a entender cómo los visitantes interactúan con nuestro sitio web recopilando y reportando información de forma anónima.",
+        "required": false
+      },
+      "functional": {
+        "title": "Cookies Funcionales",
+        "description": "Estas cookies permiten funcionalidades mejoradas y personalización, como recordar tus preferencias y configuraciones.",
+        "required": false
+      },
+      "marketing": {
+        "title": "Cookies de Marketing",
+        "description": "Estas cookies se utilizan para rastrear visitantes a través de sitios web para permitirnos mostrar anuncios relevantes y atractivos.",
+        "required": false
+      }
+    },
+    "usage": {
+      "title": "Cómo Utilizamos las Cookies",
+      "subtitle": "Nuestros propósitos de uso de cookies",
+      "description": "Utilizamos cookies para diversos propósitos para mejorar tu experiencia en nuestra plataforma:",
+      "items": {
+        "improve": "Para mejorar el rendimiento y la experiencia de usuario de nuestro sitio web",
+        "analyze": "Para analizar cómo los visitantes utilizan nuestro sitio web",
+        "personalize": "Para personalizar tu experiencia y recordar tus preferencias",
+        "remember": "Para recordar tu estado de inicio de sesión y otra información importante"
+      }
+    },
+    "management": {
+      "title": "Gestión de tus Cookies",
+      "subtitle": "Cómo controlar la configuración de cookies",
+      "description": "Puedes controlar y/o eliminar las cookies como desees. Puedes eliminar todas las cookies que ya están en tu computadora y puedes configurar la mayoría de los navegadores para evitar que se coloquen.",
+      "options": {
+        "browser": "Puedes gestionar tus preferencias de cookies a través de la configuración de tu navegador",
+        "preferences": "Puedes actualizar tus preferencias de cookies en cualquier momento a través de la configuración de nuestro sitio web",
+        "thirdParty": "Para cookies de terceros, consulta sus respectivas políticas de privacidad"
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Política de Privacidad",
+    "subtitle": "Cómo protegemos y manejamos tus datos",
+    "introduction": {
+      "title": "Introducción",
+      "subtitle": "Nuestro compromiso con tu privacidad",
+      "description": "En MarketFlex, nos tomamos tu privacidad muy en serio. Esta política explica cómo recopilamos, utilizamos y protegemos tu información personal cuando usas nuestra plataforma."
+    },
+    "dataCollection": {
+      "title": "Recopilación de Datos",
+      "subtitle": "Qué información recopilamos",
+      "types": {
+        "personal": {
+          "title": "Información Personal",
+          "description": "Nombre, correo electrónico, número de teléfono y otros datos de contacto que proporcionas al crear una cuenta o realizar una compra."
+        },
+        "usage": {
+          "title": "Datos de Uso",
+          "description": "Información sobre cómo interactúas con nuestra plataforma, incluyendo historial de navegación, búsquedas y uso de funciones."
+        },
+        "technical": {
+          "title": "Datos Técnicos",
+          "description": "Información del dispositivo, dirección IP, tipo de navegador y otros detalles técnicos recopilados automáticamente."
+        }
+      }
+    },
+    "dataUsage": {
+      "title": "Cómo Usamos tus Datos",
+      "subtitle": "Nuestros propósitos de procesamiento de datos",
+      "description": "Utilizamos tus datos para diversos propósitos para mejorar nuestros servicios:",
+      "purposes": {
+        "service": "Para proporcionar y mantener nuestros servicios",
+        "improvement": "Para mejorar y personalizar tu experiencia",
+        "communication": "Para comunicarnos contigo sobre nuestros servicios",
+        "security": "Para garantizar la seguridad de nuestra plataforma"
+      }
+    },
+    "dataProtection": {
+      "title": "Protección de Datos",
+      "subtitle": "Cómo mantenemos tus datos seguros",
+      "description": "Implementamos varias medidas de seguridad para proteger tus datos:",
+      "measures": {
+        "encryption": {
+          "title": "Encriptación",
+          "description": "Todos los datos están encriptados en tránsito y en reposo usando protocolos estándar de la industria."
+        },
+        "access": {
+          "title": "Control de Acceso",
+          "description": "Controles de acceso estrictos y mecanismos de autenticación para proteger tus datos."
+        },
+        "backup": {
+          "title": "Copias de Seguridad",
+          "description": "Copias de seguridad regulares para prevenir la pérdida de datos y asegurar la recuperación."
+        },
+        "compliance": {
+          "title": "Cumplimiento",
+          "description": "Adherencia a estándares y regulaciones internacionales de protección de datos."
+        }
+      }
+    },
+    "userRights": {
+      "title": "Tus Derechos",
+      "subtitle": "Tus derechos de protección de datos",
+      "description": "Tienes varios derechos sobre tus datos personales:",
+      "rights": {
+        "access": {
+          "title": "Derecho de Acceso",
+          "description": "Solicitar una copia de tus datos personales que tenemos en nuestro poder."
+        },
+        "correction": {
+          "title": "Derecho de Rectificación",
+          "description": "Solicitar la corrección de cualquier dato inexacto que tengamos sobre ti."
+        },
+        "deletion": {
+          "title": "Derecho de Eliminación",
+          "description": "Solicitar la eliminación de tus datos personales de nuestros sistemas."
+        },
+        "portability": {
+          "title": "Portabilidad de Datos",
+          "description": "Solicitar tus datos en un formato estructurado y de uso común."
+        }
+      }
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "subtitle": "Ponte en contacto sobre tu privacidad",
+      "description": "Si tienes alguna pregunta sobre nuestra política de privacidad o tus datos:",
+      "details": {
+        "email": "Correo: privacy@marketflex.com",
+        "address": "Dirección: 123 Calle Privacidad, Suite 100, San Francisco, CA 94105",
+        "phone": "Teléfono: +1 (555) 123-4567"
+      }
+    }
+  },
+  "Terms": {
+    "title": "Términos de Servicio",
+    "subtitle": "Entendiendo tus derechos y responsabilidades al usar nuestra plataforma",
+    "introduction": {
+      "title": "Introducción",
+      "subtitle": "Bienvenido a MarketFlex",
+      "description": "Estos Términos de Servicio rigen tu uso de MarketFlex y establecen las reglas, pautas y acuerdos que se aplican a todos los usuarios de nuestra plataforma."
+    },
+    "acceptance": {
+      "title": "Aceptación de los Términos",
+      "subtitle": "Tu acuerdo con estos términos",
+      "description": "Al acceder o usar MarketFlex, aceptas estar sujeto a estos Términos de Servicio. Si no estás de acuerdo con alguna parte de estos términos, no podrás acceder a nuestra plataforma.",
+      "conditions": {
+        "title": "Condiciones de Uso",
+        "description": "Debes tener al menos 18 años y tener la capacidad legal para celebrar contratos vinculantes para usar nuestros servicios."
+      }
+    },
+    "responsibilities": {
+      "title": "Responsabilidades del Usuario",
+      "subtitle": "Tus obligaciones como usuario",
+      "description": "Como usuario de MarketFlex, tienes ciertas responsabilidades:",
+      "items": {
+        "account": {
+          "title": "Seguridad de la Cuenta",
+          "description": "Eres responsable de mantener la confidencialidad de tus credenciales de cuenta y de todas las actividades bajo tu cuenta."
+        },
+        "content": {
+          "title": "Pautas de Contenido",
+          "description": "Debes asegurarte de que todo el contenido que publiques o compartas cumpla con nuestras pautas comunitarias y las leyes aplicables."
+        },
+        "conduct": {
+          "title": "Conducta del Usuario",
+          "description": "Aceptas usar nuestra plataforma de manera legal, ética y respetuosa con otros usuarios."
+        },
+        "security": {
+          "title": "Seguridad de la Plataforma",
+          "description": "No debes intentar violar o eludir nuestras medidas de seguridad ni interferir con el funcionamiento adecuado de nuestra plataforma."
+        }
+      }
+    },
+    "intellectualProperty": {
+      "title": "Propiedad Intelectual",
+      "subtitle": "Derechos de propiedad y uso",
+      "description": "Todo el contenido y materiales disponibles en MarketFlex están protegidos por derechos de propiedad intelectual:",
+      "items": {
+        "ownership": {
+          "title": "Propiedad de la Plataforma",
+          "description": "MarketFlex y su contenido original, características y funcionalidad son propiedad nuestra y están protegidos por leyes internacionales de derechos de autor, marcas registradas y otras leyes de propiedad intelectual."
+        },
+        "licenses": {
+          "title": "Licencias de Usuario",
+          "description": "Te otorgamos una licencia limitada, no exclusiva, no transferible para usar nuestra plataforma con fines personales y no comerciales."
+        },
+        "infringement": {
+          "title": "Reclamos de Infracción",
+          "description": "Respetamos los derechos de propiedad intelectual y esperamos que los usuarios hagan lo mismo. Si crees que tus derechos han sido violados, por favor contáctanos."
+        }
+      }
+    },
+    "liability": {
+      "title": "Limitación de Responsabilidad",
+      "subtitle": "Entendiendo nuestras responsabilidades legales",
+      "description": "MarketFlex se proporciona 'tal cual' sin garantías ni garantías:",
+      "disclaimer": {
+        "title": "Descargo de Responsabilidad",
+        "description": "No somos responsables por daños indirectos, incidentales, especiales, consecuentes o punitivos que resulten de tu uso o incapacidad para usar nuestra plataforma."
+      }
+    },
+    "changes": {
+      "title": "Cambios en los Términos",
+      "subtitle": "Actualizaciones y modificaciones",
+      "description": "Nos reservamos el derecho de modificar estos términos en cualquier momento:",
+      "notification": {
+        "title": "Notificación de Cambios",
+        "description": "Notificaremos a los usuarios sobre cualquier cambio material en estos términos a través de nuestra plataforma o por correo electrónico."
+      }
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "subtitle": "Ponte en contacto sobre nuestros términos",
+      "description": "Si tienes alguna pregunta sobre estos Términos de Servicio:",
+      "details": {
+        "email": "Correo: legal@marketflex.com",
+        "address": "Dirección: 123 Calle Legal, Suite 100, San Francisco, CA 94105",
+        "phone": "Teléfono: +1 (555) 123-4567"
+      }
+    }
+  },
+  "Auth": {
+    "signIn": {
+      "title": "Inicia sesión",
+      "subtitle": "Bienvenido de nuevo a MarketFlex",
+      "description": "Inicia sesión en tu cuenta para continuar",
+      "notRegistered": "¿No tienes una cuenta?",
+      "orContinueWith": "O continua con",
+      "googleButton": "Inicia sesión con Google",
+      "githubButton": "Inicia sesión con GitHub",
+      "signIn": "Inicia sesión",
+      "signUp": "Crea una cuenta",
+      "email": "Correo",
+      "password": "Contraseña",
+      "forgotPassword": "¿Olvidaste tu contraseña?"
+    },
+    "signUp": {
+      "title": "Crea una cuenta",
+      "subtitle": "Crea una cuenta para continuar",
+      "description": "Crea una cuenta para continuar",
+      "alreadyRegistered": "¿Ya tienes una cuenta?",
+      "orContinueWith": "O continua con",
+      "googleButton": "Crea una cuenta con Google",
+      "githubButton": "Crea una cuenta con GitHub",
+      "signIn": "Inicia sesión",
+      "signUp": "Crea una cuenta",
+      "email": "Correo",
+      "password": "Contraseña",
+      "forgotPassword": "¿Olvidaste tu contraseña?"
+    },
+    "forgotPassword": {
+      "title": "Restablece tu contraseña",
+      "subtitle": "Restablece tu contraseña para continuar",
+      "description": "Restablece tu contraseña para continuar",
+      "orContinueWith": "O continua con",
+      "signIn": "Inicia sesión",
+      "resetPassword": "Restablece tu contraseña",
+      "email": "Correo"
+    }
+  }
+}

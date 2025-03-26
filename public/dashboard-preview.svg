@@ -1,0 +1,51 @@
+<svg width="800" height="600" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <title>Dashboard Preview</title>
+  
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  
+  <!-- Grid pattern -->
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+  </pattern>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+  
+  <!-- MarketFlex logo -->
+  <g transform="translate(30, 30)">
+    <rect width="40" height="40" rx="8" fill="#888888" opacity="0.7"/>
+    <text x="20" y="25" font-size="16" fill="white" text-anchor="middle" dominant-baseline="middle">MF</text>
+  </g>
+  
+  <!-- Dashboard elements -->
+  <!-- Header -->
+  <rect x="30" y="100" width="740" height="60" rx="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  
+  <!-- Sidebar -->
+  <rect x="30" y="170" width="180" height="400" rx="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  
+  <!-- Main area -->
+  <rect x="220" y="170" width="550" height="400" rx="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  
+  <!-- Charts -->
+  <rect x="240" y="190" width="240" height="160" rx="4" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <rect x="240" y="230" width="240" height="100" fill="#f9f9f9"/>
+  
+  <rect x="500" y="190" width="240" height="160" rx="4" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <circle cx="620" cy="260" r="60" fill="none" stroke="#888888" stroke-width="20" stroke-dasharray="270,100"/>
+  
+  <!-- Table -->
+  <rect x="240" y="370" width="500" height="180" rx="4" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="240" y1="410" x2="740" y2="410" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="240" y1="450" x2="740" y2="450" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="240" y1="490" x2="740" y2="490" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="240" y1="530" x2="740" y2="530" stroke="#e0e0e0" stroke-width="1"/>
+  
+  <!-- Sidebar items -->
+  <rect x="50" y="190" width="140" height="10" rx="5" fill="#888888"/>
+  <rect x="50" y="215" width="140" height="10" rx="5" fill="#e0e0e0"/>
+  <rect x="50" y="240" width="140" height="10" rx="5" fill="#e0e0e0"/>
+  <rect x="50" y="265" width="140" height="10" rx="5" fill="#e0e0e0"/>
+  <rect x="50" y="290" width="140" height="10" rx="5" fill="#e0e0e0"/>
+  
+  <!-- Text label -->
+  <text x="400" y="130" font-size="18" fill="#888888" text-anchor="middle" dominant-baseline="middle">Dashboard Preview</text>
+</svg> 
