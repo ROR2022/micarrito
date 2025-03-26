@@ -14,6 +14,7 @@
     "listings": "Anuncios",
     "about": "Nosotros",
     "contact": "Contacto",
+    "dashboard": "Dashboard",
     "login": "Iniciar Sesión",
     "signup": "Registrarse",
     "openMenu": "Abrir Menú",
@@ -546,6 +547,93 @@
       "signIn": "Inicia sesión",
       "resetPassword": "Restablece tu contraseña",
       "email": "Correo"
+    }
+  },
+  "Dashboard": {
+    "common": {
+      "welcome": "Bienvenido de nuevo, {email}",
+      "dashboard": "Panel de Control",
+      "listings": "Anuncios",
+      "messages": "Mensajes",
+      "profile": "Perfil",
+      "settings": "Configuración"
+    },
+    "overview": {
+      "title": "Panel de Control",
+      "totalListings": "Total de Anuncios",
+      "noListings": "No hay anuncios todavía",
+      "messagesCount": "Mensajes",
+      "noMessages": "No hay mensajes todavía",
+      "activeSales": "Ventas Activas",
+      "noSales": "No hay ventas activas",
+      "accountStatus": "Estado de la Cuenta",
+      "freeTier": "Plan gratuito",
+      "recentActivity": "Actividad Reciente",
+      "recentActivityDesc": "Tus acciones y actualizaciones recientes",
+      "noActivity": "No hay actividad reciente",
+      "recentMessages": "Mensajes Recientes",
+      "recentMessagesDesc": "Tus últimas conversaciones",
+      "analytics": "Análisis",
+      "analyticsDesc": "Ver estadísticas y análisis",
+      "analyticsData": "Los datos de análisis aparecerán aquí",
+      "reports": "Informes",
+      "reportsDesc": "Ver y descargar informes",
+      "reportsData": "Los datos de informes aparecerán aquí"
+    },
+    "listings": {
+      "title": "Tus Anuncios",
+      "createNew": "Crear Nuevo Anuncio",
+      "allListings": "Todos los Anuncios",
+      "manageListings": "Administra tus productos y servicios",
+      "noListings": "No tienes anuncios todavía. Crea tu primer anuncio para comenzar."
+    },
+    "messages": {
+      "title": "Mensajes",
+      "manage": "Administra tus conversaciones con compradores y vendedores",
+      "inbox": "Bandeja de entrada",
+      "recentConversations": "Tus conversaciones recientes",
+      "noMessages": "No tienes mensajes todavía."
+    },
+    "profile": {
+      "title": "Tu Perfil",
+      "manage": "Administra la configuración de tu cuenta e información de perfil",
+      "personalInfo": "Información Personal",
+      "updatePersonal": "Actualiza tus datos personales",
+      "email": "Correo Electrónico",
+      "emailHelp": "Tu correo electrónico se utiliza para autenticación y no se puede cambiar aquí.",
+      "fullName": "Nombre Completo",
+      "fullNamePlaceholder": "Ingresa tu nombre completo",
+      "phone": "Número de Teléfono",
+      "phonePlaceholder": "Ingresa tu número de teléfono",
+      "saveChanges": "Guardar Cambios",
+      "password": "Contraseña",
+      "updatePassword": "Actualizar tu contraseña",
+      "currentPassword": "Contraseña Actual",
+      "newPassword": "Nueva Contraseña",
+      "confirmPassword": "Confirmar Nueva Contraseña",
+      "updatePasswordBtn": "Actualizar Contraseña"
+    },
+    "settings": {
+      "title": "Configuración",
+      "manage": "Administra la configuración y preferencias de tu cuenta",
+      "general": "General",
+      "notifications": "Notificaciones",
+      "privacy": "Privacidad",
+      "generalSettings": "Configuración General",
+      "generalDesc": "Administra la configuración general de tu cuenta",
+      "displayEnglish": "Mostrar en Español",
+      "marketingEmails": "Recibir correos de marketing",
+      "saveSettings": "Guardar Configuración",
+      "notificationPreferences": "Preferencias de Notificaciones",
+      "notificationDesc": "Controla cómo te contactamos",
+      "newMessageNotif": "Notificaciones de nuevos mensajes",
+      "listingUpdates": "Notificaciones de actualización de anuncios",
+      "savePreferences": "Guardar Preferencias",
+      "privacySettings": "Configuración de Privacidad",
+      "privacyDesc": "Administra tus preferencias de privacidad",
+      "publicProfile": "Hacer perfil público",
+      "activityTracking": "Permitir seguimiento de actividad para recomendaciones mejoradas",
+      "updatePrivacy": "Actualizar Configuración de Privacidad"
     }
   }
 }

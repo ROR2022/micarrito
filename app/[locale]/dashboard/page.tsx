@@ -1,10 +1,15 @@
-import React from 'react'
 
+import React from 'react';
+import { getUser } from '@/app/actions';
+import DashboardClientPage from './dashboard-client-page';
 
-const DashboardPage = () => {
+export default async function DashboardPage() {
+  const { user } = await getUser();
+
   return (
-    <div>DashboardPage</div>
-  )
+    <DashboardClientPage user={user} />
+  );
 }
 
-export default DashboardPage;
+
+

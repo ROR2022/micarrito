@@ -173,3 +173,9 @@ export const signOutAction = async () => {
   const locale = await getLocale();
   return redirect(`/${locale}/sign-in`);
 };
+
+export const getUser = async () => {
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  return { user };
+};

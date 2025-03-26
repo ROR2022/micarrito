@@ -14,6 +14,7 @@
         "listings": "Listings",
         "about": "About",
         "contact": "Contact",
+        "dashboard": "Dashboard",
         "login": "Log In",
         "signup": "Sign Up",
         "openMenu": "Open Menu",
@@ -546,6 +547,93 @@
             "signIn": "Sign in",
             "resetPassword": "Reset Password",
             "email": "Email"
+        }
+    },
+    "Dashboard": {
+        "common": {
+            "welcome": "Welcome back, {email}",
+            "dashboard": "Dashboard",
+            "listings": "Listings",
+            "messages": "Messages",
+            "profile": "Profile",
+            "settings": "Settings"
+        },
+        "overview": {
+            "title": "Dashboard",
+            "totalListings": "Total Listings",
+            "noListings": "No listings yet",
+            "messagesCount": "Messages",
+            "noMessages": "No messages yet",
+            "activeSales": "Active Sales",
+            "noSales": "No active sales",
+            "accountStatus": "Account Status",
+            "freeTier": "Free tier",
+            "recentActivity": "Recent Activity",
+            "recentActivityDesc": "Your recent actions and updates",
+            "noActivity": "No recent activity",
+            "recentMessages": "Recent Messages",
+            "recentMessagesDesc": "Your latest conversations",
+            "analytics": "Analytics",
+            "analyticsDesc": "View your analytics and stats",
+            "analyticsData": "Analytics data will appear here",
+            "reports": "Reports",
+            "reportsDesc": "View and download reports",
+            "reportsData": "Report data will appear here"
+        },
+        "listings": {
+            "title": "Your Listings",
+            "createNew": "Create New Listing",
+            "allListings": "All Listings",
+            "manageListings": "Manage your products and services",
+            "noListings": "You don't have any listings yet. Create your first listing to get started."
+        },
+        "messages": {
+            "title": "Messages",
+            "manage": "Manage your conversations with buyers and sellers",
+            "inbox": "Inbox",
+            "recentConversations": "Your recent conversations",
+            "noMessages": "You don't have any messages yet."
+        },
+        "profile": {
+            "title": "Your Profile",
+            "manage": "Manage your account settings and profile information",
+            "personalInfo": "Personal Information",
+            "updatePersonal": "Update your personal details",
+            "email": "Email",
+            "emailHelp": "Your email address is used for authentication and cannot be changed here.",
+            "fullName": "Full Name",
+            "fullNamePlaceholder": "Enter your full name",
+            "phone": "Phone Number",
+            "phonePlaceholder": "Enter your phone number",
+            "saveChanges": "Save Changes",
+            "password": "Password",
+            "updatePassword": "Update your password",
+            "currentPassword": "Current Password",
+            "newPassword": "New Password",
+            "confirmPassword": "Confirm New Password",
+            "updatePasswordBtn": "Update Password"
+        },
+        "settings": {
+            "title": "Settings",
+            "manage": "Manage your account settings and preferences",
+            "general": "General",
+            "notifications": "Notifications",
+            "privacy": "Privacy",
+            "generalSettings": "General Settings",
+            "generalDesc": "Manage your general account settings",
+            "displayEnglish": "Display in English",
+            "marketingEmails": "Receive marketing emails",
+            "saveSettings": "Save Settings",
+            "notificationPreferences": "Notification Preferences",
+            "notificationDesc": "Control how we contact you",
+            "newMessageNotif": "New message notifications",
+            "listingUpdates": "Listing update notifications",
+            "savePreferences": "Save Preferences",
+            "privacySettings": "Privacy Settings",
+            "privacyDesc": "Manage your privacy preferences",
+            "publicProfile": "Make profile public",
+            "activityTracking": "Allow activity tracking for improved recommendations",
+            "updatePrivacy": "Update Privacy Settings"
         }
     }
 }
