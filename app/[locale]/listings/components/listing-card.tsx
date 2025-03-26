@@ -25,6 +25,8 @@ export function ListingCard({ title, description, price, imageUrl, category }: L
               src={imageUrl}
               alt={title}
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              priority
               className="object-cover rounded-t-lg"
             />
           ) : (
