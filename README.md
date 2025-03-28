@@ -201,8 +201,8 @@ Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE)
 ## 💬 Soporte
 
 ¿Tienes preguntas o necesitas ayuda?
-- Abre un [issue](https://github.com/tuusuario/marketflex/issues/new)
-- Contacta por email: support@marketflex.app
+- Abre un [issue](https://marketflex.vercel.app/es/contact)
+- Contacta por email: kodeandoando2023@gmail.com
 
 ---
 
