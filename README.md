@@ -1,104 +1,211 @@
-<a href="https://demo-nextjs-with-supabase.vercel.app/">
-  <img alt="Next.js and Supabase Starter Kit - the fastest way to build apps with Next.js and Supabase" src="https://demo-nextjs-with-supabase.vercel.app/opengraph-image.png">
-  <h1 align="center">Next.js and Supabase Starter Kit</h1>
-</a>
+# MarketFlex
 
 <p align="center">
- The fastest way to build apps with Next.js and Supabase
+  <img src="public/logoMarketFlex.png" alt="MarketFlex Logo" width="200" />
 </p>
 
 <p align="center">
-  <a href="#features"><strong>Features</strong></a> ·
+  <strong>Un boilerplate SaaS flexible para crear marketplaces personalizados</strong>
+</p>
+
+<p align="center">
+  <a href="#características"><strong>Características</strong></a> ·
   <a href="#demo"><strong>Demo</strong></a> ·
-  <a href="#deploy-to-vercel"><strong>Deploy to Vercel</strong></a> ·
-  <a href="#clone-and-run-locally"><strong>Clone and run locally</strong></a> ·
-  <a href="#feedback-and-issues"><strong>Feedback and issues</strong></a>
-  <a href="#more-supabase-examples"><strong>More Examples</strong></a>
+  <a href="#instalación"><strong>Instalación</strong></a> ·
+  <a href="#uso"><strong>Uso</strong></a> ·
+  <a href="#personalización"><strong>Personalización</strong></a> ·
+  <a href="#tecnologías"><strong>Tecnologías</strong></a> ·
+  <a href="#contribuir"><strong>Contribuir</strong></a>
 </p>
-<br/>
 
-## Features
+## 🌟 Introducción
 
-- Works across the entire [Next.js](https://nextjs.org) stack
-  - App Router
-  - Pages Router
-  - Middleware
-  - Client
-  - Server
-  - It just works!
-- supabase-ssr. A package to configure Supabase Auth to use cookies
-- Styling with [Tailwind CSS](https://tailwindcss.com)
-- Components with [shadcn/ui](https://ui.shadcn.com/)
-- Optional deployment with [Supabase Vercel Integration and Vercel deploy](#deploy-your-own)
-  - Environment variables automatically assigned to Vercel project
+MarketFlex es un boilerplate SaaS completo diseñado para lanzar rápidamente marketplaces personalizados para diversos nichos (automotriz, inmobiliario, servicios, etc.) sin necesidad de modificar el código base. Ofrece un enfoque "configura, no codifiques", permitiéndote adaptar campos, categorías y flujos de trabajo mediante configuración.
 
-## Demo
+Ideal para emprendedores, desarrolladores y empresas que necesitan implementar un marketplace profesional y escalable en tiempo récord.
 
-You can view a fully working demo at [demo-nextjs-with-supabase.vercel.app](https://demo-nextjs-with-supabase.vercel.app/).
+## ✨ Características
 
-## Deploy to Vercel
+### Estructura Adaptable
+- **Listados Dinámicos**: Define campos personalizados según tu nicho sin modificar el código
+- **Búsqueda Avanzada**: Filtrado y ordenamiento inteligente adaptado a los campos personalizados
+- **Multilenguaje**: Soporte para español, inglés y fácilmente extensible a otros idiomas
+- **Multidivisa**: Configura precios en diferentes monedas (USD, ARS, MXN, etc.)
 
-Vercel deployment will guide you through creating a Supabase account and project.
+### Experiencia de Usuario
+- **Diseño Responsivo**: Optimizado para dispositivos móviles y escritorio
+- **Temas Personalizables**: Modos claro/oscuro y personalización de colores
+- **Interfaz Intuitiva**: Navegación fluida y accesible (WCAG 2.1)
 
-After installation of the Supabase integration, all relevant environment variables will be assigned to the project so the deployment is fully functioning.
+### Monetización
+- **Suscripciones**: Planes para vendedores mediante integración con MercadoPago
+- **Comisiones por Transacción**: Configura porcentajes flexibles por cada venta
+- **Listings Premium**: Opciones de promoción y destacados
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fwith-supabase&project-name=nextjs-with-supabase&repository-name=nextjs-with-supabase&demo-title=nextjs-with-supabase&demo-description=This+starter+configures+Supabase+Auth+to+use+cookies%2C+making+the+user%27s+session+available+throughout+the+entire+Next.js+app+-+Client+Components%2C+Server+Components%2C+Route+Handlers%2C+Server+Actions+and+Middleware.&demo-url=https%3A%2F%2Fdemo-nextjs-with-supabase.vercel.app%2F&external-id=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fwith-supabase&demo-image=https%3A%2F%2Fdemo-nextjs-with-supabase.vercel.app%2Fopengraph-image.png)
+### Pagos y Seguridad
+- **Integración con MercadoPago**: Procesa pagos con múltiples métodos (tarjetas, transferencias, efectivo)
+- **Webhooks Configurados**: Notificaciones automáticas de pagos y suscripciones
+- **RLS de Supabase**: Políticas de seguridad robustas a nivel de base de datos
 
-The above will also clone the Starter kit to your GitHub, you can clone that locally and develop locally.
+### Funcionalidades Clave
+- **Mensajería Interna**: Comunicación directa entre compradores y vendedores
+- **Panel de Administración**: Gestión centralizada de usuarios, listings y configuraciones
+- **Autenticación Segura**: Email/contraseña y proveedores sociales (Google, GitHub)
 
-If you wish to just develop locally and not deploy to Vercel, [follow the steps below](#clone-and-run-locally).
+## 🔍 Demo
 
-## Clone and run locally
+Puedes explorar una demostración completa en [marketflex.vercel.app](https://marketflex.vercel.app)
 
-1. You'll first need a Supabase project which can be made [via the Supabase dashboard](https://database.new)
+- **Credenciales de prueba**:
+  - Comprador: buyer@example.com / password123
+  - Vendedor: seller@example.com / password123
+  - Admin: admin@example.com / password123
 
-2. Create a Next.js app using the Supabase Starter template npx command
+## 🚀 Instalación
 
+### Prerrequisitos
+- Node.js 18+ y npm/yarn/pnpm
+- Una cuenta en [Supabase](https://supabase.com)
+- Una cuenta en [MercadoPago](https://www.mercadopago.com.ar) (para procesamiento de pagos)
+
+### Instalación Local
+
+1. Clona el repositorio
    ```bash
-   npx create-next-app --example with-supabase with-supabase-app
+   git clone https://github.com/tuusuario/marketflex.git
+   cd marketflex
    ```
 
+2. Instala dependencias
    ```bash
-   yarn create next-app --example with-supabase with-supabase-app
+   npm install
+   # o yarn install
+   # o pnpm install
    ```
 
+3. Configura las variables de entorno
    ```bash
-   pnpm create next-app --example with-supabase with-supabase-app
+   cp .env.example .env.local
+   ```
+   
+   Edita `.env.local` con tus credenciales:
+   ```
+   NEXT_PUBLIC_SUPABASE_URL=tu_url_de_supabase
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=tu_clave_anon_de_supabase
+   NEXT_PUBLIC_MERCADOPAGO_PUBLIC_KEY=tu_clave_publica_de_mercado_pago
+   MERCADOPAGO_ACCESS_TOKEN=tu_token_de_acceso_de_mercado_pago
    ```
 
-3. Use `cd` to change into the app's directory
-
+4. Inicializa la base de datos
    ```bash
-   cd with-supabase-app
+   npm run db:setup
+   # o yarn db:setup
+   # o pnpm db:setup
    ```
 
-4. Rename `.env.example` to `.env.local` and update the following:
-
-   ```
-   NEXT_PUBLIC_SUPABASE_URL=[INSERT SUPABASE PROJECT URL]
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=[INSERT SUPABASE PROJECT API ANON KEY]
-   ```
-
-   Both `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` can be found in [your Supabase project's API settings](https://app.supabase.com/project/_/settings/api)
-
-5. You can now run the Next.js local development server:
-
+5. Inicia el servidor de desarrollo
    ```bash
    npm run dev
+   # o yarn dev
+   # o pnpm dev
    ```
 
-   The starter kit should now be running on [localhost:3000](http://localhost:3000/).
+6. Visita [http://localhost:3000](http://localhost:3000) para ver tu aplicación
 
-6. This template comes with the default shadcn/ui style initialized. If you instead want other ui.shadcn styles, delete `components.json` and [re-install shadcn/ui](https://ui.shadcn.com/docs/installation/next)
+### Despliegue a Producción
 
-> Check out [the docs for Local Development](https://supabase.com/docs/guides/getting-started/local-development) to also run Supabase locally.
+**Opción 1: Despliegue a Vercel**
 
-## Feedback and issues
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftuusuario%2Fmarketflex)
 
-Please file feedback and issues over on the [Supabase GitHub org](https://github.com/supabase/supabase/issues/new/choose).
+**Opción 2: Despliegue Manual**
 
-## More Supabase examples
+1. Configura tu proyecto en Supabase
+2. Configura MercadoPago para producción
+3. Despliega usando tu proveedor preferido (Vercel, Netlify, etc.)
+4. Configura las variables de entorno en tu proveedor
 
-- [Next.js Subscription Payments Starter](https://github.com/vercel/nextjs-subscription-payments)
-- [Cookie-based Auth and the Next.js 13 App Router (free course)](https://youtube.com/playlist?list=PL5S4mPUpp4OtMhpnp93EFSo42iQ40XjbF)
-- [Supabase Auth and the Next.js App Router](https://github.com/supabase/supabase/tree/master/examples/auth/nextjs)
+## 📋 Uso
+
+### Configuración Básica
+
+1. **Configuración del Marketplace**: Accede al panel de administración en `/dashboard/admin` y configura los parámetros básicos:
+   - Nombre del marketplace
+   - Categorías y campos personalizados
+   - Comisiones y precios de suscripción
+
+2. **Personalización Visual**: Ajusta colores, logos y temas desde la sección "Apariencia"
+
+3. **Configuración de Pagos**: Conecta tu cuenta de MercadoPago en la sección "Pagos"
+
+### Creación de Campos Personalizados
+
+1. En el panel de administración, ve a "Configuración" > "Campos Personalizados"
+2. Selecciona una categoría (ej. "Automóviles")
+3. Agrega campos como:
+   ```json
+   {
+     "marca": {"type": "string", "required": true},
+     "modelo": {"type": "string", "required": true},
+     "año": {"type": "number", "required": true},
+     "kilometraje": {"type": "number", "required": true},
+     "combustible": {"type": "select", "options": ["Gasolina", "Diesel", "Eléctrico", "Híbrido"]}
+   }
+   ```
+
+## 🔧 Personalización
+
+### Campos Dinámicos
+
+Los campos dinámicos permiten adaptar MarketFlex a cualquier nicho sin modificar el código. Estos se definen en la tabla `listing_configurations` y se utilizan automáticamente en los formularios de creación/edición de listings.
+
+### Temas y Estilo
+
+MarketFlex utiliza Tailwind CSS y Shadcn/UI para estilizar la aplicación:
+
+1. Modifica `tailwind.config.ts` para ajustar colores, fuentes y más
+2. Personaliza componentes en `components/ui/`
+3. Edita los estilos globales en `app/globals.css`
+
+### Integración de Pagos
+
+MarketFlex está preconfigurado para MercadoPago, pero puedes agregar otros procesadores:
+
+1. Implementa el adaptador correspondiente en `app/api/payments/`
+2. Actualiza la configuración en el panel de administración
+
+## 🛠️ Tecnologías
+
+- **Frontend y Backend**: [Next.js 15](https://nextjs.org/) con App Router
+- **Base de Datos y Autenticación**: [Supabase](https://supabase.com)
+- **Estilos**: [Tailwind CSS](https://tailwindcss.com) y [Shadcn/UI](https://ui.shadcn.com)
+- **Procesamiento de Pagos**: [MercadoPago](https://www.mercadopago.com)
+- **Internacionalización**: [next-intl](https://next-intl-docs.vercel.app/)
+- **Formularios**: [React Hook Form](https://react-hook-form.com/) con [Zod](https://zod.dev/)
+- **Email**: [Resend](https://resend.com)
+
+## 🤝 Contribuir
+
+¡Las contribuciones son bienvenidas! Por favor, lee nuestra [guía de contribución](CONTRIBUTING.md) antes de enviar PRs.
+
+1. Haz fork del proyecto
+2. Crea tu rama de funcionalidad (`git checkout -b feature/amazing-feature`)
+3. Haz commit de tus cambios (`git commit -m 'Add amazing feature'`)
+4. Sube la rama (`git push origin feature/amazing-feature`)
+5. Abre un Pull Request
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+## 💬 Soporte
+
+¿Tienes preguntas o necesitas ayuda?
+- Abre un [issue](https://github.com/tuusuario/marketflex/issues/new)
+- Contacta por email: support@marketflex.app
+
+---
+
+<p align="center">
+  Desarrollado con ❤️ por el equipo de MarketFlex
+</p>

@@ -16,8 +16,8 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "Next.js and Supabase Starter Kit",
-  description: "The fastest way to build apps with Next.js and Supabase",
+  title: "MarketFlex",
+  description: "MarketFlex es una plataforma de comercio electrónico que te permite crear tu propio sitio web de ventas en minutos.",
 };
 
 const geistSans = Geist({

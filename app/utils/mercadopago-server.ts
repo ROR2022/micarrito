@@ -121,7 +121,7 @@ test_user_1184956246@testuser.com
       body: {
         back_url: data.back_url || 'http://localhost:3000',
         reason: data.reason,
-        payer_email: 'test_user_1184956246@testuser.com',
+        payer_email: data.payer_email,
         status: 'pending',
         auto_recurring: {
           frequency: data.auto_recurring.frequency,
