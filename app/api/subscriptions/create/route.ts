@@ -1,11 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/utils/supabase/server';
 import { createSubscription } from '@/app/utils/mercadopago-server';
+import { getLocale } from 'next-intl/server';
 //import { v4 as uuidv4 } from 'uuid';
 
 export async function POST(request: NextRequest) {
   try {
     const supabase = await createClient();
+    const locale = await getLocale();
     
     // Verificar autenticación
     const { data: { user } } = await supabase.auth.getUser();
@@ -65,7 +67,7 @@ export async function POST(request: NextRequest) {
         transaction_amount: price,
         currency_id: currency_id
       },
-      back_url: `${process.env.NEXT_PUBLIC_APP_URL}/checkout/success`,
+      back_url: `${process.env.NEXT_PUBLIC_APP_URL}/${locale}/checkout/success`,
     };
 
     // Llamar a la función de MercadoPago
