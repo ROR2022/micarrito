@@ -114,14 +114,14 @@ export const createSubscription = async (data: CreateSubscriptionPayload) => {
   back_url: 'https://5530-2806-104e-b-1dd6-7df1-4026-c9d7-943.ngrok-free.app/checkout/success'
 }
 
-
+test_user_1184956246@testuser.com
    */
   try {
     const subscription = await new PreApproval(client).create({
       body: {
         back_url: data.back_url || 'http://localhost:3000',
         reason: data.reason,
-        payer_email: data.payer_email,
+        payer_email: 'test_user_1184956246@testuser.com',
         status: 'pending',
         auto_recurring: {
           frequency: data.auto_recurring.frequency,
