@@ -181,7 +181,7 @@ export default function SubscriptionPlansClient({
                     variant={plan.name === 'Pro' ? 'default' : 'outline'}
                     asChild
                   >
-                    <Link href={`/${locale}/login?returnTo=/subscriptions`}>
+                    <Link href={`/${locale}/sign-in?returnTo=/subscriptions`}>
                       {t("loginToSubscribe")}
                     </Link>
                   </Button>
