@@ -1,7 +1,7 @@
 # MarketFlex
 
 <p align="center">
-  <img src="public/logoMarketFlex.png" alt="MarketFlex Logo" width="200" />
+  <img src="public/images/logoMarketFlex.png" alt="MarketFlex Logo" width="200" />
 </p>
 
 <p align="center">
