@@ -8,13 +8,14 @@ import { useToast } from "@/components/ui/use-toast";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Check } from "lucide-react";
+import { useLocale } from "next-intl";
 
 export default function CheckoutSuccessPage() {
   const searchParams = useSearchParams();
   const t = useTranslations("Checkout");
   const { toast } = useToast();
   const [transactionId, setTransactionId] = useState<string | null>(null);
-  
+  const locale = useLocale();
   // Extraer el external_reference de la URL
   const externalReference = searchParams.get("external_reference");
 
@@ -62,10 +63,10 @@ export default function CheckoutSuccessPage() {
         </CardContent>
         <CardFooter className="flex justify-between">
           <Button asChild variant="outline">
-            <Link href="/dashboard">{t("backToDashboard")}</Link>
+            <Link href={`/${locale}/dashboard`}>{t("backToDashboard")}</Link>
           </Button>
           <Button asChild>
-            <Link href="/listings">{t("continueShopping")}</Link>
+            <Link href={`/${locale}/listings`}>{t("continueShopping")}</Link>
           </Button>
         </CardFooter>
       </Card>
