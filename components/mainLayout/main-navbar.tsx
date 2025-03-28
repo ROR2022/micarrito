@@ -40,6 +40,13 @@ export default function MainNavbar({
             {t('listings')}
           </Link>
           <Link
+            href={`/${locale}/subscriptions`}
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
+            {t('subscriptions')}
+          </Link>
+          {!userEmail && <>
+            <Link
             href={`/${locale}/about`}
             className="text-sm font-medium transition-colors hover:text-primary"
           >
@@ -51,6 +58,8 @@ export default function MainNavbar({
           >
             {t('contact')}
           </Link>
+          </>}
+          
           {userEmail && (
             <Link
               href={`/${locale}/dashboard`}
@@ -116,6 +125,13 @@ export default function MainNavbar({
               onClick={() => setIsMenuOpen(false)}
             >
               {t('listings')}
+            </Link>
+            <Link
+              href={`/${locale}/subscriptions`}
+              className="px-2 py-1 text-sm font-medium rounded-md hover:bg-accent"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t('subscriptions')}
             </Link>
             <Link
               href={`/${locale}/about`}

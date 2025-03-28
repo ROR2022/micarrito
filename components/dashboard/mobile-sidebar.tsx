@@ -1,43 +1,106 @@
 "use client";
 
-import React from 'react';
-import { X } from 'lucide-react';
-import { Sidebar } from './sidebar';
-import { Button } from '@/components/ui/button';
-//import { useTranslations } from 'next-intl';
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
+import { Menu } from "lucide-react";
+import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { 
+  Home, 
+  Package2, 
+  MessageCircle, 
+  User, 
+  Settings, 
+  ShoppingCart, 
+  CreditCard,
+  Bookmark 
+} from "lucide-react";
+import { cn } from "@/lib/utils";
 
 interface MobileSidebarProps {
   open: boolean;
   onClose: () => void;
 }
 
-export function MobileSidebar({ open, onClose }: MobileSidebarProps) {
-  //const t = useTranslations('Dashboard.common');
-  
-  if (!open) return null;
+export default function MobileSidebar({ open, onClose }: MobileSidebarProps) {
+  const pathname = usePathname();
+  const locale = useLocale();
+  const t = useTranslations("Dashboard.common");
+
+  const navItems = [
+    {
+      href: `/${locale}/dashboard`,
+      icon: <Home className="h-4 w-4" />,
+      title: t("dashboard"),
+    },
+    {
+      href: `/${locale}/dashboard/listings`,
+      icon: <Package2 className="h-4 w-4" />,
+      title: t("listings"),
+    },
+    {
+      href: `/${locale}/dashboard/messages`,
+      icon: <MessageCircle className="h-4 w-4" />,
+      title: t("messages"),
+    },
+    {
+      href: `/${locale}/dashboard/profile`,
+      icon: <User className="h-4 w-4" />,
+      title: t("profile"),
+    },
+    {
+      href: `/${locale}/dashboard/purchases`,
+      icon: <ShoppingCart className="h-4 w-4" />,
+      title: t("purchases"),
+    },
+    {
+      href: `/${locale}/dashboard/sales`,
+      icon: <CreditCard className="h-4 w-4" />,
+      title: t("sales"),
+    },
+    {
+      href: `/${locale}/dashboard/subscriptions`,
+      icon: <Bookmark className="h-4 w-4" />,
+      title: t('subscriptions'),
+    },
+    {
+      href: `/${locale}/dashboard/settings`,
+      icon: <Settings className="h-4 w-4" />,
+      title: t("settings"),
+    },
+  ];
 
   return (
-    <div className="fixed inset-0 z-50 flex md:hidden text-base-content">
-      <div 
-        className="fixed inset-0 bg-background/80 backdrop-blur-sm" 
-        onClick={onClose}
-        onKeyDown={(e) => e.key === 'Escape' && onClose()}
-        role="button"
-        tabIndex={0}
-        aria-label="Close sidebar"
-      />
-      <div className="relative flex w-full max-w-xs flex-1 flex-col bg-background">
-        <div className="flex items-center justify-between p-4 border-b">
-          <h2 className="text-lg font-semibold">MarketFlex</h2>
-          <Button variant="ghost" size="icon" onClick={onClose}>
-            <X className="h-5 w-5" />
-            <span className="sr-only">Close</span>
-          </Button>
+    <Sheet open={open} onOpenChange={onClose}>
+      <SheetTrigger asChild>
+        <Button variant="ghost" size="icon" className="md:hidden">
+          <Menu />
+          <span className="sr-only">Toggle navigation menu</span>
+        </Button>
+      </SheetTrigger>
+      <SheetContent side="left" className="p-0">
+        <div className="flex h-14 items-center border-b px-6 font-semibold">
+          MarketFlex
         </div>
-        <div className="overflow-y-auto p-4">
-          <Sidebar />
+        <div className="flex flex-col gap-1 p-4">
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={cn(
+                "flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-all",
+                pathname === item.href
+                  ? "bg-accent text-accent-foreground"
+                  : "hover:bg-accent/50"
+              )}
+            >
+              {item.icon}
+              <span>{item.title}</span>
+            </Link>
+          ))}
         </div>
-      </div>
-    </div>
+      </SheetContent>
+    </Sheet>
   );
 } 

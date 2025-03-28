@@ -1,7 +1,7 @@
 "use client";
 
 import { Header } from "@/components/dashboard/header";
-import { MobileSidebar } from "@/components/dashboard/mobile-sidebar";
+import MobileSidebar  from "@/components/dashboard/mobile-sidebar";
 import { useState, ReactNode } from "react";
 
 

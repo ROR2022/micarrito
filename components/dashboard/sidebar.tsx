@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
-import { Home, Package2, MessageCircle, User, Settings } from 'lucide-react';
+import { Home, Package2, MessageCircle, User, Settings, ShoppingCart, CreditCard, Bookmark } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface SidebarItemProps {
@@ -54,6 +54,21 @@ export function Sidebar() {
       href: `/${locale}/dashboard/profile`,
       icon: <User className="h-4 w-4" />,
       title: t('profile'),
+    },
+    {
+      href: `/${locale}/dashboard/purchases`,
+      icon: <ShoppingCart className="h-4 w-4" />,
+      title: t('purchases'),
+    },
+    {
+      href: `/${locale}/dashboard/sales`,
+      icon: <CreditCard className="h-4 w-4" />,
+      title: t('sales'),
+    },
+    {
+      href: `/${locale}/dashboard/subscriptions`,
+      icon: <Bookmark className="h-4 w-4" />,
+      title: t('subscriptions'),
     },
     {
       href: `/${locale}/dashboard/settings`,

@@ -1,7 +1,7 @@
 import { HeroSection } from "@/components/landing/hero-section";
 import { FeaturesSection } from "@/components/landing/features-section";
 import { MarketplaceTemplates } from "@/components/landing/marketplace-templates";
-import { PricingSection } from "@/components/landing/pricing-section";
+//import { PricingSection } from "@/components/landing/pricing-section";
 import { TestimonialsSection } from "@/components/landing/testimonials-section";
 import { FaqSection } from "@/components/landing/faq-section";
 import { CtaSection } from "@/components/landing/cta-section";
@@ -12,7 +12,7 @@ export default function HomePage() {
       <HeroSection />
       <FeaturesSection />
       <MarketplaceTemplates />
-      <PricingSection />
+      {/* <PricingSection /> */}
       <TestimonialsSection />
       <FaqSection />
       <CtaSection />
