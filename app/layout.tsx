@@ -9,6 +9,7 @@ import { ThemeProvider } from "next-themes";
 //import Link from "next/link";
 import "./globals.css";
 //import { getLocale } from "next-intl/server";
+import { Toaster } from "sonner";
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -42,6 +43,7 @@ export default function RootLayout({
           themes={['light', 'dark', 'pastel', 'retro', 'cyberpunk']}
         >
           {children}
+          <Toaster richColors position="top-right" />
         </ThemeProvider>
       </body>
     </html>

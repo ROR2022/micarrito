@@ -45,6 +45,7 @@ export default function MainNavbar({
           >
             {t('subscriptions')}
           </Link>
+          
           {!userEmail && <>
             <Link
             href={`/${locale}/about`}
@@ -132,6 +133,13 @@ export default function MainNavbar({
               onClick={() => setIsMenuOpen(false)}
             >
               {t('subscriptions')}
+            </Link>
+            <Link
+              href={`/${locale}/docs`}
+              className="px-2 py-1 text-sm font-medium rounded-md hover:bg-accent"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t('documentation')}
             </Link>
             <Link
               href={`/${locale}/about`}

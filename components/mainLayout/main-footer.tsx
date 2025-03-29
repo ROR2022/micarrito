@@ -32,6 +32,9 @@ export default function MainFooter({locale}:{locale: string}) {
                             <Link href={`/${locale}/contact`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                                 {t('contact')}
                             </Link>
+                            <Link href={`/${locale}/docs`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                                {t('documentation')}
+                            </Link>
                         </nav>
                     </div>
                     

@@ -13,7 +13,7 @@ export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
   const params = useParams();
   const locale = params.locale as string;
-
+  const repoUrl = process.env.NEXT_PUBLIC_REPO_URL;
   useEffect(() => {
     // Trigger animations after component mounts
     setIsVisible(true)
@@ -55,13 +55,15 @@ export function HeroSection() {
                 asChild
                 className="group relative overflow-hidden shadow-lg hover:shadow-primary/20 transition-all duration-300"
               >
-                <Link href={`/${locale}/signup`} className="flex items-center gap-2">
+                <Link href={`${repoUrl}`} className="flex items-center gap-2">
                   {t("primaryCTA")}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
               <Button variant="outline" size="lg" className="border-2 hover:bg-secondary/5 transition-all duration-300">
-                {t("secondaryCTA")}
+                <Link href={`/${locale}/docs`} className="flex items-center gap-2">
+                  {t("secondaryCTA")}
+                </Link>
               </Button>
             </div>
 
