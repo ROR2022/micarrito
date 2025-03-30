@@ -30,17 +30,25 @@ export default async function SubscriptionsPage() {
   if (!user) {
     redirect(`/${locale}/login?returnTo=/dashboard/subscriptions`);
   }
+  //console.log('user.id:..', user.id);
+  //recuperar todas las suscripciones existentes
+  /* const { data: subscription } = await supabase
+    .from('subscriptions')
+    .select('*')
+    .eq('user_id', user.id)
+    .single();
+
+  console.log('subscription:..', subscription); */
 
   // Fetch user's active subscription if exists
-  const { data: subscription } = await supabase
+   const { data: subscription } = await supabase
     .from("subscriptions")
     .select(`
       *,
       subscription_plans (*)
     `)
     .eq("user_id", user.id)
-    .eq("status", "active")
-    .single();
+    .single(); 
 
   // Fetch subscription plans
   const { data: plans } = await supabase

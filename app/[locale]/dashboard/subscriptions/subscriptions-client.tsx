@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -86,13 +86,18 @@ export default function SubscriptionsClient({
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
+  const [isMounted, setIsMounted] = useState(false);
   const supabase = createClient();
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   // Format currency
   const formatCurrency = (amount: number, currency: string) => {
     return new Intl.NumberFormat("en-US", {
       style: "currency",
-      currency: currency,
+      currency: currency || "MXN",
     }).format(amount);
   };
 
@@ -160,6 +165,8 @@ export default function SubscriptionsClient({
       setLoading(false);
     }
   };
+
+  if (!isMounted) return null;
 
   return (
     <div className="container py-10">
