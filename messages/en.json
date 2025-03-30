@@ -1,1185 +1,1221 @@
 {
-    "Common": {
-        "cookieConsent": "We use cookies to ensure you get the best experience on our website. By continuing to use our site, you agree to our cookie policy.",
-        "cookies":{
-            "accept": "Accept",
-            "decline": "Decline",
-            "title": "Cookie Policy",
-            "message": "We use cookies to ensure you get the best experience on our website. By continuing to use our site, you agree to our cookie policy.",
-            "learnMore": "Learn More"
-        }
+  "Common": {
+    "cookieConsent": "We use cookies to ensure you get the best experience on our website. By continuing to use our site, you agree to our cookie policy.",
+    "cookies": {
+      "accept": "Accept",
+      "decline": "Decline",
+      "title": "Cookie Policy",
+      "message": "We use cookies to ensure you get the best experience on our website. By continuing to use our site, you agree to our cookie policy.",
+      "learnMore": "Learn More"
+    }
+  },
+  "MainNavbar": {
+    "title": "MarketFlex",
+    "listings": "Listings",
+    "about": "About",
+    "contact": "Contact",
+    "dashboard": "Dashboard",
+    "login": "Log In",
+    "signup": "Sign Up",
+    "openMenu": "Open Menu",
+    "closeMenu": "Close Menu",
+    "home": "Home",
+    "mainNavigation": "Main Navigation",
+    "subscriptions": "Subscriptions",
+    "documentation": "Documentation"
+  },
+  "MainFooter": {
+    "title": "MarketFlex"
+  },
+  "Footer": {
+    "description": "A flexible marketplace platform for various niches, offering customizable listings, secure payments, and a seamless user experience.",
+    "quickLinks": "Quick Links",
+    "quickLinksAriaLabel": "Quick navigation links",
+    "listings": "Listings",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "legal": "Legal",
+    "legalAriaLabel": "Legal information",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "followUs": "Follow Us",
+    "allRightsReserved": "All rights reserved.",
+    "madeWith": "Made with",
+    "documentation": "Documentation"
+  },
+  "ThemeSwitcher": {
+    "changeTheme": "Change theme",
+    "light": "Light",
+    "dark": "Dark",
+    "pastel": "Pastel",
+    "retro": "Retro",
+    "cyberpunk": "Cyberpunk",
+    "system": "System"
+  },
+  "Docs": {
+    "metadata": {
+      "title": "MarketFlex Documentation",
+      "description": "Official documentation for MarketFlex marketplace platform"
     },
-    "MainNavbar": {
-        "title": "MarketFlex",
+    "documentation": "Documentation",
+    "nav": {
+      "gettingStarted": "Getting Started",
+      "installation": "Installation",
+      "configuration": "Configuration",
+      "architecture": "Architecture",
+      "database": "Database",
+      "components": "Components",
+      "customization": "Customization",
+      "dynamicFields": "Dynamic Fields",
+      "styling": "Styling",
+      "development": "Development",
+      "apiReference": "API Reference",
+      "hooks": "Hooks",
+      "integrations": "Integrations",
+      "mercadopago": "MercadoPago",
+      "supabase": "Supabase",
+      "deployment": "Deployment",
+      "faq": "FAQ"
+    },
+    "index": {
+      "title": "MarketFlex Documentation",
+      "subtitle": "A complete guide for developers using the MarketFlex marketplace boilerplate",
+      "introduction": "MarketFlex is a complete boilerplate for developers who want to create customized marketplaces with minimal programming effort. This documentation will guide you through the key aspects of the project.",
+      "forDevelopers": "For Developers",
+      "quickStartGuide": "Quick Start Guide",
+      "architectureOverview": "Architecture Overview",
+      "customizationOptions": "Customization Options",
+      "developmentGuide": "Development Guide",
+      "integrationsGuide": "Integrations Guide",
+      "deploymentGuide": "Deployment Guide",
+      "frequentlyAskedQuestions": "Frequently Asked Questions"
+    },
+    "content": {
+      "installation": {
+        "title": "Installation",
+        "description": "Learn how to install and set up MarketFlex on your server.",
+        "systemRequirements": "System Requirements",
+        "installationSteps": "Installation Steps",
+        "cloneRepository": "1. Clone the Repository",
+        "installDependencies": "2. Install Dependencies",
+        "envVariables": "3. Environment Variables",
+        "runDevServer": "4. Run the Development Server",
+        "verification": "Verification",
+        "troubleshooting": "Troubleshooting"
+      },
+      "configuration": {
+        "title": "Configuration",
+        "description": "Configure MarketFlex to meet your specific needs.",
+        "supabaseSetup": "Supabase Setup",
+        "mercadopagoSetup": "MercadoPago Setup",
+        "appSettings": "Application Settings",
+        "customizationOptions": "Customization Options"
+      },
+      "architecture": {
+        "title": "Architecture",
+        "description": "Understand how MarketFlex is built and organized.",
+        "techStack": "Tech Stack Overview",
+        "appStructure": "Application Structure",
+        "keyComponents": "Key Components",
+        "dataFlow": "Data Flow",
+        "extensionPoints": "Extension Points"
+      },
+      "features": {
+        "title": "Features",
+        "description": "Explore the features available in MarketFlex.",
+        "userManagement": "User Management",
+        "marketplaceFeatures": "Marketplace Features",
+        "sellerTools": "Seller Tools",
+        "adminFeatures": "Admin Features",
+        "paymentSystem": "Payment and Transactions",
+        "communicationTools": "Communication Tools",
+        "customization": "Platform Customization",
+        "internationalization": "Internationalization",
+        "technicalFeatures": "Technical Features"
+      },
+      "database": {
+        "title": "Database Architecture",
+        "description": "Understand the database structure used in MarketFlex.",
+        "overview": "Database Overview",
+        "tableStructure": "Table Structure",
+        "relationships": "Relationships",
+        "indexing": "Indexing and Performance",
+        "rlsPolicies": "Row Level Security Policies",
+        "customFields": "Custom Fields Implementation",
+        "migrations": "Database Migrations",
+        "backups": "Backups and Recovery"
+      },
+      "components": {
+        "title": "Component Architecture",
+        "description": "Learn about the reusable components that make up MarketFlex.",
+        "overview": "Components Overview",
+        "uiComponents": "UI Components",
+        "layoutComponents": "Layout Components",
+        "formComponents": "Form Components",
+        "dataComponents": "Data Display Components",
+        "marketplaceComponents": "Marketplace-specific Components",
+        "stateManagement": "State Management",
+        "bestPractices": "Component Best Practices"
+      },
+      "customization": {
+        "title": "Customization",
+        "description": "Learn how to customize MarketFlex to your specific needs.",
+        "customizationOptions": "Customization Options",
+        "overview": "Customization Overview",
+        "branding": "Branding Customization",
+        "listingStructure": "Listing Structure Customization",
+        "layout": "Layout Customization",
+        "workflow": "Workflow Customization",
+        "commonCustomizations": "Common Customizations",
+        "bestPractices": "Best Practices for Customization"
+      },
+      "dynamicFields": {
+        "title": "Dynamic Fields",
+        "description": "Learn how to use dynamic fields in MarketFlex.",
+        "overview": "Dynamic Fields Overview",
+        "fieldTypes": "Field Types",
+        "validation": "Validation and Security",
+        "howTheyWork": "How They Work",
+        "configuration": "Configuration",
+        "rendering": "Rendering",
+        "querying": "Querying",
+        "examples": "Examples",
+        "display": "Displaying Dynamic Fields",
+        "bestPractices": "Best Practices for Dynamic Fields"
+      },
+      "styling": {
+        "title": "Styling",
+        "description": "Learn how to style MarketFlex.",
+        "overview": "Styling Overview",
+        "customization": "Customization",
+        "responsiveDesign": "Responsive Design",
+        "performance": "Performance Optimization",
+        "bestPractices": "Best Practices for Styling",
+        "tailwindConfig": "TailwindCSS Configuration",
+        "themes": "Themes",
+        "components": "Components",
+        "layout": "Layout",
+        "typography": "Typography",
+        "images": "Images"
+      },
+      "development": {
+        "title": "Development",
+        "description": "Learn how to develop MarketFlex.",
+        "overview": "Development Overview",
+        "bestPractices": "Best Practices for Development",
+        "performance": "Performance Optimization",
+        "extendingMarketFlex": "Extending MarketFlex",
+        "addingNewPages": "Adding New Pages",
+        "customizingRoutes": "Customizing Routes",
+        "usingComponents": "Using Components",
+        "stateManagement": "State Management",
+        "dataFetching": "Data Fetching",
+        "errorHandling": "Error Handling",
+        "testing": "Testing",
+        "deployment": "Deployment",
+        "developmentEnvironment": "Development Environment",
+        "projectStructure": "Project Structure"
+      },
+      "apiReference": {
+        "title": "API Reference",
+        "overview": "API Overview",
+        "authentication": "Authentication",
         "listings": "Listings",
-        "about": "About",
-        "contact": "Contact",
-        "dashboard": "Dashboard",
-        "login": "Log In",
-        "signup": "Sign Up",
-        "openMenu": "Open Menu",
-        "closeMenu": "Close Menu",
-        "home": "Home",
-        "mainNavigation": "Main Navigation",
+        "transactions": "Transactions",
+        "users": "Users",
+        "admin": "Admin",
+        "description": "Reference documentation for the API endpoints and functionality.",
+        "apiOverview": "API Overview",
+        "webhooks": "Webhooks",
+        "errorHandling": "Error Handling",
+        "rateLimiting": "Rate Limiting"
+      },
+      "hooks": {
+        "title": "Hooks",
+        "description": "Learn how to use the hooks available in MarketFlex.",
+        "overview": "Hooks Overview",
+        "customHooks": "Custom Hooks",
+        "bestPractices": "Best Practices for Hooks",
+        "authHooks": "Authentication Hooks",
+        "dataHooks": "Data Hooks",
+        "uiHooks": "UI Hooks",
+        "formHooks": "Form Hooks",
+        "notificationHooks": "Notification Hooks",
+        "paymentHooks": "Payment Hooks",
+        "integrationsHooks": "Integrations Hooks",
+        "creatingCustomHooks": "Creating Custom Hooks"
+      },
+      "integrations": {
+        "title": "Integrations",
+        "description": "Learn how to integrate MarketFlex with other services.",
+        "overview": "Integrations Overview",
+        "mercadopago": "MercadoPago Integration",
+        "supabase": "Supabase Integration",
+        "stripe": "Stripe Integration",
+        "paypal": "PayPal Integration",
+        "twilio": "Twilio Integration",
+        "sendgrid": "SendGrid Integration",
+        "googleAnalytics": "Google Analytics Integration",
+        "implementationStrategy": "Implementation Strategy",
+        "configurationManagement": "Configuration Management",
+        "extendingIntegrations": "Extending Integrations",
+        "additionalIntegrations": "Additional Integrations"
+      },
+      "mercadopago": {
+        "title": "MercadoPago Integration",
+        "description": "Learn how to integrate MercadoPago in MarketFlex.",
+        "overview": "MercadoPago Integration Overview",
+        "paymentProcess": "Payment Process",
+        "prerequisites": "Prerequisites",
+        "configuration": "Configuration",
+        "implementation": "Implementation",
+        "processingPayments": "Processing Payments",
         "subscriptions": "Subscriptions",
-        "documentation": "Documentation"
+        "webhooks": "Webhooks",
+        "bestPractices": "Best Practices for MercadoPago Integration",
+        "testing": "Testing",
+        "troubleshooting": "Troubleshooting",
+        "resources": "Resources"
+      },
+      "supabase": {
+        "title": "Supabase Integration",
+        "description": "Learn how to integrate Supabase in MarketFlex.",
+        "overview": "Supabase Integration Overview",
+        "authentication": "Authentication",
+        "prerequisites": "Prerequisites",
+        "configuration": "Configuration",
+        "database": "Database",
+        "storage": "Storage",
+        "functions": "Functions",
+        "security": "Security",
+        "bestPractices": "Best Practices for Supabase Integration",
+        "testing": "Testing",
+        "migrations": "Migrations",
+        "realtime": "Realtime",
+        "resources": "Resources"
+      },
+      "deployment": {
+        "title": "Deployment",
+        "description": "Learn how to deploy MarketFlex.",
+        "overview": "Deployment Overview",
+        "deploymentSteps": "Deployment Steps",
+        "prerequisites": "Prerequisites",
+        "preparingForDeployment": "Preparing for Deployment",
+        "deployingToVercel": "Deploying to Vercel",
+        "deployingToOtherPlatforms": "Deploying to Other Platforms",
+        "postDeploymentTasks": "Post-Deployment Tasks",
+        "webhooks": "Webhooks",
+        "environmentVariables": "Environment Variables",
+        "customDomain": "Custom Domain",
+        "monitoring": "Monitoring",
+        "bestPractices": "Best Practices for Deployment",
+        "deploymentStrategy": "Deployment Strategy",
+        "scaling": "Scaling",
+        "performanceOptimization": "Performance Optimization",
+        "security": "Security",
+        "backupAndRecovery": "Backup and Recovery",
+        "troubleshooting": "Troubleshooting",
+        "securityInProduction": "Security in Production"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "overview": "FAQ Overview",
+        "generalQuestions": "General Questions",
+        "technicalQuestions": "Technical Questions",
+        "paymentQuestions": "Payment Questions",
+        "accountQuestions": "Account Questions",
+        "listingQuestions": "Listing Questions",
+        "userQuestions": "User Questions",
+        "adminQuestions": "Admin Questions",
+        "integrationQuestions": "Integration Questions",
+        "deploymentQuestions": "Deployment Questions",
+        "description": "Answers to common questions about MarketFlex.",
+        "general": "General",
+        "whatIs": "What is MarketFlex?",
+        "techStack": "What technologies does MarketFlex use?",
+        "whyUse": "Why use MarketFlex?",
+        "installation": "Installation",
+        "systemRequirements": "System Requirements",
+        "installSteps": "Installation Steps",
+        "envVars": "Environment Variables",
+        "customization": "Customization",
+        "customizeTheme": "How to customize the themes?",
+        "addNewNiche": "How to add a new niche?",
+        "changeCurrency": "How to change the currency?",
+        "payment": "Payment",
+        "mercadopagoAlternative": "MercadoPago alternative?",
+        "mercadopagoTesting": "How to test MercadoPago payments?",
+        "commissionModel": "What is the comission model?",
+        "database": "Database",
+        "migrateExisting": "How to migrate existing data?",
+        "addNewTables": "How to add new tables?",
+        "dataBackup": "How to backup the data?",
+        "deployment": "Deployment",
+        "recommendedHost": "Recommended hosting providers",
+        "productionChecklist": "Production Checklist",
+        "multipleEnvironments": "Multiple Environments",
+        "troubleshooting": "Troubleshooting",
+        "commonErrors": "Common Errors",
+        "debugTips": "Debugging Tips",
+        "performance": "Performance",
+        "licensing": "Licensing",
+        "licenseType": "License Type"
+      }
+    }
+  },
+  "Contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have questions? We'd love to hear from you.",
+    "email": {
+      "title": "Email",
+      "value": "support@marketflex.com"
     },
-    "MainFooter": {
-        "title": "MarketFlex"
+    "phone": {
+      "title": "Phone",
+      "value": "+1 (555) 123-4567"
     },
-    "Footer": {
-        "description": "A flexible marketplace platform for various niches, offering customizable listings, secure payments, and a seamless user experience.",
-        "quickLinks": "Quick Links",
-        "quickLinksAriaLabel": "Quick navigation links",
-        "listings": "Listings",
-        "about": "About Us",
-        "contact": "Contact Us",
-        "legal": "Legal",
-        "legalAriaLabel": "Legal information",
-        "privacy": "Privacy Policy",
-        "terms": "Terms of Service",
-        "cookies": "Cookie Policy",
-        "followUs": "Follow Us",
-        "allRightsReserved": "All rights reserved.",
-        "madeWith": "Made with",
-        "documentation": "Documentation"
+    "address": {
+      "title": "Address",
+      "value": "123 Market Street, Suite 100, San Francisco, CA 94105"
     },
-    "ThemeSwitcher": {
-        "changeTheme": "Change theme",
-        "light": "Light",
-        "dark": "Dark",
-        "pastel": "Pastel",
-        "retro": "Retro",
-        "cyberpunk": "Cyberpunk",
-        "system": "System"
+    "form": {
+      "title": "Send us a Message",
+      "subtitle": "Fill out the form below and we'll get back to you as soon as possible.",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What's this about?",
+      "message": "Message",
+      "messagePlaceholder": "Your message...",
+      "submit": "Send Message",
+      "submitting": "Submitting...",
+      "successMessage": "Message sent successfully",
+      "errorMessage": "An error occurred while sending the message",
+      "genericError": "An error occurred while sending the message",
+      "validation": {
+        "nameRequired": "Name is required",
+        "emailInvalid": "Invalid email address",
+        "subjectRequired": "Subject is required",
+        "messageLength": "Message must be at least 10 characters long"
+      }
+    }
+  },
+  "Admin": {
+    "Messages": {
+      "title": "Contact Messages",
+      "noMessages": "No messages to show",
+      "loading": "Loading messages...",
+      "unauthorized": "You don't have permission to view this page",
+      "fetchError": "Error loading messages",
+      "columns": {
+        "status": "Status",
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "date": "Date",
+        "actions": "Actions"
+      },
+      "status": {
+        "read": "Read",
+        "unread": "Unread"
+      },
+      "actions": {
+        "view": "View",
+        "markRead": "Mark as read"
+      }
+    }
+  },
+  "Landing": {
+    "Hero": {
+      "badge": "Marketplace Framework for Developers",
+      "title": "The Ultimate Boilerplate for Custom Marketplaces",
+      "subtitle": "MarketFlex provides a modular and adaptable codebase for developers to launch scalable marketplaces with minimal effort. Built with Next.js, Supabase and MercadoPago pre-integrated.",
+      "primaryCTA": "View Repository",
+      "secondaryCTA": "Documentation",
+      "usersCount": "Used by 2,000+ developers",
+      "usersAction": "to create custom marketplaces",
+      "imageAlt": "MarketFlex dashboard preview",
+      "feature1": "Modular and Extensible Architecture",
+      "feature2": "Clean and Well-documented Code",
+      "feature3": "Reusable Design Patterns",
+      "feature4": "Modern and Robust Tech Stack",
+      "statusText": "In Development"
     },
-    "Docs": {
-        "metadata": {
-            "title": "MarketFlex Documentation",
-            "description": "Official documentation for MarketFlex marketplace platform"
+    "Features": {
+      "title": "Built for Developers",
+      "subtitle": "Minimize setup time and maximize customization",
+      "adaptability": {
+        "title": "Modular and Adaptable Code",
+        "description": "Project structure designed to facilitate modifications and extensions with clear, well-documented design patterns."
+      },
+      "payments": {
+        "title": "Pre-implemented Integrations",
+        "description": "Functional code for MercadoPago ready to use and modify, including webhook examples and payment event handling."
+      },
+      "revenue": {
+        "title": "Extensible and Customizable APIs",
+        "description": "Well-structured RESTful endpoints that you can extend or modify according to your project's specific needs."
+      },
+      "compliance": {
+        "title": "Implemented and Documented Security",
+        "description": "Functional examples of Row Level Security (RLS) in Supabase, JWT authentication, and data validation that you can adapt to your requirements."
+      }
+    },
+    "Templates": {
+      "title": "Implementation Examples for Common Cases",
+      "subtitle": "Reference code to accelerate your project development",
+      "automotive": {
+        "title": "Automotive Marketplace",
+        "description": "Examples of models, controllers, and UI components for vehicle listings with automotive sector-specific fields."
+      },
+      "realEstate": {
+        "title": "Real Estate Platform",
+        "description": "Code for geospatial search, map integration, and specific components for real estate properties."
+      },
+      "services": {
+        "title": "Services Platform",
+        "description": "Reference implementation for rating system, availability management, and proximity search."
+      },
+      "viewDetails": "View Code"
+    },
+    "Pricing": {
+      "title": "Plans for Every Development Stage",
+      "subtitle": "From prototyping to production at scale",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "savePercent": "Save 20%",
+      "basic": {
+        "title": "Open Source",
+        "price": "Free",
+        "period": "forever",
+        "description": "For individual developers and startups",
+        "features": [
+          "Full source code access",
+          "Unlimited implementation and customization",
+          "Community support",
+          "Regular updates",
+          "Detailed technical documentation"
+        ],
+        "cta": "Get Started"
+      },
+      "pro": {
+        "title": "Developer",
+        "price": "$99",
+        "period": "/month",
+        "description": "For growing projects",
+        "features": [
+          "Everything in free plan",
+          "Additional premium components",
+          "Advanced analytics modules",
+          "Email technical support",
+          "Access to private component repository",
+          "Advanced implementation guides"
+        ],
+        "cta": "Get Started",
+        "popular": "Most Popular"
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "price": "$249",
+        "period": "/month",
+        "description": "For established businesses",
+        "features": [
+          "Everything in Developer plan",
+          "Customization assistance",
+          "Dedicated technical support",
+          "CI/CD setup",
+          "Code security audit",
+          "Performance optimization",
+          "Extended commercial license"
+        ],
+        "cta": "Contact Sales"
+      }
+    },
+    "Testimonials": {
+      "title": "Trusted by Marketplace Developers",
+      "subtitle": "See what our users are saying",
+      "badge": "Testimonials",
+      "trustedBy": "Trusted by Marketplace Developers",
+      "testimonials": [
+        {
+          "quote": "MarketFlex's architecture allowed me to quickly adapt the code for our automotive marketplace's specific requirements. The design patterns are clean and easy to extend.",
+          "author": "Carlos Rodriguez",
+          "role": "Full Stack Developer, AutoMarket"
         },
-        "documentation": "Documentation",
-        "nav": {
-            "gettingStarted": "Getting Started",
-            "installation": "Installation",
-            "configuration": "Configuration",
-            "architecture": "Architecture",
-            "database": "Database",
-            "components": "Components",
-            "customization": "Customization",
-            "dynamicFields": "Dynamic Fields",
-            "styling": "Styling",
-            "development": "Development",
-            "apiReference": "API Reference",
-            "hooks": "Hooks",
-            "integrations": "Integrations",
-            "mercadopago": "MercadoPago",
-            "supabase": "Supabase",
-            "deployment": "Deployment",
-            "faq": "FAQ"
+        {
+          "quote": "The project structure and Supabase integration make customization incredibly easy. I was able to modify the data models for our real estate needs without having to rewrite the base infrastructure.",
+          "author": "Maria Gonzalez",
+          "role": "Tech Lead, PropiedadesYa"
         },
-        "index": {
-            "title": "MarketFlex Documentation",
-            "subtitle": "A complete guide for developers using the MarketFlex marketplace boilerplate",
-            "introduction": "MarketFlex is a complete boilerplate for developers who want to create customized marketplaces with minimal programming effort. This documentation will guide you through the key aspects of the project.",
-            "forDevelopers": "For Developers",
-            "quickStartGuide": "Quick Start Guide",
-            "architectureOverview": "Architecture Overview",
-            "customizationOptions": "Customization Options",
-            "developmentGuide": "Development Guide",
-            "integrationsGuide": "Integrations Guide",
-            "deploymentGuide": "Deployment Guide",
-            "frequentlyAskedQuestions": "Frequently Asked Questions"
-        },
-        "content": {
-            "installation": {
-                "title": "Installation",
-                "description": "Learn how to install and set up MarketFlex on your server.",
-                "systemRequirements": "System Requirements",
-                "installationSteps": "Installation Steps",
-                "cloneRepository": "1. Clone the Repository",
-                "installDependencies": "2. Install Dependencies",
-                "envVariables": "3. Environment Variables",
-                "runDevServer": "4. Run the Development Server",
-                "verification": "Verification",
-                "troubleshooting": "Troubleshooting"
-            },
-            "configuration": {
-                "title": "Configuration",
-                "description": "Configure MarketFlex to meet your specific needs.",
-                "supabaseSetup": "Supabase Setup",
-                "mercadopagoSetup": "MercadoPago Setup",
-                "appSettings": "Application Settings",
-                "customizationOptions": "Customization Options"
-            },
-            "architecture": {
-                "title": "Architecture",
-                "description": "Understand how MarketFlex is built and organized.",
-                "techStack": "Tech Stack Overview",
-                "appStructure": "Application Structure",
-                "keyComponents": "Key Components",
-                "dataFlow": "Data Flow",
-                "extensionPoints": "Extension Points"
-            },
-            "features": {
-                "title": "Features",
-                "description": "Explore the features available in MarketFlex.",
-                "userManagement": "User Management",
-                "marketplaceFeatures": "Marketplace Features",
-                "sellerTools": "Seller Tools",
-                "adminFeatures": "Admin Features",
-                "paymentSystem": "Payment and Transactions",
-                "communicationTools": "Communication Tools",
-                "customization": "Platform Customization",
-                "internationalization": "Internationalization",
-                "technicalFeatures": "Technical Features"
-            },
-            "database": {
-                "title": "Database Architecture",
-                "description": "Understand the database structure used in MarketFlex.",
-                "overview": "Database Overview",
-                "tableStructure": "Table Structure",
-                "relationships": "Relationships",
-                "indexing": "Indexing and Performance",
-                "rlsPolicies": "Row Level Security Policies",
-                "customFields": "Custom Fields Implementation",
-                "migrations": "Database Migrations",
-                "backups": "Backups and Recovery"
-            },
-            "components": {
-                "title": "Component Architecture",
-                "description": "Learn about the reusable components that make up MarketFlex.",
-                "overview": "Components Overview",
-                "uiComponents": "UI Components",
-                "layoutComponents": "Layout Components",
-                "formComponents": "Form Components",
-                "dataComponents": "Data Display Components",
-                "marketplaceComponents": "Marketplace-specific Components",
-                "stateManagement": "State Management",
-                "bestPractices": "Component Best Practices"
-            },
-            "customization": {
-                "title": "Customization",
-                "description": "Learn how to customize MarketFlex to your specific needs.",
-                "customizationOptions": "Customization Options",
-                "overview": "Customization Overview",
-                "branding": "Branding Customization",
-                "listingStructure": "Listing Structure Customization",
-                "layout": "Layout Customization",
-                "workflow": "Workflow Customization",
-                "commonCustomizations": "Common Customizations",
-                "bestPractices": "Best Practices for Customization"
-            },
-            "dynamicFields": {
-                "title": "Dynamic Fields",
-                "description": "Learn how to use dynamic fields in MarketFlex.",
-                "overview": "Dynamic Fields Overview",
-                "fieldTypes": "Field Types",
-                "validation": "Validation and Security",
-                "howTheyWork": "How They Work",
-                "configuration": "Configuration",
-                "rendering": "Rendering",
-                "querying": "Querying",
-                "examples": "Examples",
-                "display": "Displaying Dynamic Fields",
-                "bestPractices": "Best Practices for Dynamic Fields"
-            },
-            "styling": {
-                "title": "Styling",
-                "description": "Learn how to style MarketFlex.",
-                "overview": "Styling Overview",
-                "customization": "Customization",
-                "responsiveDesign": "Responsive Design",
-                "performance": "Performance Optimization",
-                "bestPractices": "Best Practices for Styling",
-                "tailwindConfig": "TailwindCSS Configuration",
-                "themes": "Themes",
-                "components": "Components",
-                "layout": "Layout",
-                "typography": "Typography",
-                "images": "Images"
-            },
-            "development": {
-                "title": "Development",
-                "description": "Learn how to develop MarketFlex.",
-                "overview": "Development Overview",
-                "bestPractices": "Best Practices for Development",
-                "performance": "Performance Optimization",
-                "extendingMarketFlex": "Extending MarketFlex",
-                "addingNewPages": "Adding New Pages",
-                "customizingRoutes": "Customizing Routes",
-                "usingComponents": "Using Components",
-                "stateManagement": "State Management",
-                "dataFetching": "Data Fetching",
-                "errorHandling": "Error Handling",
-                "testing": "Testing",
-                "deployment": "Deployment",
-                "developmentEnvironment": "Development Environment",
-                "projectStructure": "Project Structure"
-            },
-            "apiReference": {
-                "title": "API Reference",
-                "overview": "API Overview",
-                "authentication": "Authentication",
-                "listings": "Listings",
-                "transactions": "Transactions",
-                "users": "Users",
-                "admin": "Admin",
-                "description": "Reference documentation for the API endpoints and functionality.",
-                "apiOverview": "API Overview",
-                "webhooks": "Webhooks",
-                "errorHandling": "Error Handling",
-                "rateLimiting": "Rate Limiting"
-            },
-            "hooks": {
-                "title": "Hooks",
-                "description": "Learn how to use the hooks available in MarketFlex.",
-                "overview": "Hooks Overview",
-                "customHooks": "Custom Hooks",
-                "bestPractices": "Best Practices for Hooks",
-                "authHooks": "Authentication Hooks",
-                "dataHooks": "Data Hooks",
-                "uiHooks": "UI Hooks",
-                "formHooks": "Form Hooks",
-                "notificationHooks": "Notification Hooks",
-                "paymentHooks": "Payment Hooks",
-                "integrationsHooks": "Integrations Hooks",
-                "creatingCustomHooks": "Creating Custom Hooks"
-            },
-            "integrations": {
-                "title": "Integrations",
-                "description": "Learn how to integrate MarketFlex with other services.",
-                "overview": "Integrations Overview",
-                "mercadopago": "MercadoPago Integration",
-                "supabase": "Supabase Integration",
-                "stripe": "Stripe Integration",
-                "paypal": "PayPal Integration",
-                "twilio": "Twilio Integration",
-                "sendgrid": "SendGrid Integration",
-                "googleAnalytics": "Google Analytics Integration",
-                "implementationStrategy": "Implementation Strategy",
-                "configurationManagement": "Configuration Management",
-                "extendingIntegrations": "Extending Integrations",
-                "additionalIntegrations": "Additional Integrations"
-            },
-            "mercadopago": {
-                "title": "MercadoPago Integration",
-                "description": "Learn how to integrate MercadoPago in MarketFlex.",
-                "overview": "MercadoPago Integration Overview",
-                "paymentProcess": "Payment Process",
-                "prerequisites": "Prerequisites",
-                "configuration": "Configuration",
-                "implementation": "Implementation",
-                "processingPayments": "Processing Payments",
-                "subscriptions": "Subscriptions",
-                "webhooks": "Webhooks",
-                "bestPractices": "Best Practices for MercadoPago Integration",
-                "testing": "Testing",
-                "troubleshooting": "Troubleshooting",
-                "resources": "Resources"
-            },
-            "supabase": {
-                "title": "Supabase Integration",
-                "description": "Learn how to integrate Supabase in MarketFlex.",
-                "overview": "Supabase Integration Overview",
-                "authentication": "Authentication",
-                "prerequisites": "Prerequisites",
-                "configuration": "Configuration",
-                "database": "Database",
-                "storage": "Storage",
-                "functions": "Functions",
-                "security": "Security",
-                "bestPractices": "Best Practices for Supabase Integration",
-                "testing": "Testing",
-                "migrations": "Migrations",
-                "realtime": "Realtime",
-                "resources": "Resources"
-            },
-            "deployment": {
-                "title": "Deployment",
-                "description": "Learn how to deploy MarketFlex.",
-                "overview": "Deployment Overview",
-                "deploymentSteps": "Deployment Steps",
-                "prerequisites": "Prerequisites",
-                "preparingForDeployment": "Preparing for Deployment",
-                "deployingToVercel": "Deploying to Vercel",
-                "deployingToOtherPlatforms": "Deploying to Other Platforms",
-                "postDeploymentTasks": "Post-Deployment Tasks",
-                "webhooks": "Webhooks",
-                "environmentVariables": "Environment Variables",
-                "customDomain": "Custom Domain",
-                "monitoring": "Monitoring",
-                "bestPractices": "Best Practices for Deployment",
-                "deploymentStrategy": "Deployment Strategy",
-                "scaling": "Scaling",
-                "performanceOptimization": "Performance Optimization",
-                "security": "Security",
-                "backupAndRecovery": "Backup and Recovery",
-                "troubleshooting": "Troubleshooting",
-                "securityInProduction": "Security in Production"
-            },
-            "faq": {
-                "title": "Frequently Asked Questions",
-                "overview": "FAQ Overview",
-                "generalQuestions": "General Questions",
-                "technicalQuestions": "Technical Questions",
-                "paymentQuestions": "Payment Questions",
-                "accountQuestions": "Account Questions",
-                "listingQuestions": "Listing Questions",
-                "userQuestions": "User Questions",
-                "adminQuestions": "Admin Questions",
-                "integrationQuestions": "Integration Questions",
-                "deploymentQuestions": "Deployment Questions",
-                "description": "Answers to common questions about MarketFlex.",
-                "general": "General",
-                "whatIs": "What is MarketFlex?",
-                "techStack": "What technologies does MarketFlex use?",
-                "whyUse": "Why use MarketFlex?",
-                "installation": "Installation",
-                "systemRequirements": "System Requirements",
-                "installSteps": "Installation Steps",
-                "envVars": "Environment Variables",
-                "customization": "Customization",
-                "customizeTheme": "How to customize the themes?",
-                "addNewNiche": "How to add a new niche?",
-                "changeCurrency": "How to change the currency?",
-                "payment": "Payment",
-                "mercadopagoAlternative": "MercadoPago alternative?",
-                "mercadopagoTesting": "How to test MercadoPago payments?",
-                "commissionModel": "What is the comission model?",
-                "database": "Database",
-                "migrateExisting": "How to migrate existing data?",
-                "addNewTables": "How to add new tables?",
-                "dataBackup": "How to backup the data?",
-                "deployment": "Deployment",
-                "recommendedHost": "Recommended hosting providers",
-                "productionChecklist": "Production Checklist",
-                "multipleEnvironments": "Multiple Environments",
-                "troubleshooting": "Troubleshooting",
-                "commonErrors": "Common Errors",
-                "debugTips": "Debugging Tips",
-                "performance": "Performance",
-                "licensing": "Licensing",
-                "licenseType": "License Type"   
-            }
+        {
+          "quote": "As a developer, I appreciate the balance MarketFlex offers between prepared code and flexibility to customize. It saved me weeks of setup while giving me the freedom to implement specific features.",
+          "author": "Juan Perez",
+          "role": "Independent Developer"
         }
+      ]
     },
-    "Contact": {
-        "title": "Get in Touch",
-        "subtitle": "Have questions? We'd love to hear from you.",
-        "email": {
-            "title": "Email",
-            "value": "support@marketflex.com"
+    "FAQ": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about MarketFlex",
+      "questions": [
+        {
+          "question": "What level of customization does MarketFlex allow?",
+          "answer": "MarketFlex is designed to be fully customizable. It's a boilerplate that provides a solid structure and functional components, but you will always need to code to adapt it to your specific needs. The advantage is that the code is well-organized, documented, and follows clear design patterns."
         },
-        "phone": {
-            "title": "Phone",
-            "value": "+1 (555) 123-4567"
+        {
+          "question": "What technology stack does MarketFlex use?",
+          "answer": "MarketFlex is built with Next.js, TypeScript, Supabase (PostgreSQL, Auth, Storage), Shadcn/UI, TailwindCSS, and MercadoPago SDK. It includes support for i18n with next-intl and themes with next-themes. You can modify any part of the stack according to your needs."
         },
-        "address": {
-            "title": "Address",
-            "value": "123 Market Street, Suite 100, San Francisco, CA 94105"
+        {
+          "question": "What technical skills do I need to use MarketFlex?",
+          "answer": "You'll need experience with React/Next.js, TypeScript, and basic knowledge of PostgreSQL. Experience with Supabase is recommended but not essential, as the documentation includes detailed guides on its use in the project."
         },
-        "form": {
-            "title": "Send us a Message",
-            "subtitle": "Fill out the form below and we'll get back to you as soon as possible.",
-            "name": "Name",
-            "namePlaceholder": "Your name",
-            "email": "Email",
-            "emailPlaceholder": "your.email@example.com",
-            "subject": "Subject",
-            "subjectPlaceholder": "What's this about?",
-            "message": "Message",
-            "messagePlaceholder": "Your message...",
-            "submit": "Send Message"
+        {
+          "question": "How can I modify or extend the data models?",
+          "answer": "The structure uses JSONB fields for flexibility, but you can also modify Supabase migrations or add new tables according to your needs. The documentation includes examples of how to extend the data model while maintaining compatibility with future updates."
+        },
+        {
+          "question": "Can I integrate payment processors other than MercadoPago?",
+          "answer": "Yes, although it comes with MercadoPago integrated, the code uses an adapter pattern that allows you to implement other processors like Stripe or PayPal. The documentation includes guides for these alternative integrations."
+        },
+        {
+          "question": "How do I contribute to the project?",
+          "answer": "You can contribute by opening issues, sending pull requests, or improving the documentation. The CONTRIBUTING.md file contains detailed guidelines for correctly contributing to the project."
         }
+      ],
+      "moreQuestions": "Have more questions?",
+      "contactUs": "Contact Us"
     },
-    "Landing": {
-        "Hero": {
-            "badge": "Marketplace Framework for Developers",
-            "title": "The Ultimate Boilerplate for Custom Marketplaces",
-            "subtitle": "MarketFlex provides a modular and adaptable codebase for developers to launch scalable marketplaces with minimal effort. Built with Next.js, Supabase and MercadoPago pre-integrated.",
-            "primaryCTA": "View Repository",
-            "secondaryCTA": "Documentation",
-            "usersCount": "Used by 2,000+ developers",
-            "usersAction": "to create custom marketplaces",
-            "imageAlt": "MarketFlex dashboard preview",
-            "feature1": "Modular and Extensible Architecture",
-            "feature2": "Clean and Well-documented Code",
-            "feature3": "Reusable Design Patterns",
-            "feature4": "Modern and Robust Tech Stack",
-            "statusText": "In Development"
-        },
-        "Features": {
-            "title": "Built for Developers",
-            "subtitle": "Minimize setup time and maximize customization",
-            "adaptability": {
-                "title": "Modular and Adaptable Code",
-                "description": "Project structure designed to facilitate modifications and extensions with clear, well-documented design patterns."
-            },
-            "payments": {
-                "title": "Pre-implemented Integrations",
-                "description": "Functional code for MercadoPago ready to use and modify, including webhook examples and payment event handling."
-            },
-            "revenue": {
-                "title": "Extensible and Customizable APIs",
-                "description": "Well-structured RESTful endpoints that you can extend or modify according to your project's specific needs."
-            },
-            "compliance": {
-                "title": "Implemented and Documented Security",
-                "description": "Functional examples of Row Level Security (RLS) in Supabase, JWT authentication, and data validation that you can adapt to your requirements."
-            }
-        },
-        "Templates": {
-            "title": "Implementation Examples for Common Cases",
-            "subtitle": "Reference code to accelerate your project development",
-            "automotive": {
-                "title": "Automotive Marketplace",
-                "description": "Examples of models, controllers, and UI components for vehicle listings with automotive sector-specific fields."
-            },
-            "realEstate": {
-                "title": "Real Estate Platform",
-                "description": "Code for geospatial search, map integration, and specific components for real estate properties."
-            },
-            "services": {
-                "title": "Services Platform",
-                "description": "Reference implementation for rating system, availability management, and proximity search."
-            },
-            "viewDetails": "View Code"
-        },
-        "Pricing": {
-            "title": "Plans for Every Development Stage",
-            "subtitle": "From prototyping to production at scale",
-            "monthly": "Monthly",
-            "yearly": "Yearly",
-            "savePercent": "Save 20%",
-            "basic": {
-                "title": "Open Source",
-                "price": "Free",
-                "period": "forever",
-                "description": "For individual developers and startups",
-                "features": [
-                    "Full source code access",
-                    "Unlimited implementation and customization",
-                    "Community support",
-                    "Regular updates",
-                    "Detailed technical documentation"
-                ],
-                "cta": "Get Started"
-            },
-            "pro": {
-                "title": "Developer",
-                "price": "$99",
-                "period": "/month",
-                "description": "For growing projects",
-                "features": [
-                    "Everything in free plan",
-                    "Additional premium components",
-                    "Advanced analytics modules",
-                    "Email technical support",
-                    "Access to private component repository",
-                    "Advanced implementation guides"
-                ],
-                "cta": "Get Started",
-                "popular": "Most Popular"
-            },
-            "enterprise": {
-                "title": "Enterprise",
-                "price": "$249",
-                "period": "/month",
-                "description": "For established businesses",
-                "features": [
-                    "Everything in Developer plan",
-                    "Customization assistance",
-                    "Dedicated technical support",
-                    "CI/CD setup",
-                    "Code security audit",
-                    "Performance optimization",
-                    "Extended commercial license"
-                ],
-                "cta": "Contact Sales"
-            }
-        },
-        "Testimonials": {
-            "title": "Trusted by Marketplace Developers",
-            "subtitle": "See what our users are saying",
-            "badge": "Testimonials",
-            "trustedBy": "Trusted by Marketplace Developers",
-            "testimonials": [
-                {
-                    "quote": "MarketFlex's architecture allowed me to quickly adapt the code for our automotive marketplace's specific requirements. The design patterns are clean and easy to extend.",
-                    "author": "Carlos Rodriguez",
-                    "role": "Full Stack Developer, AutoMarket"
-                },
-                {
-                    "quote": "The project structure and Supabase integration make customization incredibly easy. I was able to modify the data models for our real estate needs without having to rewrite the base infrastructure.",
-                    "author": "Maria Gonzalez",
-                    "role": "Tech Lead, PropiedadesYa"
-                },
-                {
-                    "quote": "As a developer, I appreciate the balance MarketFlex offers between prepared code and flexibility to customize. It saved me weeks of setup while giving me the freedom to implement specific features.",
-                    "author": "Juan Perez",
-                    "role": "Independent Developer"
-                }
-            ]
-        },
-        "FAQ": {
-            "title": "Frequently Asked Questions",
-            "subtitle": "Everything you need to know about MarketFlex",
-            "questions": [
-                {
-                    "question": "What level of customization does MarketFlex allow?",
-                    "answer": "MarketFlex is designed to be fully customizable. It's a boilerplate that provides a solid structure and functional components, but you will always need to code to adapt it to your specific needs. The advantage is that the code is well-organized, documented, and follows clear design patterns."
-                },
-                {
-                    "question": "What technology stack does MarketFlex use?",
-                    "answer": "MarketFlex is built with Next.js, TypeScript, Supabase (PostgreSQL, Auth, Storage), Shadcn/UI, TailwindCSS, and MercadoPago SDK. It includes support for i18n with next-intl and themes with next-themes. You can modify any part of the stack according to your needs."
-                },
-                {
-                    "question": "What technical skills do I need to use MarketFlex?",
-                    "answer": "You'll need experience with React/Next.js, TypeScript, and basic knowledge of PostgreSQL. Experience with Supabase is recommended but not essential, as the documentation includes detailed guides on its use in the project."
-                },
-                {
-                    "question": "How can I modify or extend the data models?",
-                    "answer": "The structure uses JSONB fields for flexibility, but you can also modify Supabase migrations or add new tables according to your needs. The documentation includes examples of how to extend the data model while maintaining compatibility with future updates."
-                },
-                {
-                    "question": "Can I integrate payment processors other than MercadoPago?",
-                    "answer": "Yes, although it comes with MercadoPago integrated, the code uses an adapter pattern that allows you to implement other processors like Stripe or PayPal. The documentation includes guides for these alternative integrations."
-                },
-                {
-                    "question": "How do I contribute to the project?",
-                    "answer": "You can contribute by opening issues, sending pull requests, or improving the documentation. The CONTRIBUTING.md file contains detailed guidelines for correctly contributing to the project."
-                }
-            ],
-            "moreQuestions": "Have more questions?",
-            "contactUs": "Contact Us"
-        },
-        "CTA": {
-            "title": "Start building your marketplace today",
-            "subtitle": "Clone the repository, review the documentation, and start customizing according to your needs.",
-            "primaryCTA": "Clone Repository",
-            "secondaryCTA": "Read Documentation"
-        },
-        "About": {
-            "badge": "Our Story",
-            "title": "Building the Future of Marketplaces",
-            "subtitle": "A powerful boilerplate for developers to create custom marketplaces with ease",
-            "mission": {
-                "title": "Our Mission",
-                "description": "We're on a mission to empower developers to build scalable marketplaces faster than ever. MarketFlex provides a solid foundation that you can build upon, with all the essential features already implemented.",
-                "features": {
-                    "performance": {
-                        "title": "High Performance",
-                        "description": "Built with Next.js and optimized for speed, ensuring your marketplace runs smoothly at scale."
-                    },
-                    "security": {
-                        "title": "Enterprise Security",
-                        "description": "Implements best practices for authentication, data protection, and payment processing."
-                    }
-                }
-            },
-            "tech": {
-                "title": "Powered by Modern Tech Stack",
-                "description": "Built with the latest technologies to ensure performance and scalability"
-            }
+    "CTA": {
+      "title": "Start building your marketplace today",
+      "subtitle": "Clone the repository, review the documentation, and start customizing according to your needs.",
+      "primaryCTA": "Clone Repository",
+      "secondaryCTA": "Read Documentation"
+    },
+    "About": {
+      "badge": "Our Story",
+      "title": "Building the Future of Marketplaces",
+      "subtitle": "A powerful boilerplate for developers to create custom marketplaces with ease",
+      "mission": {
+        "title": "Our Mission",
+        "description": "We're on a mission to empower developers to build scalable marketplaces faster than ever. MarketFlex provides a solid foundation that you can build upon, with all the essential features already implemented.",
+        "features": {
+          "performance": {
+            "title": "High Performance",
+            "description": "Built with Next.js and optimized for speed, ensuring your marketplace runs smoothly at scale."
+          },
+          "security": {
+            "title": "Enterprise Security",
+            "description": "Implements best practices for authentication, data protection, and payment processing."
+          }
         }
+      },
+      "tech": {
+        "title": "Powered by Modern Tech Stack",
+        "description": "Built with the latest technologies to ensure performance and scalability"
+      }
+    }
+  },
+  "Listings": {
+    "title": "Browse Listings",
+    "subtitle": "Discover amazing products and services from our community",
+    "viewDetails": "View Details",
+    "filters": "Filters",
+    "filtersComingSoon": "Advanced filters coming soon",
+    "searchPlaceholder": "Search listings...",
+    "search": "Search",
+    "createNew": "Create New Listing",
+    "noListings": "No listings found",
+    "loading": "Loading listings...",
+    "error": "Error loading listings"
+  },
+  "Cookies": {
+    "title": "Cookie Policy",
+    "subtitle": "Understanding how we use cookies on our platform",
+    "whatAreCookies": {
+      "title": "What are Cookies?",
+      "subtitle": "Understanding the basics",
+      "description": "Cookies are small text files that are placed on your computer or mobile device when you visit our website. They help us provide you with a better experience and enable certain features to function properly."
     },
-    "Listings": {
-        "title": "Browse Listings",
-        "subtitle": "Discover amazing products and services from our community",
-        "viewDetails": "View Details",
-        "filters": "Filters",
-        "filtersComingSoon": "Advanced filters coming soon",
-        "searchPlaceholder": "Search listings...",
-        "search": "Search",
-        "createNew": "Create New Listing",
-        "noListings": "No listings found",
-        "loading": "Loading listings...",
-        "error": "Error loading listings"
+    "types": {
+      "title": "Types of Cookies We Use",
+      "subtitle": "Different cookies for different purposes",
+      "essential": {
+        "title": "Essential Cookies",
+        "description": "These cookies are necessary for the website to function properly. They enable core functionality such as security, network management, and accessibility.",
+        "required": true
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "description": "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.",
+        "required": false
+      },
+      "functional": {
+        "title": "Functional Cookies",
+        "description": "These cookies enable enhanced functionality and personalization, such as remembering your preferences and settings.",
+        "required": false
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "description": "These cookies are used to track visitors across websites to enable us to display relevant and engaging advertisements.",
+        "required": false
+      }
     },
-    "Cookies": {
-        "title": "Cookie Policy",
-        "subtitle": "Understanding how we use cookies on our platform",
-        "whatAreCookies": {
-            "title": "What are Cookies?",
-            "subtitle": "Understanding the basics",
-            "description": "Cookies are small text files that are placed on your computer or mobile device when you visit our website. They help us provide you with a better experience and enable certain features to function properly."
-        },
-        "types": {
-            "title": "Types of Cookies We Use",
-            "subtitle": "Different cookies for different purposes",
-            "essential": {
-                "title": "Essential Cookies",
-                "description": "These cookies are necessary for the website to function properly. They enable core functionality such as security, network management, and accessibility.",
-                "required": true
-            },
-            "analytics": {
-                "title": "Analytics Cookies",
-                "description": "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.",
-                "required": false
-            },
-            "functional": {
-                "title": "Functional Cookies",
-                "description": "These cookies enable enhanced functionality and personalization, such as remembering your preferences and settings.",
-                "required": false
-            },
-            "marketing": {
-                "title": "Marketing Cookies",
-                "description": "These cookies are used to track visitors across websites to enable us to display relevant and engaging advertisements.",
-                "required": false
-            }
+    "usage": {
+      "title": "How We Use Cookies",
+      "subtitle": "Our cookie usage purposes",
+      "description": "We use cookies for various purposes to improve your experience on our platform:",
+      "items": {
+        "improve": "To improve our website&apos;s performance and user experience",
+        "analyze": "To analyze how visitors use our website",
+        "personalize": "To personalize your experience and remember your preferences",
+        "remember": "To remember your login status and other important information"
+      }
+    },
+    "management": {
+      "title": "Managing Your Cookies",
+      "subtitle": "How to control cookie settings",
+      "description": "You can control and/or delete cookies as you wish. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed.",
+      "options": {
+        "browser": "You can manage your cookie preferences through your browser settings",
+        "preferences": "You can update your cookie preferences at any time through our website settings",
+        "thirdParty": "For third-party cookies, please refer to their respective privacy policies"
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "How we protect and handle your data",
+    "introduction": {
+      "title": "Introduction",
+      "subtitle": "Our commitment to your privacy",
+      "description": "At MarketFlex, we take your privacy seriously. This policy explains how we collect, use, and protect your personal information when you use our platform."
+    },
+    "dataCollection": {
+      "title": "Data Collection",
+      "subtitle": "What information we collect",
+      "types": {
+        "personal": {
+          "title": "Personal Information",
+          "description": "Name, email, phone number, and other contact details you provide when creating an account or making a purchase."
         },
         "usage": {
-            "title": "How We Use Cookies",
-            "subtitle": "Our cookie usage purposes",
-            "description": "We use cookies for various purposes to improve your experience on our platform:",
-            "items": {
-                "improve": "To improve our website&apos;s performance and user experience",
-                "analyze": "To analyze how visitors use our website",
-                "personalize": "To personalize your experience and remember your preferences",
-                "remember": "To remember your login status and other important information"
-            }
+          "title": "Usage Data",
+          "description": "Information about how you interact with our platform, including browsing history, search queries, and feature usage."
         },
-        "management": {
-            "title": "Managing Your Cookies",
-            "subtitle": "How to control cookie settings",
-            "description": "You can control and/or delete cookies as you wish. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed.",
-            "options": {
-                "browser": "You can manage your cookie preferences through your browser settings",
-                "preferences": "You can update your cookie preferences at any time through our website settings",
-                "thirdParty": "For third-party cookies, please refer to their respective privacy policies"
-            }
+        "technical": {
+          "title": "Technical Data",
+          "description": "Device information, IP address, browser type, and other technical details collected automatically."
         }
+      }
     },
-    "Privacy": {
-        "title": "Privacy Policy",
-        "subtitle": "How we protect and handle your data",
-        "introduction": {
-            "title": "Introduction",
-            "subtitle": "Our commitment to your privacy",
-            "description": "At MarketFlex, we take your privacy seriously. This policy explains how we collect, use, and protect your personal information when you use our platform."
+    "dataUsage": {
+      "title": "How We Use Your Data",
+      "subtitle": "Our data processing purposes",
+      "description": "We use your data for various purposes to improve our services:",
+      "purposes": {
+        "service": "To provide and maintain our services",
+        "improvement": "To improve and personalize your experience",
+        "communication": "To communicate with you about our services",
+        "security": "To ensure the security of our platform"
+      }
+    },
+    "dataProtection": {
+      "title": "Data Protection",
+      "subtitle": "How we keep your data safe",
+      "description": "We implement various security measures to protect your data:",
+      "measures": {
+        "encryption": {
+          "title": "Encryption",
+          "description": "All data is encrypted in transit and at rest using industry-standard protocols."
         },
-        "dataCollection": {
-            "title": "Data Collection",
-            "subtitle": "What information we collect",
-            "types": {
-                "personal": {
-                    "title": "Personal Information",
-                    "description": "Name, email, phone number, and other contact details you provide when creating an account or making a purchase."
-                },
-                "usage": {
-                    "title": "Usage Data",
-                    "description": "Information about how you interact with our platform, including browsing history, search queries, and feature usage."
-                },
-                "technical": {
-                    "title": "Technical Data",
-                    "description": "Device information, IP address, browser type, and other technical details collected automatically."
-                }
-            }
+        "access": {
+          "title": "Access Control",
+          "description": "Strict access controls and authentication mechanisms to protect your data."
         },
-        "dataUsage": {
-            "title": "How We Use Your Data",
-            "subtitle": "Our data processing purposes",
-            "description": "We use your data for various purposes to improve our services:",
-            "purposes": {
-                "service": "To provide and maintain our services",
-                "improvement": "To improve and personalize your experience",
-                "communication": "To communicate with you about our services",
-                "security": "To ensure the security of our platform"
-            }
+        "backup": {
+          "title": "Regular Backups",
+          "description": "Regular data backups to prevent data loss and ensure recovery."
         },
-        "dataProtection": {
-            "title": "Data Protection",
-            "subtitle": "How we keep your data safe",
-            "description": "We implement various security measures to protect your data:",
-            "measures": {
-                "encryption": {
-                    "title": "Encryption",
-                    "description": "All data is encrypted in transit and at rest using industry-standard protocols."
-                },
-                "access": {
-                    "title": "Access Control",
-                    "description": "Strict access controls and authentication mechanisms to protect your data."
-                },
-                "backup": {
-                    "title": "Regular Backups",
-                    "description": "Regular data backups to prevent data loss and ensure recovery."
-                },
-                "compliance": {
-                    "title": "Compliance",
-                    "description": "Adherence to international data protection standards and regulations."
-                }
-            }
-        },
-        "userRights": {
-            "title": "Your Rights",
-            "subtitle": "Your data protection rights",
-            "description": "You have several rights regarding your personal data:",
-            "rights": {
-                "access": {
-                    "title": "Right to Access",
-                    "description": "Request a copy of your personal data that we hold."
-                },
-                "correction": {
-                    "title": "Right to Correction",
-                    "description": "Request correction of any inaccurate data we have about you."
-                },
-                "deletion": {
-                    "title": "Right to Deletion",
-                    "description": "Request deletion of your personal data from our systems."
-                },
-                "portability": {
-                    "title": "Data Portability",
-                    "description": "Request your data in a structured, commonly used format."
-                }
-            }
-        },
-        "contact": {
-            "title": "Contact Us",
-            "subtitle": "Get in touch about your privacy",
-            "description": "If you have any questions about our privacy policy or your data:",
-            "details": {
-                "email": "Email: privacy@marketflex.com",
-                "address": "Address: 123 Privacy Street, Suite 100, San Francisco, CA 94105",
-                "phone": "Phone: +1 (555) 123-4567"
-            }
+        "compliance": {
+          "title": "Compliance",
+          "description": "Adherence to international data protection standards and regulations."
         }
+      }
     },
-    "Terms": {
-        "title": "Terms of Service",
-        "subtitle": "Understanding your rights and responsibilities when using our platform",
-        "introduction": {
-            "title": "Introduction",
-            "subtitle": "Welcome to MarketFlex",
-            "description": "These Terms of Service govern your use of MarketFlex and outline the rules, guidelines, and agreements that apply to all users of our platform."
+    "userRights": {
+      "title": "Your Rights",
+      "subtitle": "Your data protection rights",
+      "description": "You have several rights regarding your personal data:",
+      "rights": {
+        "access": {
+          "title": "Right to Access",
+          "description": "Request a copy of your personal data that we hold."
         },
-        "acceptance": {
-            "title": "Acceptance of Terms",
-            "subtitle": "Your agreement to these terms",
-            "description": "By accessing or using MarketFlex, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our platform.",
-            "conditions": {
-                "title": "Conditions of Use",
-                "description": "You must be at least 18 years old and have the legal capacity to enter into binding contracts to use our services."
-            }
+        "correction": {
+          "title": "Right to Correction",
+          "description": "Request correction of any inaccurate data we have about you."
         },
-        "responsibilities": {
-            "title": "User Responsibilities",
-            "subtitle": "Your obligations as a user",
-            "description": "As a user of MarketFlex, you have certain responsibilities:",
-            "items": {
-                "account": {
-                    "title": "Account Security",
-                    "description": "You are responsible for maintaining the confidentiality of your account credentials and for all activities under your account."
-                },
-                "content": {
-                    "title": "Content Guidelines",
-                    "description": "You must ensure that all content you post or share complies with our community guidelines and applicable laws."
-                },
-                "conduct": {
-                    "title": "User Conduct",
-                    "description": "You agree to use our platform in a manner that is lawful, ethical, and respectful of other users."
-                },
-                "security": {
-                    "title": "Platform Security",
-                    "description": "You must not attempt to breach or circumvent our security measures or interfere with the proper functioning of our platform."
-                }
-            }
+        "deletion": {
+          "title": "Right to Deletion",
+          "description": "Request deletion of your personal data from our systems."
         },
-        "intellectualProperty": {
-            "title": "Intellectual Property",
-            "subtitle": "Ownership and usage rights",
-            "description": "All content and materials available on MarketFlex are protected by intellectual property rights:",
-            "items": {
-                "ownership": {
-                    "title": "Platform Ownership",
-                    "description": "MarketFlex and its original content, features, and functionality are owned by us and are protected by international copyright, trademark, and other intellectual property laws."
-                },
-                "licenses": {
-                    "title": "User Licenses",
-                    "description": "We grant you a limited, non-exclusive, non-transferable license to use our platform for personal, non-commercial purposes."
-                },
-                "infringement": {
-                    "title": "Infringement Claims",
-                    "description": "We respect intellectual property rights and expect users to do the same. If you believe your rights have been violated, please contact us."
-                }
-            }
-        },
-        "liability": {
-            "title": "Limitation of Liability",
-            "subtitle": "Understanding our legal responsibilities",
-            "description": "MarketFlex is provided 'as is' without any warranties or guarantees:",
-            "disclaimer": {
-                "title": "Disclaimer",
-                "description": "We are not liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use our platform."
-            }
-        },
-        "changes": {
-            "title": "Changes to Terms",
-            "subtitle": "Updates and modifications",
-            "description": "We reserve the right to modify these terms at any time:",
-            "notification": {
-                "title": "Notification of Changes",
-                "description": "We will notify users of any material changes to these terms through our platform or via email."
-            }
-        },
-        "contact": {
-            "title": "Contact Us",
-            "subtitle": "Get in touch about our terms",
-            "description": "If you have any questions about these Terms of Service:",
-            "details": {
-                "email": "Email: legal@marketflex.com",
-                "address": "Address: 123 Legal Street, Suite 100, San Francisco, CA 94105",
-                "phone": "Phone: +1 (555) 123-4567"
-            }
+        "portability": {
+          "title": "Data Portability",
+          "description": "Request your data in a structured, commonly used format."
         }
+      }
     },
-    "Auth": {
-        "signIn": {
-            "title": "Sign in",
-            "subtitle": "Welcome back to MarketFlex",
-            "description": "Sign in to your account to continue",
-            "notRegistered": "Don't have an account?",
-            "orContinueWith": "Or continue with",
-            "googleButton": "Sign in with Google",
-            "githubButton": "Sign in with GitHub",
-            "signUp": "Sign up",
-            "signIn": "Sign in",
-            "email": "Email",
-            "password": "Password",
-            "forgotPassword": "Forgot Password?"
-        },
-        "signUp": {
-            "title": "Sign up",
-            "subtitle": "Create an account to continue",
-            "description": "Sign up for an account to continue",
-            "alreadyRegistered": "Already have an account?",
-            "orContinueWith": "Or continue with",
-            "googleButton": "Sign up with Google",
-            "githubButton": "Sign up with GitHub",
-            "signIn": "Sign in",
-            "signUp": "Sign up",
-            "email": "Email",
-            "password": "Password",
-            "forgotPassword": "Forgot Password?"
-        },
-        "forgotPassword": {
-            "title": "Reset Password",
-            "subtitle": "Reset your password to continue",
-            "description": "Reset your password to continue",
-            "orContinueWith": "Or continue with",
-            "signIn": "Sign in",
-            "resetPassword": "Reset Password",
-            "email": "Email"
-        }
-    },
-    "Dashboard": {
-        "common": {
-            "welcome": "Welcome back, {email}",
-            "dashboard": "Dashboard",
-            "listings": "Listings",
-            "messages": "Messages",
-            "profile": "Profile",
-            "settings": "Settings",
-            "purchases": "My Purchases",
-            "sales": "My Sales",
-            "payments": "Payments",
-            "managePayments": "Manage your payments",
-            "subscriptions": "Subscriptions"
-        },
-        "overview": {
-            "title": "Dashboard",
-            "totalListings": "Total Listings",
-            "noListings": "No listings yet",
-            "messagesCount": "Messages",
-            "noMessages": "No messages yet",
-            "activeSales": "Active Sales",
-            "noSales": "No active sales",
-            "accountStatus": "Account Status",
-            "freeTier": "Free tier",
-            "recentActivity": "Recent Activity",
-            "recentActivityDesc": "Your recent actions and updates",
-            "noActivity": "No recent activity",
-            "recentMessages": "Recent Messages",
-            "recentMessagesDesc": "Your latest conversations",
-            "analytics": "Analytics",
-            "analyticsDesc": "View your analytics and stats",
-            "analyticsData": "Analytics data will appear here",
-            "reports": "Reports",
-            "reportsDesc": "View and download reports",
-            "reportsData": "Report data will appear here"
-        },
-        "listings": {
-            "title": "Your Listings",
-            "createNew": "Create New Listing",
-            "allListings": "All Listings",
-            "manageListings": "Manage your products and services",
-            "noListings": "You don't have any listings yet. Create your first listing to get started."
-        },
-        "messages": {
-            "title": "Messages",
-            "manage": "Manage your conversations with buyers and sellers",
-            "inbox": "Inbox",
-            "recentConversations": "Your recent conversations",
-            "noMessages": "You don't have any messages yet."
-        },
-        "profile": {
-            "title": "Your Profile",
-            "manage": "Manage your account settings and profile information",
-            "personalInfo": "Personal Information",
-            "updatePersonal": "Update your personal details",
-            "email": "Email",
-            "emailHelp": "Your email address is used for authentication and cannot be changed here.",
-            "fullName": "Full Name",
-            "fullNamePlaceholder": "Enter your full name",
-            "phone": "Phone Number",
-            "phonePlaceholder": "Enter your phone number",
-            "saveChanges": "Save Changes",
-            "password": "Password",
-            "updatePassword": "Update your password",
-            "currentPassword": "Current Password",
-            "newPassword": "New Password",
-            "confirmPassword": "Confirm New Password",
-            "updatePasswordBtn": "Update Password"
-        },
-        "settings": {
-            "title": "Settings",
-            "manage": "Manage your account settings and preferences",
-            "general": "General",
-            "notifications": "Notifications",
-            "privacy": "Privacy",
-            "generalSettings": "General Settings",
-            "generalDesc": "Manage your general account settings",
-            "displayEnglish": "Display in English",
-            "marketingEmails": "Receive marketing emails",
-            "saveSettings": "Save Settings",
-            "notificationPreferences": "Notification Preferences",
-            "notificationDesc": "Control how we contact you",
-            "newMessageNotif": "New message notifications",
-            "listingUpdates": "Listing update notifications",
-            "savePreferences": "Save Preferences",
-            "privacySettings": "Privacy Settings",
-            "privacyDesc": "Manage your privacy preferences",
-            "publicProfile": "Make profile public",
-            "activityTracking": "Allow activity tracking for improved recommendations",
-            "updatePrivacy": "Update Privacy Settings"
-        }
-    },
-    "Checkout": {
-        "title": "Checkout",
-        "summary": "Order Summary",
-        "total": "Total",
-        "items": "Items",
-        "proceedToPayment": "Proceed to Payment",
-        "processing": "Processing...",
-        "errorProcessingPayment": "There was an error processing your payment. Please try again.",
-        "success": "Payment Successful",
-        "successTitle": "Payment Successful",
-        "successMessage": "Thank you for your purchase! Your order has been successfully processed.",
-        "backToDashboard": "Back to Dashboard",
-        "continueShopping": "Continue Shopping",
-        "successDescription": "Thank you for your purchase. Your payment has been processed successfully.",
-        "failure": "Payment Failed",
-        "failureMessage": "We couldn't process your payment. Please try again or contact customer support.",
-        "pending": "Payment Pending",
-        "pendingMessage": "Your payment is being processed. We'll notify you once it's completed.",
-        "subscriptionTitle": "Checkout - Subscription",
-        "subscriptionCheckout": "Checkout",
-        "payWithMercadoPago": "Pay with MercadoPago",
-        "redirectToMercadoPago": "Redirecting to MercadoPago...",
-        "securePaymentDescription": "Secure payment processing",
-        "subscriptionDescription": "Complete your subscription purchase",
-        "checkoutTitle": "Payment Information",
-        "checkoutDescription": "Complete your subscription purchase with a secure payment",
-        "cardholderName": "Cardholder Name",
-        "cardNumber": "Card Number",
-        "expiryDate": "Expiry Date",
-        "cvv": "CVV",
-        "errorTitle": "Payment Error",
-        "processingPayment": "Processing Payment...",
-        "completeSubscription": "Complete Subscription",
-        "orderSummary": "Order Summary",
-        "orderDetails": "Review your subscription details",
-        "billedYearly": "Billed yearly",
-        "billedMonthly": "Billed monthly",
-        "month": "month",
-        "includes": "Includes",
-        "securePayment": "Secure payment processing",
-        "alreadySubscribed": "You're Already Subscribed",
-        "alreadySubscribedDescription": "You already have an active subscription plan",
-        "activeSubscriptionAlert": "Active Subscription",
-        "visitDashboardToManage": "Visit your dashboard to manage your current subscription",
-        "goToDashboard": "Go to Dashboard",
-        "subscriptionSuccess": "Subscription Successful!",
-        "subscriptionSuccessDescription": "Your subscription has been activated successfully",
-        "thankYou": "Thank you for your subscription",
-        "redirectingToDashboard": "You will be redirected to your dashboard in a moment"
-    },
-    "Payments": {
-        "completed": "Completed",
-        "pending": "Pending",
-        "failed": "Failed",
-        "cancelled": "Cancelled",
-        "refunded": "Refunded",
-        "active": "Active",
-        "history": "Payment History",
-        "noPayments": "No payments found",
-        "details": "Payment Details",
-        "date": "Date",
-        "amount": "Amount",
-        "status": "Status",
-        "method": "Payment Method",
-        "transactionId": "Transaction ID"
-    },
-    "Subscriptions": {
-        "title": "Choose Your Subscription Plan",
-        "subtitle": "Get access to premium features and enhance your marketplace experience",
-        "currentPlan": "Current Plan:",
-        "renewsOn": "Renews on",
-        "managePlan": "Manage Plan",
-        "monthly": "Monthly",
-        "yearly": "Yearly",
-        "savePercent": "Save 20%",
-        "mostPopular": "Most Popular",
-        "perMonth": "per month",
-        "perYear": "per year",
-        "currentPlanButton": "Current Plan",
-        "subscribeCTA": "Subscribe Now",
-        "loginToSubscribe": "Login to Subscribe",
-        "faqTitle": "Frequently Asked Questions",
-        "faq": {
-            "question1": "How do subscriptions work?",
-            "answer1": "When you subscribe, you'll be charged immediately for the first month or year, depending on your billing cycle selection. Your subscription will automatically renew at the end of each period unless you cancel it.",
-            "question2": "Can I cancel my subscription anytime?",
-            "answer2": "Yes, you can cancel your subscription at any time from your account dashboard. Your benefits will continue until the end of your current billing period.",
-            "question3": "Are there any discounts available?",
-            "answer3": "We offer a 20% discount when you choose annual billing compared to monthly billing. Look for special promotions that we run occasionally throughout the year."
-        }
-    },
-    "Purchases": {
-        "pageTitle": "My Purchases",
-        "pageDescription": "Track and manage your purchases on MarketFlex",
-        "title": "My Purchases",
-        "description": "View and manage your recent purchases",
-        "searchPlaceholder": "Search by reference, status or seller",
-        "recentPurchasesCaption": "A list of your recent purchases",
-        "reference": "Reference",
-        "seller": "Seller",
-        "date": "Date",
-        "amount": "Amount",
-        "status": "Status",
-        "action": "Action",
-        "viewDetails": "View Details",
-        "noSearchResults": "No purchases match your search",
-        "noPurchasesYet": "You haven't made any purchases yet",
-        "unknownSeller": "Unknown seller",
-        "backToPurchases": "Back to purchases",
-        "detail": {
-            "title": "Purchase Details",
-            "pageTitle": "Purchase Details",
-            "pageDescription": "Detailed information about your purchase",
-            "transactionInfo": "Transaction Information",
-            "transactionDescription": "Details about your purchase transaction",
-            "reference": "Reference",
-            "mercadoPagoId": "MercadoPago ID",
-            "amount": "Amount",
-            "date": "Date",
-            "downloadReceipt": "Download Receipt",
-            "sellerInfo": "Seller Information",
-            "sellerDescription": "Details about the seller",
-            "seller": "Seller",
-            "contactSeller": "Contact Seller",
-            "itemsInfo": "Items Purchased",
-            "itemsDescription": "Details of the items you purchased",
-            "total": "Total",
-            "noItemsFound": "No item details available",
-            "notAvailable": "Not available"
-        }
-    },
-    "Sales": {
-        "pageTitle": "My Sales",
-        "pageDescription": "Track and manage your sales on MarketFlex",
-        "title": "My Sales",
-        "description": "View and manage your recent sales",
-        "searchPlaceholder": "Search by reference, status or buyer",
-        "recentSalesCaption": "A list of your recent sales",
-        "reference": "Reference",
-        "buyer": "Buyer",
-        "date": "Date",
-        "amount": "Amount",
-        "status": "Status",
-        "action": "Action",
-        "viewDetails": "View Details",
-        "noSearchResults": "No sales match your search",
-        "noSalesYet": "You haven't made any sales yet",
-        "unknownBuyer": "Unknown buyer",
-        "backToSales": "Back to sales",
-        "detail": {
-            "title": "Sale Details",
-            "pageTitle": "Sale Details",
-            "pageDescription": "Detailed information about your sale",
-            "transactionInfo": "Transaction Information",
-            "transactionDescription": "Details about the sale transaction",
-            "reference": "Reference",
-            "referenceCopied": "Reference copied to clipboard",
-            "mercadoPagoId": "MercadoPago ID",
-            "mercadoPagoIdCopied": "MercadoPago ID copied to clipboard",
-            "amount": "Amount",
-            "date": "Date",
-            "downloadReceipt": "Download Receipt",
-            "buyerInfo": "Buyer Information",
-            "buyerDescription": "Details about the buyer",
-            "buyer": "Buyer",
-            "contactBuyer": "Contact Buyer",
-            "itemsInfo": "Items Sold",
-            "itemsDescription": "Details of the items you sold",
-            "total": "Total",
-            "noItemsFound": "No item details available",
-            "notAvailable": "Not available",
-            "copyFailed": "Failed to copy to clipboard"
-        }
-    },
-    "DashboardSubscriptions": {
-        "title": "Subscription Management",
-        "description": "Manage your subscription plans and billing",
-        "subscriptionStatus": "Subscription Status",
-        "subscriptionStatusDescription": "Current status of your subscription plan",
-        "currentPlan": "Current Plan",
-        "active": "Active",
-        "willCancel": "Will Cancel",
-        "price": "Price",
-        "month": "month",
-        "renewsOn": "Renews on",
-        "endsOn": "Ends on",
-        "subscriptionActive": "Subscription Active",
-        "subscriptionActiveDescription": "Your subscription is active and will automatically renew at the end of the billing period.",
-        "subscriptionCanceled": "Subscription Canceled",
-        "subscriptionCanceledDescription": "Your subscription has been canceled and will end at the end of the current billing period. You can reactivate it anytime.",
-        "error": "Error",
-        "success": "Success",
-        "noSubscription": "No Active Subscription",
-        "noSubscriptionDescription": "You don't have an active subscription. Subscribe to a plan to access premium features.",
-        "cancelSubscription": "Cancel Subscription",
-        "confirmCancel": "Confirm Cancellation",
-        "keepSubscription": "Keep Subscription",
-        "processing": "Processing...",
-        "reactivateSubscription": "Reactivate Subscription",
-        "cancelSuccess": "Your subscription has been successfully canceled. You will continue to have access until the end of your billing period.",
-        "cancelError": "There was an error canceling your subscription. Please try again.",
-        "reactivateSuccess": "Your subscription has been successfully reactivated.",
-        "reactivateError": "There was an error reactivating your subscription. Please try again.",
-        "browseSubscriptions": "Browse Subscription Plans",
-        "benefits": "Subscription Benefits",
-        "benefitsDescription": "Features included in your subscription",
-        "noBenefits": "Subscribe to a plan to see benefits",
-        "billingHistory": "Billing History",
-        "date": "Date",
-        "amount": "Amount",
-        "status": "Status",
-        "noTransactions": "No billing history available",
-        "availablePlans": "Available Plans",
-        "viewAllPlans": "View All Plans",
-        "moreFeatures": "more features",
-        "currentPlanButton": "Current Plan",
-        "selectPlan": "Select Plan"
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "Get in touch about your privacy",
+      "description": "If you have any questions about our privacy policy or your data:",
+      "details": {
+        "email": "Email: privacy@marketflex.com",
+        "address": "Address: 123 Privacy Street, Suite 100, San Francisco, CA 94105",
+        "phone": "Phone: +1 (555) 123-4567"
+      }
     }
+  },
+  "Terms": {
+    "title": "Terms of Service",
+    "subtitle": "Understanding your rights and responsibilities when using our platform",
+    "introduction": {
+      "title": "Introduction",
+      "subtitle": "Welcome to MarketFlex",
+      "description": "These Terms of Service govern your use of MarketFlex and outline the rules, guidelines, and agreements that apply to all users of our platform."
+    },
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "subtitle": "Your agreement to these terms",
+      "description": "By accessing or using MarketFlex, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our platform.",
+      "conditions": {
+        "title": "Conditions of Use",
+        "description": "You must be at least 18 years old and have the legal capacity to enter into binding contracts to use our services."
+      }
+    },
+    "responsibilities": {
+      "title": "User Responsibilities",
+      "subtitle": "Your obligations as a user",
+      "description": "As a user of MarketFlex, you have certain responsibilities:",
+      "items": {
+        "account": {
+          "title": "Account Security",
+          "description": "You are responsible for maintaining the confidentiality of your account credentials and for all activities under your account."
+        },
+        "content": {
+          "title": "Content Guidelines",
+          "description": "You must ensure that all content you post or share complies with our community guidelines and applicable laws."
+        },
+        "conduct": {
+          "title": "User Conduct",
+          "description": "You agree to use our platform in a manner that is lawful, ethical, and respectful of other users."
+        },
+        "security": {
+          "title": "Platform Security",
+          "description": "You must not attempt to breach or circumvent our security measures or interfere with the proper functioning of our platform."
+        }
+      }
+    },
+    "intellectualProperty": {
+      "title": "Intellectual Property",
+      "subtitle": "Ownership and usage rights",
+      "description": "All content and materials available on MarketFlex are protected by intellectual property rights:",
+      "items": {
+        "ownership": {
+          "title": "Platform Ownership",
+          "description": "MarketFlex and its original content, features, and functionality are owned by us and are protected by international copyright, trademark, and other intellectual property laws."
+        },
+        "licenses": {
+          "title": "User Licenses",
+          "description": "We grant you a limited, non-exclusive, non-transferable license to use our platform for personal, non-commercial purposes."
+        },
+        "infringement": {
+          "title": "Infringement Claims",
+          "description": "We respect intellectual property rights and expect users to do the same. If you believe your rights have been violated, please contact us."
+        }
+      }
+    },
+    "liability": {
+      "title": "Limitation of Liability",
+      "subtitle": "Understanding our legal responsibilities",
+      "description": "MarketFlex is provided 'as is' without any warranties or guarantees:",
+      "disclaimer": {
+        "title": "Disclaimer",
+        "description": "We are not liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use our platform."
+      }
+    },
+    "changes": {
+      "title": "Changes to Terms",
+      "subtitle": "Updates and modifications",
+      "description": "We reserve the right to modify these terms at any time:",
+      "notification": {
+        "title": "Notification of Changes",
+        "description": "We will notify users of any material changes to these terms through our platform or via email."
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "Get in touch about our terms",
+      "description": "If you have any questions about these Terms of Service:",
+      "details": {
+        "email": "Email: legal@marketflex.com",
+        "address": "Address: 123 Legal Street, Suite 100, San Francisco, CA 94105",
+        "phone": "Phone: +1 (555) 123-4567"
+      }
+    }
+  },
+  "Auth": {
+    "signIn": {
+      "title": "Sign in",
+      "subtitle": "Welcome back to MarketFlex",
+      "description": "Sign in to your account to continue",
+      "notRegistered": "Don't have an account?",
+      "orContinueWith": "Or continue with",
+      "googleButton": "Sign in with Google",
+      "githubButton": "Sign in with GitHub",
+      "signUp": "Sign up",
+      "signIn": "Sign in",
+      "email": "Email",
+      "password": "Password",
+      "forgotPassword": "Forgot Password?"
+    },
+    "signUp": {
+      "title": "Sign up",
+      "subtitle": "Create an account to continue",
+      "description": "Sign up for an account to continue",
+      "alreadyRegistered": "Already have an account?",
+      "orContinueWith": "Or continue with",
+      "googleButton": "Sign up with Google",
+      "githubButton": "Sign up with GitHub",
+      "signIn": "Sign in",
+      "signUp": "Sign up",
+      "email": "Email",
+      "password": "Password",
+      "forgotPassword": "Forgot Password?"
+    },
+    "forgotPassword": {
+      "title": "Reset Password",
+      "subtitle": "Reset your password to continue",
+      "description": "Reset your password to continue",
+      "orContinueWith": "Or continue with",
+      "signIn": "Sign in",
+      "resetPassword": "Reset Password",
+      "email": "Email"
+    }
+  },
+  "Dashboard": {
+    "common": {
+      "welcome": "Welcome back, {email}",
+      "dashboard": "Dashboard",
+      "listings": "Listings",
+      "messages": "Messages",
+      "profile": "Profile",
+      "settings": "Settings",
+      "purchases": "My Purchases",
+      "sales": "My Sales",
+      "payments": "Payments",
+      "managePayments": "Manage your payments",
+      "subscriptions": "Subscriptions"
+    },
+    "overview": {
+      "title": "Dashboard",
+      "totalListings": "Total Listings",
+      "noListings": "No listings yet",
+      "messagesCount": "Messages",
+      "noMessages": "No messages yet",
+      "activeSales": "Active Sales",
+      "noSales": "No active sales",
+      "accountStatus": "Account Status",
+      "freeTier": "Free tier",
+      "recentActivity": "Recent Activity",
+      "recentActivityDesc": "Your recent actions and updates",
+      "noActivity": "No recent activity",
+      "recentMessages": "Recent Messages",
+      "recentMessagesDesc": "Your latest conversations",
+      "analytics": "Analytics",
+      "analyticsDesc": "View your analytics and stats",
+      "analyticsData": "Analytics data will appear here",
+      "reports": "Reports",
+      "reportsDesc": "View and download reports",
+      "reportsData": "Report data will appear here"
+    },
+    "listings": {
+      "title": "Your Listings",
+      "createNew": "Create New Listing",
+      "allListings": "All Listings",
+      "manageListings": "Manage your products and services",
+      "noListings": "You don't have any listings yet. Create your first listing to get started."
+    },
+    "messages": {
+      "title": "Messages",
+      "manage": "Manage your conversations with buyers and sellers",
+      "inbox": "Inbox",
+      "recentConversations": "Your recent conversations",
+      "noMessages": "You don't have any messages yet."
+    },
+    "profile": {
+      "title": "Your Profile",
+      "manage": "Manage your account settings and profile information",
+      "personalInfo": "Personal Information",
+      "updatePersonal": "Update your personal details",
+      "email": "Email",
+      "emailHelp": "Your email address is used for authentication and cannot be changed here.",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number",
+      "saveChanges": "Save Changes",
+      "password": "Password",
+      "updatePassword": "Update your password",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "updatePasswordBtn": "Update Password"
+    },
+    "settings": {
+      "title": "Settings",
+      "manage": "Manage your account settings and preferences",
+      "general": "General",
+      "notifications": "Notifications",
+      "privacy": "Privacy",
+      "generalSettings": "General Settings",
+      "generalDesc": "Manage your general account settings",
+      "displayEnglish": "Display in English",
+      "marketingEmails": "Receive marketing emails",
+      "saveSettings": "Save Settings",
+      "notificationPreferences": "Notification Preferences",
+      "notificationDesc": "Control how we contact you",
+      "newMessageNotif": "New message notifications",
+      "listingUpdates": "Listing update notifications",
+      "savePreferences": "Save Preferences",
+      "privacySettings": "Privacy Settings",
+      "privacyDesc": "Manage your privacy preferences",
+      "publicProfile": "Make profile public",
+      "activityTracking": "Allow activity tracking for improved recommendations",
+      "updatePrivacy": "Update Privacy Settings"
+    }
+  },
+  "Checkout": {
+    "title": "Checkout",
+    "summary": "Order Summary",
+    "total": "Total",
+    "items": "Items",
+    "proceedToPayment": "Proceed to Payment",
+    "processing": "Processing...",
+    "errorProcessingPayment": "There was an error processing your payment. Please try again.",
+    "success": "Payment Successful",
+    "successTitle": "Payment Successful",
+    "successMessage": "Thank you for your purchase! Your order has been successfully processed.",
+    "backToDashboard": "Back to Dashboard",
+    "continueShopping": "Continue Shopping",
+    "successDescription": "Thank you for your purchase. Your payment has been processed successfully.",
+    "failure": "Payment Failed",
+    "failureMessage": "We couldn't process your payment. Please try again or contact customer support.",
+    "pending": "Payment Pending",
+    "pendingMessage": "Your payment is being processed. We'll notify you once it's completed.",
+    "subscriptionTitle": "Checkout - Subscription",
+    "subscriptionCheckout": "Checkout",
+    "payWithMercadoPago": "Pay with MercadoPago",
+    "redirectToMercadoPago": "Redirecting to MercadoPago...",
+    "securePaymentDescription": "Secure payment processing",
+    "subscriptionDescription": "Complete your subscription purchase",
+    "checkoutTitle": "Payment Information",
+    "checkoutDescription": "Complete your subscription purchase with a secure payment",
+    "cardholderName": "Cardholder Name",
+    "cardNumber": "Card Number",
+    "expiryDate": "Expiry Date",
+    "cvv": "CVV",
+    "errorTitle": "Payment Error",
+    "processingPayment": "Processing Payment...",
+    "completeSubscription": "Complete Subscription",
+    "orderSummary": "Order Summary",
+    "orderDetails": "Review your subscription details",
+    "billedYearly": "Billed yearly",
+    "billedMonthly": "Billed monthly",
+    "month": "month",
+    "includes": "Includes",
+    "securePayment": "Secure payment processing",
+    "alreadySubscribed": "You're Already Subscribed",
+    "alreadySubscribedDescription": "You already have an active subscription plan",
+    "activeSubscriptionAlert": "Active Subscription",
+    "visitDashboardToManage": "Visit your dashboard to manage your current subscription",
+    "goToDashboard": "Go to Dashboard",
+    "subscriptionSuccess": "Subscription Successful!",
+    "subscriptionSuccessDescription": "Your subscription has been activated successfully",
+    "thankYou": "Thank you for your subscription",
+    "redirectingToDashboard": "You will be redirected to your dashboard in a moment"
+  },
+  "Payments": {
+    "completed": "Completed",
+    "pending": "Pending",
+    "failed": "Failed",
+    "cancelled": "Cancelled",
+    "refunded": "Refunded",
+    "active": "Active",
+    "history": "Payment History",
+    "noPayments": "No payments found",
+    "details": "Payment Details",
+    "date": "Date",
+    "amount": "Amount",
+    "status": "Status",
+    "method": "Payment Method",
+    "transactionId": "Transaction ID"
+  },
+  "Subscriptions": {
+    "title": "Choose Your Subscription Plan",
+    "subtitle": "Get access to premium features and enhance your marketplace experience",
+    "currentPlan": "Current Plan:",
+    "renewsOn": "Renews on",
+    "managePlan": "Manage Plan",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "savePercent": "Save 20%",
+    "mostPopular": "Most Popular",
+    "perMonth": "per month",
+    "perYear": "per year",
+    "currentPlanButton": "Current Plan",
+    "subscribeCTA": "Subscribe Now",
+    "loginToSubscribe": "Login to Subscribe",
+    "faqTitle": "Frequently Asked Questions",
+    "faq": {
+      "question1": "How do subscriptions work?",
+      "answer1": "When you subscribe, you'll be charged immediately for the first month or year, depending on your billing cycle selection. Your subscription will automatically renew at the end of each period unless you cancel it.",
+      "question2": "Can I cancel my subscription anytime?",
+      "answer2": "Yes, you can cancel your subscription at any time from your account dashboard. Your benefits will continue until the end of your current billing period.",
+      "question3": "Are there any discounts available?",
+      "answer3": "We offer a 20% discount when you choose annual billing compared to monthly billing. Look for special promotions that we run occasionally throughout the year."
+    }
+  },
+  "Purchases": {
+    "pageTitle": "My Purchases",
+    "pageDescription": "Track and manage your purchases on MarketFlex",
+    "title": "My Purchases",
+    "description": "View and manage your recent purchases",
+    "searchPlaceholder": "Search by reference, status or seller",
+    "recentPurchasesCaption": "A list of your recent purchases",
+    "reference": "Reference",
+    "seller": "Seller",
+    "date": "Date",
+    "amount": "Amount",
+    "status": "Status",
+    "action": "Action",
+    "viewDetails": "View Details",
+    "noSearchResults": "No purchases match your search",
+    "noPurchasesYet": "You haven't made any purchases yet",
+    "unknownSeller": "Unknown seller",
+    "backToPurchases": "Back to purchases",
+    "detail": {
+      "title": "Purchase Details",
+      "pageTitle": "Purchase Details",
+      "pageDescription": "Detailed information about your purchase",
+      "transactionInfo": "Transaction Information",
+      "transactionDescription": "Details about your purchase transaction",
+      "reference": "Reference",
+      "mercadoPagoId": "MercadoPago ID",
+      "amount": "Amount",
+      "date": "Date",
+      "downloadReceipt": "Download Receipt",
+      "sellerInfo": "Seller Information",
+      "sellerDescription": "Details about the seller",
+      "seller": "Seller",
+      "contactSeller": "Contact Seller",
+      "itemsInfo": "Items Purchased",
+      "itemsDescription": "Details of the items you purchased",
+      "total": "Total",
+      "noItemsFound": "No item details available",
+      "notAvailable": "Not available"
+    }
+  },
+  "Sales": {
+    "pageTitle": "My Sales",
+    "pageDescription": "Track and manage your sales on MarketFlex",
+    "title": "My Sales",
+    "description": "View and manage your recent sales",
+    "searchPlaceholder": "Search by reference, status or buyer",
+    "recentSalesCaption": "A list of your recent sales",
+    "reference": "Reference",
+    "buyer": "Buyer",
+    "date": "Date",
+    "amount": "Amount",
+    "status": "Status",
+    "action": "Action",
+    "viewDetails": "View Details",
+    "noSearchResults": "No sales match your search",
+    "noSalesYet": "You haven't made any sales yet",
+    "unknownBuyer": "Unknown buyer",
+    "backToSales": "Back to sales",
+    "detail": {
+      "title": "Sale Details",
+      "pageTitle": "Sale Details",
+      "pageDescription": "Detailed information about your sale",
+      "transactionInfo": "Transaction Information",
+      "transactionDescription": "Details about the sale transaction",
+      "reference": "Reference",
+      "referenceCopied": "Reference copied to clipboard",
+      "mercadoPagoId": "MercadoPago ID",
+      "mercadoPagoIdCopied": "MercadoPago ID copied to clipboard",
+      "amount": "Amount",
+      "date": "Date",
+      "downloadReceipt": "Download Receipt",
+      "buyerInfo": "Buyer Information",
+      "buyerDescription": "Details about the buyer",
+      "buyer": "Buyer",
+      "contactBuyer": "Contact Buyer",
+      "itemsInfo": "Items Sold",
+      "itemsDescription": "Details of the items you sold",
+      "total": "Total",
+      "noItemsFound": "No item details available",
+      "notAvailable": "Not available",
+      "copyFailed": "Failed to copy to clipboard"
+    }
+  },
+  "DashboardSubscriptions": {
+    "title": "Subscription Management",
+    "description": "Manage your subscription plans and billing",
+    "subscriptionStatus": "Subscription Status",
+    "subscriptionStatusDescription": "Current status of your subscription plan",
+    "currentPlan": "Current Plan",
+    "active": "Active",
+    "willCancel": "Will Cancel",
+    "price": "Price",
+    "month": "month",
+    "renewsOn": "Renews on",
+    "endsOn": "Ends on",
+    "subscriptionActive": "Subscription Active",
+    "subscriptionActiveDescription": "Your subscription is active and will automatically renew at the end of the billing period.",
+    "subscriptionCanceled": "Subscription Canceled",
+    "subscriptionCanceledDescription": "Your subscription has been canceled and will end at the end of the current billing period. You can reactivate it anytime.",
+    "error": "Error",
+    "success": "Success",
+    "noSubscription": "No Active Subscription",
+    "noSubscriptionDescription": "You don't have an active subscription. Subscribe to a plan to access premium features.",
+    "cancelSubscription": "Cancel Subscription",
+    "confirmCancel": "Confirm Cancellation",
+    "keepSubscription": "Keep Subscription",
+    "processing": "Processing...",
+    "reactivateSubscription": "Reactivate Subscription",
+    "cancelSuccess": "Your subscription has been successfully canceled. You will continue to have access until the end of your billing period.",
+    "cancelError": "There was an error canceling your subscription. Please try again.",
+    "reactivateSuccess": "Your subscription has been successfully reactivated.",
+    "reactivateError": "There was an error reactivating your subscription. Please try again.",
+    "browseSubscriptions": "Browse Subscription Plans",
+    "benefits": "Subscription Benefits",
+    "benefitsDescription": "Features included in your subscription",
+    "noBenefits": "Subscribe to a plan to see benefits",
+    "billingHistory": "Billing History",
+    "date": "Date",
+    "amount": "Amount",
+    "status": "Status",
+    "noTransactions": "No billing history available",
+    "availablePlans": "Available Plans",
+    "viewAllPlans": "View All Plans",
+    "moreFeatures": "more features",
+    "currentPlanButton": "Current Plan",
+    "selectPlan": "Select Plan"
+  }
 }

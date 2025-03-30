@@ -390,7 +390,43 @@
       "subjectPlaceholder": "¿Sobre qué es?",
       "message": "Mensaje",
       "messagePlaceholder": "Tu mensaje...",
-      "submit": "Enviar Mensaje"
+      "submit": "Enviar Mensaje",
+      "submitting": "Enviando...",
+      "successMessage": "Mensaje enviado correctamente",
+      "errorMessage": "Ocurrió un error al enviar el mensaje",
+      "genericError": "Ocurrió un error al enviar el mensaje",
+      "validation": {
+        "nameRequired": "El nombre es requerido",
+        "emailInvalid": "Dirección de correo electrónico inválida",
+        "subjectRequired": "El asunto es requerido",
+        "messageLength": "El mensaje debe tener al menos 10 caracteres"
+      }
+    }
+  },
+  "Admin": {
+    "Messages": {
+      "title": "Mensajes de Contacto",
+      "noMessages": "No hay mensajes para mostrar",
+      "loading": "Cargando mensajes...",
+      "unauthorized": "No tienes permisos para ver esta página",
+      "fetchError": "Error al cargar los mensajes",
+      "columns": {
+        "status": "Estado",
+        "name": "Nombre",
+        "email": "Email",
+        "subject": "Asunto",
+        "message": "Mensaje",
+        "date": "Fecha",
+        "actions": "Acciones"
+      },
+      "status": {
+        "read": "Leído",
+        "unread": "No leído"
+      },
+      "actions": {
+        "view": "Ver",
+        "markRead": "Marcar como leído"
+      }
     }
   },
   "Landing": {
