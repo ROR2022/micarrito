@@ -1,109 +1,174 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { useTranslations } from "next-intl"
+//import { useTranslations } from "next-intl"
 import Link from "next/link"
-import Image from "next/image"
-import { ArrowRight, Users } from "lucide-react"
-import { useState, useEffect } from "react"
+//import Image from "next/image"
+import { Search, CheckCircle, Shield } from "lucide-react"
+//import { useState, useEffect } from "react"
 import { useParams } from "next/navigation"
+//import { Input } from "@/components/ui/input"
+//import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 export function HeroSection() {
-  const t = useTranslations("Landing.Hero")
-  const [isVisible, setIsVisible] = useState(false)
+  //const t = useTranslations("Landing.Hero")
   const params = useParams();
   const locale = params.locale as string;
-  const repoUrl = process.env.NEXT_PUBLIC_REPO_URL;
-  useEffect(() => {
+  //const repoUrl = process.env.NEXT_PUBLIC_REPO_URL;
+  //const [isVisible, setIsVisible] = useState(false)
+
+  //useEffect(() => {
     // Trigger animations after component mounts
-    setIsVisible(true)
-  }, [])
+    //setIsVisible(true)
+  //}, [])
 
   return (
-    <section className="relative py-24 overflow-hidden text-base-content">
-      {/* Enhanced background with animated gradient */}
-      <div
-        className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/20 pointer-events-none"
-        aria-hidden="true"
-      />
-
-      {/* Decorative elements */}
-      <div className="absolute top-20 right-[10%] w-64 h-64 bg-primary/5 rounded-full blur-3xl" aria-hidden="true" />
-      <div className="absolute bottom-20 left-[5%] w-72 h-72 bg-secondary/5 rounded-full blur-3xl" aria-hidden="true" />
-
-      <div className="container px-4 md:px-6 relative z-10">
-        <div className="grid gap-12 lg:grid-cols-2 items-center">
-          <div
-            className={`flex flex-col justify-center space-y-6 transition-all duration-700 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
-          >
-            <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-2 w-fit gap-2 border border-primary/20">
-              <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse" />
-              {t("badge")}
+    <section className="relative bg-background overflow-hidden">
+      {/* Background pattern/gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-background pointer-events-none" />
+      <div className="absolute inset-y-0 right-0 w-1/2 bg-primary/10 rounded-l-[50px] transform translate-x-1/3 pointer-events-none" />
+      
+      <div className="container relative px-4 py-16 md:py-24 lg:py-32 md:px-6 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        {/* Content */}
+        <div className="w-full lg:w-1/2 space-y-6 z-10">
+          <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
+            <span className="flex h-2 w-2 rounded-full bg-primary mr-2"></span>
+            Marketplace de autos verificados
+          </div>
+          
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
+            Encuentra tu auto ideal con garantía de confianza
+          </h1>
+          
+          <p className="text-xl text-muted-foreground max-w-[600px]">
+            Miles de vehículos verificados por expertos, con financiamiento a tu medida y garantía mecánica incluida.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <Button size="lg" asChild className="gap-2 text-base px-8 py-6">
+              <Link href={`/${locale}/listings`}>
+                <Search className="h-5 w-5" />
+                Explorar vehículos
+              </Link>
+            </Button>
+            <Button variant="outline" size="lg" asChild className="gap-2 text-base border-2 px-8 py-6">
+              <Link href={`/${locale}/sell`}>
+                Vender mi auto
+              </Link>
+            </Button>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pt-6">
+            <div className="flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span className="text-sm font-medium">+5,000 autos disponibles</span>
             </div>
-
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-              {t("title")}
-            </h1>
-
-            <p className="max-w-[600px] text-muted-foreground text-lg md:text-xl leading-relaxed">{t("subtitle")}</p>
-
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button
-                size="lg"
-                asChild
-                className="group relative overflow-hidden shadow-lg hover:shadow-primary/20 transition-all duration-300"
-              >
-                <Link href={`${repoUrl}`} className="flex items-center gap-2">
-                  {t("primaryCTA")}
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </Button>
-              <Button variant="outline" size="lg" className="border-2 hover:bg-secondary/5 transition-all duration-300">
-                <Link href={`/${locale}/docs`} className="flex items-center gap-2">
-                  {t("secondaryCTA")}
-                </Link>
-              </Button>
+            <div className="flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span className="text-sm font-medium">Garantía de 3 meses</span>
             </div>
-
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Users className="h-4 w-4" />
-              <span>{t("usersCount")}</span>
-              <span className="text-primary">{t("usersAction")}</span>
+            <div className="flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span className="text-sm font-medium">Financiamiento</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Shield className="h-5 w-5 text-primary" />
+              <span className="text-sm font-medium">Inspección de 240 puntos</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span className="text-sm font-medium">Prueba de manejo</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span className="text-sm font-medium">Devolución 7 días</span>
             </div>
           </div>
-
-          <div
-            className={`mx-auto lg:mx-0 relative transition-all duration-1000 delay-300 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-            }`}
-          >
-            {/* Animated gradient border */}
-            <div
-              className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-primary via-secondary to-primary blur-xl opacity-30 animate-gradient-x"
-              aria-hidden="true"
-            />
-
-            <div className="relative rounded-xl border-2 border-border/50 shadow-2xl bg-background/80 backdrop-blur-sm overflow-hidden">
-              {/* Dashboard preview with proper image */}
-              <div className="aspect-[4/3] w-full overflow-hidden">
-                <Image
-                  src="/dashboard-preview.svg"
-                  alt={t("imageAlt") || "Dashboard Preview"}
-                  width={800}
-                  height={600}
-                  className="object-cover w-full h-full transition-transform hover:scale-105 duration-700"
-                  priority
-                  unoptimized={true}
-                />
+        </div>
+        
+        {/* Image */}
+        <div className="w-full lg:w-1/2 relative">
+          <div className="relative aspect-[4/3] bg-muted rounded-lg overflow-hidden shadow-2xl">
+            {/* Uncomment and add your image when available */}
+            {/* <img 
+              src="/images/hero-car.jpg" 
+              alt="Autos verificados" 
+              className="w-full h-full object-cover" 
+            /> */}
+            
+            {/* Placeholder content - replace with actual image */}
+            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-primary/20 to-muted">
+              <div className="relative w-full h-full flex items-center justify-center">
+                <div className="absolute w-3/4 h-1/2 bg-white/10 backdrop-blur-sm rounded-xl transform -rotate-6 border border-white/20" />
+                <div className="absolute w-3/4 h-1/2 bg-primary/10 backdrop-blur-sm rounded-xl transform rotate-3 border border-primary/20" />
+                <span className="relative text-2xl font-bold text-foreground/70">Mi Carrito</span>
               </div>
-
-              {/* Floating UI elements for visual interest */}
-              <div className="absolute top-4 right-4 bg-background/90 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-border/50 flex items-center gap-2 text-sm font-medium">
-                <span className="h-3 w-3 rounded-full bg-green-500" />
-                {t("statusText") || "Live Dashboard"}
+            </div>
+            
+            {/* Trust badges */}
+            <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-background rounded-lg p-4 shadow-lg border flex items-center gap-6 w-5/6 justify-center">
+              <div className="text-center">
+                <div className="font-bold text-2xl text-primary">4.8</div>
+                <div className="text-xs text-muted-foreground">★★★★★</div>
+                <div className="text-xs">1200+ reseñas</div>
               </div>
+              <div className="h-12 w-px bg-border"></div>
+              <div className="flex flex-col items-center">
+                <div className="text-sm font-medium">Transacciones</div>
+                <div className="font-bold text-xl">+10,000</div>
+              </div>
+              <div className="h-12 w-px bg-border hidden md:block"></div>
+              <div className="hidden md:block text-center">
+                <div className="text-sm font-medium">Financiamiento</div>
+                <div className="font-bold text-lg">Aprobación 24h</div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Quick search form over the image */}
+          <div className="absolute top-6 right-6 z-10 bg-background/80 backdrop-blur-sm rounded-lg shadow-lg p-4 max-w-[300px] hidden md:block">
+            <h3 className="font-medium mb-2">Búsqueda rápida</h3>
+            <div className="space-y-2">
+              <div className="grid grid-cols-2 gap-2">
+                <div>
+                  <select className="w-full p-2 bg-background border rounded-md text-sm">
+                    <option>Marca</option>
+                    <option>Toyota</option>
+                    <option>Honda</option>
+                    <option>Nissan</option>
+                  </select>
+                </div>
+                <div>
+                  <select className="w-full p-2 bg-background border rounded-md text-sm">
+                    <option>Modelo</option>
+                    <option>Corolla</option>
+                    <option>Civic</option>
+                    <option>Versa</option>
+                  </select>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                <div>
+                  <select className="w-full p-2 bg-background border rounded-md text-sm">
+                    <option>Año desde</option>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                  </select>
+                </div>
+                <div>
+                  <select className="w-full p-2 bg-background border rounded-md text-sm">
+                    <option>Precio hasta</option>
+                    <option>$250,000</option>
+                    <option>$400,000</option>
+                    <option>$600,000</option>
+                  </select>
+                </div>
+              </div>
+              <Button size="sm" className="w-full">
+                <Search className="h-4 w-4 mr-2" />
+                Buscar
+              </Button>
             </div>
           </div>
         </div>

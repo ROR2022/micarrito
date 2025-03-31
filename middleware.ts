@@ -9,7 +9,7 @@ export async function middleware(request: NextRequest) {
   const locale = getLocale();
   // Handle root path
   if (request.nextUrl.pathname === '/') {
-    return NextResponse.redirect(new URL('/en', request.url));
+    return NextResponse.redirect(new URL('/es', request.url));
   }
   // Verificar si la ruta es protegida
   const isProtectedRoute = request.nextUrl.pathname.startsWith(`/${locale}/dashboard`);

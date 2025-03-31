@@ -17,8 +17,8 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "MarketFlex",
-  description: "MarketFlex es una plataforma de comercio electrónico que te permite crear tu propio sitio web de ventas en minutos.",
+  title: "Mi Carrito",
+  description: "Mi Carrito es una plataforma de marketplace de autos que te permite comprar y vender vehículos de forma rápida y segura.",
 };
 
 const geistSans = Geist({

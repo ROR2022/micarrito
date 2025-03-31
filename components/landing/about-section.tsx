@@ -8,45 +8,45 @@ import Image from "next/image";
 const stats = [
   {
     icon: <Code2 className="h-6 w-6 text-primary" />,
-    value: "10k+",
-    label: "Lines of Code"
+    value: "1000+",
+    label: "Vehículos Listados"
   },
   {
     icon: <Users className="h-6 w-6 text-primary" />,
-    value: "500+",
-    label: "Active Developers"
+    value: "5000+",
+    label: "Usuarios Activos"
   },
   {
     icon: <GitBranch className="h-6 w-6 text-primary" />,
-    value: "100+",
-    label: "GitHub Stars"
+    value: "50+",
+    label: "Concesionarios"
   },
   {
     icon: <Shield className="h-6 w-6 text-primary" />,
     value: "99.9%",
-    label: "Uptime"
+    label: "Satisfacción"
   }
 ];
 
 const technologies = [
   {
     name: "Next.js",
-    description: "React framework for production",
+    description: "Plataforma web de alto rendimiento",
     icon: "/tech/nextjs.svg"
   },
   {
     name: "Supabase",
-    description: "Open source Firebase alternative",
+    description: "Base de datos segura y escalable",
     icon: "/tech/supabase.svg"
   },
   {
     name: "MercadoPago",
-    description: "Latin America's leading payment processor",
+    description: "Procesador de pagos líder en Latinoamérica",
     icon: "/tech/mercadopago.svg"
   },
   {
     name: "TailwindCSS",
-    description: "Utility-first CSS framework",
+    description: "Diseño moderno y responsivo",
     icon: "/tech/tailwind.svg"
   }
 ];
@@ -122,7 +122,7 @@ export function AboutSection() {
             <div className="aspect-square rounded-lg overflow-hidden border-2 border-primary/10 shadow-xl">
               <Image
                 src="/about-preview.svg"
-                alt="MarketFlex Architecture"
+                alt="Mi Carrito - Marketplace de Autos"
                 fill
                 className="object-cover"
                 priority

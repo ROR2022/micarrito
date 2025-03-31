@@ -9,7 +9,14 @@ interface Listing {
   description: string;
   price: number;
   imageUrl?: string;
-  category: string;
+  year: number;
+  brand: string;
+  model: string;
+  mileage: number;
+  transmission: "manual" | "automático";
+  certified?: boolean;
+  financeable?: boolean;
+  fuelType?: string;
 }
 
 interface ListingGridProps {
@@ -41,11 +48,19 @@ export function ListingGrid({ listings, isLoading = false }: ListingGridProps) {
       {listings.map((listing) => (
         <ListingCard
           key={listing.id}
+          id={listing.id}
           title={listing.title}
           description={listing.description}
           price={listing.price}
           imageUrl={listing.imageUrl}
-          category={listing.category}
+          year={listing.year}
+          brand={listing.brand}
+          model={listing.model}
+          mileage={listing.mileage}
+          transmission={listing.transmission}
+          certified={listing.certified}
+          financeable={listing.financeable}
+          fuelType={listing.fuelType}
         />
       ))}
     </div>

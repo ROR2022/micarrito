@@ -1,12 +1,81 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { Card, CardContent } from "@/components/ui/card";
-import { Quote, Star, ChevronRight, ChevronLeft } from "lucide-react";
-import Image from "next/image";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Quote, Star, ChevronRight, ChevronLeft, CheckCircle } from "lucide-react";
+
+// Definición de tipos para los testimonios
+interface Testimonial {
+  id: number;
+  name: string;
+  role: string;
+  image: string;
+  initials: string;
+  rating: number;
+  purchaseDate: string;
+  verified: boolean;
+  quote: string;
+}
+
+// Datos de testimonios de ejemplo
+const testimonials: Testimonial[] = [
+  {
+    id: 1,
+    name: "María García",
+    role: "Compró un Honda Civic 2020",
+    image: "/images/testimonials/maria.jpg",
+    initials: "MG",
+    rating: 5,
+    purchaseDate: "Enero 2023",
+    verified: true,
+    quote: "El proceso fue increíblemente sencillo. En menos de una semana ya tenía mi auto nuevo en casa, con todos los trámites listos y la garantía en orden. Definitivamente recomendaría Mi Carrito a cualquiera."
+  },
+  {
+    id: 2,
+    name: "Carlos Rodríguez",
+    role: "Vendió un Toyota Corolla 2019",
+    image: "/images/testimonials/carlos.jpg",
+    initials: "CR",
+    rating: 5,
+    purchaseDate: "Marzo 2023",
+    verified: true,
+    quote: "Nunca pensé que vender mi auto sería tan fácil. Recibí una oferta justa, el pago fue rápido y no tuve que ocuparme de ningún trámite. El equipo fue profesional desde el primer contacto."
+  },
+  {
+    id: 3,
+    name: "Alejandra Torres",
+    role: "Compró un Mazda CX-5 2021",
+    image: "/images/testimonials/alejandra.jpg",
+    initials: "AT",
+    rating: 4,
+    purchaseDate: "Mayo 2023",
+    verified: true,
+    quote: "La financiación que me ofrecieron superó mis expectativas. Tasa competitiva y aprobación rápida. El SUV que compré estaba en perfectas condiciones y el asesor que me atendió fue muy paciente explicándome todas las características."
+  },
+  {
+    id: 4,
+    name: "Roberto Méndez",
+    role: "Compró un Volkswagen Jetta 2022",
+    image: "/images/testimonials/roberto.jpg",
+    initials: "RM",
+    rating: 5,
+    purchaseDate: "Abril 2023",
+    verified: true,
+    quote: "La prueba de manejo a domicilio hizo toda la diferencia. El auto que elegí estaba impecable y el proceso de financiamiento fue rápido y sin complicaciones. Tres meses después, sigo muy contento con mi compra."
+  },
+  {
+    id: 5,
+    name: "Laura Sánchez",
+    role: "Vendió un Nissan Sentra 2018",
+    image: "/images/testimonials/laura.jpg",
+    initials: "LS",
+    rating: 5,
+    purchaseDate: "Febrero 2023",
+    verified: true,
+    quote: "Recibí una oferta justa por mi auto y el proceso fue rápido. Me pagaron en 24 horas tal como prometieron y se encargaron de todos los trámites. Una experiencia excepcional de principio a fin."
+  }
+];
 
 const TempLogoCompany = () => {
   return (
@@ -28,11 +97,17 @@ const TempLogoCompany = () => {
 };
 
 export function TestimonialsSection() {
-  const t = useTranslations("Landing.Testimonials");
-  const testimonials = t.raw("testimonials");
   const [activeIndex, setActiveIndex] = useState(0);
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const testimonialsRef = useRef<HTMLDivElement>(null);
   const [isMounted, setIsMounted] = useState(false);
+  
+  
+  const nextTestimonial = useCallback(() => {
+    setActiveIndex((prevIndex) => 
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+    );
+  }, []);
+
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -40,36 +115,35 @@ export function TestimonialsSection() {
     }
   }, []);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextTestimonial();
+    }, 8000);
+    
+    return () => clearInterval(interval);
+  }, [activeIndex, nextTestimonial]);
+
   if (!isMounted) {
     return null;
   }
 
-  // Function to handle scrolling on mobile
-  const scrollToTestimonial = (index: number) => {
-    setActiveIndex(index);
-    if (scrollRef.current) {
-      const cards = scrollRef.current.querySelectorAll(".testimonial-card");
-      if (cards[index]) {
-        cards[index].scrollIntoView({
-          behavior: "smooth",
-          block: "nearest",
-          inline: "center",
-        });
-      }
-    }
+  
+
+  const prevTestimonial = () => {
+    setActiveIndex((prevIndex) => 
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+    );
   };
 
-  // Function to handle next/prev navigation
-  const handleNavigation = (direction: "next" | "prev") => {
-    const newIndex =
-      direction === "next"
-        ? Math.min(activeIndex + 1, testimonials.length - 1)
-        : Math.max(activeIndex - 1, 0);
-    scrollToTestimonial(newIndex);
+  // Renderiza estrellas basado en la calificación
+  const renderStars = (rating: number) => {
+    return Array(5).fill(0).map((_, i) => (
+      <Star 
+        key={i} 
+        className={`h-4 w-4 ${i < rating ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300'}`} 
+      />
+    ));
   };
-
-  // Generate random rating between 4 and 5 stars
-  const getRandomRating = () => Math.floor(Math.random() * 2) + 4;
 
   // Company logos - replace with actual logos in production
   const companyLogos = [
@@ -82,212 +156,143 @@ export function TestimonialsSection() {
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden bg-gradient-to-b from-background to-muted/20">
-      {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
-      <div
-        className="absolute -top-40 -right-40 w-80 h-80 bg-primary/5 rounded-full blur-3xl"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute -bottom-40 -left-40 w-80 h-80 bg-secondary/5 rounded-full blur-3xl"
-        aria-hidden="true"
-      />
-
-      <div className="container px-4 md:px-6">
+    <section className="py-16 md:py-24 relative overflow-hidden">
+      {/* Fondo decorativo */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-background pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-full h-1/3 bg-muted/20 pointer-events-none" />
+      
+      <div className="container px-4 md:px-6 relative z-10">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-2 w-fit gap-2 border border-primary/20">
-            <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse" />
-            {t("badge") || "Customer Stories"}
+            <span className="h-2 w-2 rounded-full bg-primary" />
+            Opiniones verificadas
           </div>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-            {t("title")}
-          </h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Lo que nuestros clientes dicen</h2>
           <p className="max-w-[700px] text-muted-foreground md:text-xl">
-            {t("subtitle")}
+            Miles de clientes satisfechos confían en nosotros para comprar y vender sus vehículos.
           </p>
         </div>
-
-        {/* Featured testimonial - larger and more prominent */}
-        <div className="mb-16 max-w-4xl mx-auto">
-          <Card className="overflow-hidden border-2 border-primary/10 shadow-xl bg-gradient-to-br from-background to-primary/5">
-            <CardContent className="p-8 md:p-10">
-              <div className="flex flex-col md:flex-row gap-8 items-center">
-                <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-background shadow-xl flex-shrink-0">
-                  <Image
-                    src={`/placeholder.svg?height=128&width=128&text=${testimonials[0]?.author?.split(" ")[0] || "User"}`}
-                    alt={testimonials[0]?.author || "Featured testimonial"}
-                    width={128}
-                    height={128}
-                    className="object-cover"
-                  />
-                  <div className="absolute bottom-0 right-0 bg-primary text-primary-foreground rounded-full p-1.5 shadow-lg border-2 border-background">
-                    <Quote className="h-4 w-4" />
-                  </div>
-                </div>
-
-                <div className="flex-1">
-                  <div className="flex items-center mb-4">
-                    {Array.from({ length: 5 }).map((_, i) => (
-                      <Star
-                        key={i}
-                        className={cn(
-                          "h-5 w-5 mr-1",
-                          i < 5
-                            ? "text-yellow-500 fill-yellow-500"
-                            : "text-muted",
-                        )}
-                      />
-                    ))}
-                  </div>
-
-                  <p className="text-xl md:text-2xl font-medium italic mb-6">
-                    &ldquo;
-                    {testimonials[0]?.quote ||
-                      "This product has completely transformed how we work."}
-                    &rdquo;
-                  </p>
-
-                  <div className="flex items-center">
-                    <div>
-                      <h4 className="font-bold text-lg">
-                        {testimonials[0]?.author || "Jane Smith"}
-                      </h4>
-                      <p className="text-muted-foreground">
-                        {testimonials[0]?.role || "CEO, Company"}
-                      </p>
+        
+        {/* Badge de confianza */}
+        <div className="flex justify-center mb-12">
+          <div className="bg-background rounded-full py-2 px-4 shadow-sm border flex items-center gap-2">
+            <CheckCircle className="h-5 w-5 text-primary" />
+            <span className="text-sm font-medium">Más de 10,000 transacciones exitosas</span>
+          </div>
+        </div>
+        
+        {/* Testimonios */}
+        <div 
+          className="relative mt-12 max-w-4xl mx-auto"
+          ref={testimonialsRef}
+        >
+          <div className="overflow-hidden rounded-xl">
+            <div 
+              className="flex transition-transform duration-700 ease-in-out" 
+              style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+            >
+              {testimonials.map((testimonial) => (
+                <div 
+                  key={testimonial.id} 
+                  className="w-full flex-none bg-background p-6 sm:p-8 md:p-10 rounded-xl border"
+                >
+                  <div className="flex flex-col h-full">
+                    <div className="flex items-center gap-4 mb-6">
+                      <Avatar className="h-12 w-12 border-2 border-primary/20">
+                        <AvatarImage src={testimonial.image} alt={testimonial.name} />
+                        <AvatarFallback>{testimonial.initials}</AvatarFallback>
+                      </Avatar>
+                      <div>
+                        <div className="flex items-center gap-2">
+                          <h3 className="font-bold">{testimonial.name}</h3>
+                          {testimonial.verified && (
+                            <CheckCircle className="h-4 w-4 text-primary" />
+                          )}
+                        </div>
+                        <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                        <div className="flex mt-1">
+                          {renderStars(testimonial.rating)}
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="flex-1 relative">
+                      <Quote className="h-8 w-8 text-primary/10 absolute -top-1 -left-1" />
+                      <blockquote className="text-lg md:text-xl relative z-10 pl-4">
+                        &ldquo;{testimonial.quote}&rdquo;
+                      </blockquote>
+                    </div>
+                    
+                    <div className="mt-6 pt-4 border-t text-sm text-muted-foreground">
+                      <p>Transacción verificada · {testimonial.purchaseDate}</p>
                     </div>
                   </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Mobile navigation controls */}
-        <div className="flex items-center justify-between mb-6 md:hidden">
-          <Button
-            variant="outline"
-            size="icon"
-            onClick={() => handleNavigation("prev")}
-            disabled={activeIndex === 0}
-            className="rounded-full"
-          >
-            <ChevronLeft className="h-4 w-4" />
-          </Button>
-
-          <div className="flex space-x-1">
-            {testimonials
-              .slice(1)
-              .map(
-                (
-                  _: { quote: string; author: string; role: string },
-                  idx: number,
-                ) => (
-                  <button
-                    key={idx}
-                    className={cn(
-                      "w-2 h-2 rounded-full transition-all",
-                      activeIndex === idx ? "bg-primary w-4" : "bg-muted",
-                    )}
-                    onClick={() => scrollToTestimonial(idx)}
-                    aria-label={`Go to testimonial ${idx + 1}`}
-                  />
-                ),
-              )}
+              ))}
+            </div>
           </div>
-
-          <Button
-            variant="outline"
-            size="icon"
-            onClick={() => handleNavigation("next")}
-            disabled={activeIndex === testimonials.length - 1}
-            className="rounded-full"
-          >
-            <ChevronRight className="h-4 w-4" />
-          </Button>
+          
+          {/* Controles */}
+          <div className="flex justify-between mt-8">
+            <div className="flex gap-2">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setActiveIndex(index)}
+                  className={`w-3 h-3 rounded-full ${
+                    index === activeIndex ? 'bg-primary' : 'bg-primary/30'
+                  }`}
+                  aria-label={`Ver testimonio ${index + 1}`}
+                />
+              ))}
+            </div>
+            <div className="flex gap-2">
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={prevTestimonial}
+                className="h-10 w-10 rounded-full"
+                aria-label="Testimonio anterior"
+              >
+                <ChevronLeft className="h-5 w-5" />
+              </Button>
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={nextTestimonial}
+                className="h-10 w-10 rounded-full"
+                aria-label="Siguiente testimonio"
+              >
+                <ChevronRight className="h-5 w-5" />
+              </Button>
+            </div>
+          </div>
+        </div>
+        
+        {/* Estadísticas de clientes */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20">
+          <div className="bg-background/50 backdrop-blur-sm rounded-lg p-6 text-center">
+            <div className="text-3xl font-bold text-primary">98%</div>
+            <div className="text-sm text-muted-foreground mt-2">Clientes satisfechos</div>
+          </div>
+          <div className="bg-background/50 backdrop-blur-sm rounded-lg p-6 text-center">
+            <div className="text-3xl font-bold text-primary">4.8/5</div>
+            <div className="text-sm text-muted-foreground mt-2">Calificación promedio</div>
+          </div>
+          <div className="bg-background/50 backdrop-blur-sm rounded-lg p-6 text-center">
+            <div className="text-3xl font-bold text-primary">+10k</div>
+            <div className="text-sm text-muted-foreground mt-2">Vehículos vendidos</div>
+          </div>
+          <div className="bg-background/50 backdrop-blur-sm rounded-lg p-6 text-center">
+            <div className="text-3xl font-bold text-primary">7 días</div>
+            <div className="text-sm text-muted-foreground mt-2">Garantía de devolución</div>
+          </div>
         </div>
 
-        {/* Scrollable testimonials for mobile, grid for desktop */}
-        <div
-          ref={scrollRef}
-          className="flex md:grid gap-6 md:gap-8 md:grid-cols-3 overflow-x-auto pb-8 md:pb-0 snap-x snap-mandatory md:overflow-visible scrollbar-hide"
-        >
-          {testimonials
-            .slice(1)
-            .map(
-              (
-                testimonial: { quote: string; author: string; role: string },
-                index: number,
-              ) => {
-                const rating = getRandomRating();
-                return (
-                  <Card
-                    key={index}
-                    className={cn(
-                      "testimonial-card min-w-[85%] sm:min-w-[350px] md:min-w-0 overflow-hidden border shadow-md h-full snap-center transition-all duration-300 hover:shadow-lg",
-                      activeIndex === index
-                        ? "border-primary/50 bg-primary/5"
-                        : "bg-card",
-                    )}
-                  >
-                    <CardContent className="p-6 md:p-8">
-                      <div className="flex flex-col h-full">
-                        <div className="flex items-center justify-between mb-4">
-                          <div className="flex">
-                            {Array.from({ length: 5 }).map((_, i) => (
-                              <Star
-                                key={i}
-                                className={cn(
-                                  "h-4 w-4 mr-1",
-                                  i < rating
-                                    ? "text-yellow-500 fill-yellow-500"
-                                    : "text-muted",
-                                )}
-                              />
-                            ))}
-                          </div>
-                          <Quote className="h-6 w-6 text-primary/40" />
-                        </div>
-
-                        <p className="flex-1 mb-6 text-foreground/90">
-                          &ldquo;{testimonial.quote}&rdquo;
-                        </p>
-
-                        <div className="flex items-center mt-auto pt-4 border-t border-border/50">
-                          <div className="w-12 h-12 rounded-full overflow-hidden mr-4 border-2 border-background shadow-sm">
-                            <Image
-                              src={`/placeholder.svg?height=48&width=48&text=${testimonial.author
-                                .split(" ")
-                                .map((n) => n[0])
-                                .join("")}`}
-                              alt={testimonial.author}
-                              width={48}
-                              height={48}
-                              className="object-cover"
-                            />
-                          </div>
-                          <div>
-                            <h4 className="font-medium">
-                              {testimonial.author}
-                            </h4>
-                            <p className="text-sm text-muted-foreground">
-                              {testimonial.role}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                );
-              },
-            )}
-        </div>
-
-        {/* Trusted by logos section */}
-        <div className="mt-20 pt-10 border-t border-border/30">
+        {/* Empresas que confían en nosotros */}
+        <div className="hidden mt-20 pt-10 border-t border-border/30">
           <h3 className="text-center text-lg font-medium mb-8 text-muted-foreground">
-            {t("trustedBy") || "Trusted by innovative companies worldwide"}
+            Empresas que confían en nosotros
           </h3>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
@@ -295,13 +300,6 @@ export function TestimonialsSection() {
               <div key={i} className="flex justify-center">
                 <div className="relative h-12 w-full opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300 flex items-center justify-center group">
                   <TempLogoCompany />
-                  {/* <Image
-                    src={company.logo || "/placeholder.svg"}
-                    alt={company.name}
-                    width={120}
-                    height={40}
-                    className="object-contain max-h-10"
-                  /> */}
                   <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 rounded-md transition-opacity" />
                 </div>
               </div>

@@ -10,27 +10,48 @@ import { ListingSearch } from "./components/listing-search";
 const mockListings = [
   {
     id: "1",
-    title: "Professional Photography Services",
-    description: "High-quality photography services for events, portraits, and commercial projects.",
-    price: 150,
+    title: "Nissan Sentra 2020",
+    description: "Sedán en excelentes condiciones con poco kilometraje",
+    price: 245000,
     imageUrl: "/images/newProduct.png",
-    category: "Services"
+    year: 2020,
+    brand: "Nissan",
+    model: "Sentra",
+    mileage: 45000,
+    transmission: "automático" as const,
+    certified: true,
+    financeable: true,
+    fuelType: "Gasolina"
   },
   {
     id: "2",
-    title: "Vintage Camera Collection",
-    description: "A collection of well-maintained vintage cameras from the 1950s to 1970s.",
-    price: 1200,
+    title: "Honda Civic 2019",
+    description: "Deportivo en perfectas condiciones, único dueño",
+    price: 280000,
     imageUrl: "/images/newProduct.png",
-    category: "Electronics"
+    year: 2019,
+    brand: "Honda",
+    model: "Civic",
+    mileage: 62000,
+    transmission: "manual" as const,
+    certified: true,
+    financeable: true,
+    fuelType: "Gasolina"
   },
   {
     id: "3",
-    title: "Vintage Camera Collection",
-    description: "A collection of well-maintained vintage cameras from the 1950s to 1970s.",
-    price: 1200,
+    title: "Toyota RAV4 2021",
+    description: "SUV espaciosa con todas las características premium",
+    price: 390000,
     imageUrl: "/images/newProduct.png",
-    category: "Electronics"
+    year: 2021,
+    brand: "Toyota",
+    model: "RAV4",
+    mileage: 28000,
+    transmission: "automático" as const,
+    certified: false,
+    financeable: true,
+    fuelType: "Híbrido"
   }
   // Add more mock listings as needed
 ];

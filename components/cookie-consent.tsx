@@ -24,7 +24,7 @@ export default function CookieConsentBanner() {
     // Verificar si el usuario ya ha interactuado con el banner
     const cookieConsent = document.cookie
       .split("; ")
-      .find(row => row.startsWith("nextplate-cookie-consent="))
+      .find(row => row.startsWith("micarrito-cookie-consent="))
     
     // Si ya existe la cookie, no mostrar el banner
     if (cookieConsent) {
@@ -53,7 +53,7 @@ export default function CookieConsentBanner() {
       location="bottom"
       buttonText={t("cookies.accept")}
       declineButtonText={t("cookies.decline")}
-      cookieName="nextplate-cookie-consent"
+      cookieName="micarrito-cookie-consent"
       // Clases de Tailwind para el contenedor principal - Fijado en la parte inferior
       containerClasses="fixed bottom-0 left-0 right-0 w-full z-[9999] bg-background/80 backdrop-blur-sm border-t border-primary/20 shadow-lg"
       // Estilos mínimos necesarios que no se pueden reemplazar con Tailwind

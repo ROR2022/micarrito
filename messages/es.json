@@ -7,32 +7,73 @@
       "title": "Política de Cookies",
       "message": "Utilizamos cookies para garantizar que obtenga la mejor experiencia en nuestro sitio web. Al continuar utilizando nuestro sitio, acepta nuestra política de cookies.",
       "learnMore": "Saber Más"
-    }
-  },
-  "MainNavbar": {
-    "title": "MarketFlex",
-    "listings": "Anuncios",
+    },
+    "appTitle": "Mi Carrito",
+    "appDescription": "Marketplace de vehículos",
+    "home": "Inicio",
+    "learn": "Aprende",
     "about": "Acerca de",
     "contact": "Contacto",
-    "dashboard": "Panel",
-    "login": "Iniciar Sesión",
+    "back": "Regresar",
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "dark": "Oscuro",
+    "light": "Claro",
+    "system": "Sistema",
+    "locale": "Idioma",
+    "theme": "Tema",
+    "required": "Requerido",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "update": "Actualizar",
+    "save": "Guardar",
+    "search": "Buscar",
+    "loading": "Cargando",
+    "name": "Nombre",
+    "email": "Correo",
+    "price": "Precio",
+    "cart": "Carrito"
+  },
+  "MainNavbar": {
+    "title": "Mi Carrito",
+    "listings": "Vehículos",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "dashboard": "Mi Cuenta",
+    "login": "Iniciar sesión",
     "signup": "Registrarse",
-    "openMenu": "Abrir Menú",
-    "closeMenu": "Cerrar Menú",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
     "home": "Inicio",
-    "mainNavigation": "Navegación Principal",
+    "mainNavigation": "Navegación principal",
     "subscriptions": "Suscripciones",
-    "documentation": "Documentación"
+    "documentation": "Documentación",
+    "buy": "Comprar",
+    "sell": "Vender",
+    "financing": "Financiamiento",
+    "help": "Ayuda",
+    "myAccount": "Mi cuenta",
+    "profile": "Perfil",
+    "favorites": "Favoritos",
+    "signOut": "Cerrar sesión",
+    "allVehicles": "Todos los vehículos",
+    "sedan": "Sedán",
+    "suv": "SUV",
+    "hatchback": "Hatchback",
+    "pickup": "Pickup",
+    "advancedSearch": "Búsqueda avanzada",
+    "sellMyCar": "Vender mi auto",
+    "helpCenter": "Centro de ayuda"
   },
   "MainFooter": {
-    "title": "MarketFlex"
+    "title": "Mi Carrito"
   },
   "Footer": {
-    "description": "Una plataforma de marketplace flexible para diversos nichos, ofreciendo anuncios personalizables, pagos seguros y una experiencia de usuario fluida.",
+    "description": "El mejor marketplace para comprar y vender vehículos en México. Miles de autos verificados con garantía y financiamiento disponible.",
     "quickLinks": "Enlaces Rápidos",
     "quickLinksAriaLabel": "Enlaces de navegación rápida",
-    "listings": "Anuncios",
-    "about": "Nosotros",
+    "listings": "Explorar vehículos",
+    "about": "Sobre nosotros",
     "contact": "Contacto",
     "legal": "Legal",
     "legalAriaLabel": "Información legal",
@@ -42,7 +83,48 @@
     "followUs": "Síguenos",
     "allRightsReserved": "Todos los derechos reservados.",
     "madeWith": "Hecho con",
-    "documentation": "Documentación"
+    "documentation": "Documentación",
+    "categories": "Categorías",
+    "sell": "Vender mi auto",
+    "financing": "Financiamiento",
+    "blog": "Blog",
+    "sedan": "Sedán",
+    "suv": "SUV",
+    "hatchback": "Hatchback",
+    "pickup": "Pickup",
+    "luxury": "Autos de lujo",
+    "electric": "Eléctricos e híbridos",
+    "paymentMethods": "Métodos de pago",
+    "newsletter": {
+      "title": "Recibe las mejores ofertas",
+      "description": "Suscríbete a nuestro boletín y recibe alertas de nuevos vehículos y promociones exclusivas.",
+      "placeholder": "Tu correo electrónico",
+      "button": "Suscribirme"
+    },
+    "contactInfo": {
+      "address": "Av. Insurgentes Sur 1602, CDMX",
+      "phone": "+52 55 1234 5678",
+      "email": "contacto@micarrito.com",
+      "hours": "Lun-Vie: 9am-6pm | Sáb: 10am-2pm"
+    },
+    "trustBadges": {
+      "verifiedCars": {
+        "title": "Autos Verificados",
+        "description": "Inspección mecánica de 150 puntos"
+      },
+      "warranty": {
+        "title": "Garantía de 3 meses",
+        "description": "En todos nuestros vehículos"
+      },
+      "delivery": {
+        "title": "Entrega a domicilio",
+        "description": "En las principales ciudades"
+      },
+      "inventory": {
+        "title": "+5,000 autos disponibles",
+        "description": "Encuentra el tuyo hoy"
+      }
+    }
   },
   "ThemeSwitcher": {
     "changeTheme": "Cambiar tema",
@@ -55,8 +137,8 @@
   },
   "Docs": {
     "metadata": {
-      "title": "Documentación de MarketFlex",
-      "description": "Documentación oficial para la plataforma de mercado MarketFlex"
+      "title": "Documentación de Mi Carrito",
+      "description": "Documentación oficial para la plataforma de marketplace de autos Mi Carrito"
     },
     "documentation": "Documentación",
     "nav": {
@@ -79,9 +161,9 @@
       "faq": "Preguntas Frecuentes"
     },
     "index": {
-      "title": "Documentación de MarketFlex",
-      "subtitle": "Una guía completa para desarrolladores que utilizan el boilerplate de marketplace MarketFlex",
-      "introduction": "MarketFlex es un boilerplate completo para desarrolladores que desean crear marketplaces personalizados con un mínimo esfuerzo de programación. Esta documentación te guiará a través de los aspectos clave del proyecto.",
+      "title": "Documentación de Mi Carrito",
+      "subtitle": "Una guía completa para desarrolladores que utilizan el boilerplate de marketplace Mi Carrito",
+      "introduction": "Mi Carrito es un boilerplate completo para desarrolladores que desean crear marketplaces personalizados con un mínimo esfuerzo de programación. Esta documentación te guiará a través de los aspectos clave del proyecto.",
       "forDevelopers": "Para Desarrolladores",
       "quickStartGuide": "Guía de Inicio Rápido",
       "architectureOverview": "Visión General de la Arquitectura",
@@ -94,7 +176,7 @@
     "content": {
       "installation": {
         "title": "Instalación",
-        "description": "Aprende cómo instalar y configurar MarketFlex en tu servidor.",
+        "description": "Aprende cómo instalar y configurar Mi Carrito en tu servidor.",
         "systemRequirements": "Requisitos del Sistema",
         "installationSteps": "Pasos de Instalación",
         "cloneRepository": "1. Clonar el Repositorio",
@@ -106,7 +188,7 @@
       },
       "configuration": {
         "title": "Configuración",
-        "description": "Configura MarketFlex para satisfacer tus necesidades específicas.",
+        "description": "Configura Mi Carrito para satisfacer tus necesidades específicas.",
         "supabaseSetup": "Configuración de Supabase",
         "mercadopagoSetup": "Configuración de MercadoPago",
         "appSettings": "Ajustes de la Aplicación",
@@ -114,7 +196,7 @@
       },
       "architecture": {
         "title": "Arquitectura",
-        "description": "Comprende cómo está construido y organizado MarketFlex.",
+        "description": "Comprende cómo está construido y organizado Mi Carrito.",
         "techStack": "Visión General de la Pila Tecnológica",
         "appStructure": "Estructura de la Aplicación",
         "keyComponents": "Componentes Clave",
@@ -123,7 +205,7 @@
       },
       "features": {
         "title": "Características",
-        "description": "Explora las funcionalidades disponibles en MarketFlex.",
+        "description": "Explora las funcionalidades disponibles en Mi Carrito.",
         "userManagement": "Gestión de Usuarios",
         "marketplaceFeatures": "Funciones del Marketplace",
         "sellerTools": "Herramientas para Vendedores",
@@ -136,7 +218,7 @@
       },
       "database": {
         "title": "Arquitectura de Base de Datos",
-        "description": "Entiende la estructura de base de datos utilizada en MarketFlex.",
+        "description": "Entiende la estructura de base de datos utilizada en Mi Carrito.",
         "overview": "Visión General de la Base de Datos",
         "tableStructure": "Estructura de Tablas",
         "relationships": "Relaciones",
@@ -148,7 +230,7 @@
       },
       "components": {
         "title": "Arquitectura de Componentes",
-        "description": "Aprende sobre los componentes reutilizables que conforman MarketFlex.",
+        "description": "Aprende sobre los componentes reutilizables que conforman Mi Carrito.",
         "overview": "Visión General de Componentes",
         "uiComponents": "Componentes de UI",
         "layoutComponents": "Componentes de Diseño",
@@ -160,7 +242,7 @@
       },
       "customization": {
         "title": "Personalización",
-        "description": "Aprende cómo personalizar MarketFlex para satisfacer tus necesidades específicas.",
+        "description": "Aprende cómo personalizar Mi Carrito para satisfacer tus necesidades específicas.",
         "customizationOptions": "Opciones de Personalización",
         "overview": "Personalización General",
         "branding": "Personalización de Marca",
@@ -172,7 +254,7 @@
       },
       "dynamicFields": {
         "title": "Campos Dinámicos",
-        "description": "Aprende cómo utilizar campos dinámicos en MarketFlex.",
+        "description": "Aprende cómo utilizar campos dinámicos en Mi Carrito.",
         "overview": "Campos Dinámicos General",
         "fieldTypes": "Tipos de Campos",
         "validation": "Validación y Seguridad",
@@ -186,7 +268,7 @@
       },
       "styling": {
         "title": "Estilos",
-        "description": "Aprende cómo estilizar MarketFlex.",
+        "description": "Aprende cómo estilizar Mi Carrito.",
         "overview": "Estilos General",
         "customization": "Personalización",
         "responsiveDesign": "Diseño Responsivo",
@@ -201,11 +283,11 @@
       },
       "development": {
         "title": "Desarrollo",
-        "description": "Aprende cómo desarrollar MarketFlex.",
+        "description": "Aprende cómo desarrollar Mi Carrito.",
         "overview": "Desarrollo General",
         "bestPractices": "Mejores Prácticas para Desarrollo",
         "performance": "Optimización de Rendimiento",
-        "extendingMarketFlex": "Extensión de MarketFlex",
+        "extendingMarketFlex": "Extensión de Mi Carrito",
         "addingNewPages": "Añadir Nuevas Páginas",
         "customizingRoutes": "Personalizar Rutas",
         "usingComponents": "Usar Componentes",
@@ -233,7 +315,7 @@
       },
       "hooks": {
         "title": "Hooks",
-        "description": "Aprende cómo utilizar los hooks disponibles en MarketFlex.",
+        "description": "Aprende cómo utilizar los hooks disponibles en Mi Carrito.",
         "overview": "Hooks General",
         "customHooks": "Hooks Personalizados",
         "bestPractices": "Mejores Prácticas para Hooks",
@@ -248,7 +330,7 @@
       },
       "integrations": {
         "title": "Integraciones",
-        "description": "Aprende cómo integrar MarketFlex con otras plataformas.",
+        "description": "Aprende cómo integrar Mi Carrito con otras plataformas.",
         "overview": "Integraciones General",
         "mercadopago": "Integración de MercadoPago",
         "supabase": "Integración de Supabase",
@@ -264,7 +346,7 @@
       },
       "mercadopago": {
         "title": "Integración de MercadoPago",
-        "description": "Aprende cómo integrar MercadoPago en MarketFlex.",
+        "description": "Aprende cómo integrar MercadoPago en Mi Carrito.",
         "overview": "Integración de MercadoPago General",
         "paymentProcess": "Proceso de Pago",
         "webhooks": "Webhooks de MercadoPago",
@@ -280,7 +362,7 @@
       },
       "supabase": {
         "title": "Integración de Supabase",
-        "description": "Aprende cómo integrar Supabase en MarketFlex.",
+        "description": "Aprende cómo integrar Supabase en Mi Carrito.",
         "overview": "Integración de Supabase General",
         "authentication": "Autenticación",
         "prerequisites": "Prerequisitos",
@@ -297,7 +379,7 @@
       },
       "deployment": {
         "title": "Despliegue",
-        "description": "Aprende cómo desplegar MarketFlex.",
+        "description": "Aprende cómo desplegar Mi Carrito.",
         "overview": "Despliegue General",
         "deploymentSteps": "Pasos de Despliegue",
         "prerequisites": "Prerequisitos",
@@ -330,11 +412,11 @@
         "adminQuestions": "Preguntas sobre Administración",
         "integrationQuestions": "Preguntas sobre Integraciones",
         "deploymentQuestions": "Preguntas sobre Despliegue",
-        "description": "Respuestas a preguntas comunes sobre MarketFlex.",
+        "description": "Respuestas a preguntas comunes sobre Mi Carrito.",
         "general": "General",
-        "whatIs": "¿Qué es MarketFlex?",
-        "techStack": "¿Qué tecnologías utiliza MarketFlex?",
-        "whyUse": "¿Por qué usar MarketFlex?",
+        "whatIs": "¿Qué es Mi Carrito?",
+        "techStack": "¿Qué tecnologías utiliza Mi Carrito?",
+        "whyUse": "¿Por qué usar Mi Carrito?",
         "installation": "Instalación",
         "systemRequirements": "Requisitos del Sistema",
         "installSteps": "Pasos de Instalación",
@@ -369,7 +451,7 @@
     "subtitle": "¿Tienes preguntas? Nos encantaría escucharte.",
     "email": {
       "title": "Correo",
-      "value": "soporte@marketflex.com"
+      "value": "soporte@micarrito.com"
     },
     "phone": {
       "title": "Teléfono",
@@ -433,12 +515,12 @@
     "Hero": {
       "badge": "Framework de Marketplace para Desarrolladores",
       "title": "El Boilerplate Perfecto para Marketplaces Personalizados",
-      "subtitle": "MarketFlex ofrece una base de código modular y adaptable para desarrolladores para lanzar marketplaces escalables con esfuerzo mínimo. Construido con Next.js, Supabase y MercadoPago pre-integrado.",
+      "subtitle": "Mi Carrito ofrece una base de código modular y adaptable para desarrolladores para lanzar marketplaces escalables con esfuerzo mínimo. Construido con Next.js, Supabase y MercadoPago pre-integrado.",
       "primaryCTA": "Ver Repositorio",
       "secondaryCTA": "Ver Demo",
       "usersCount": "Usado por más de 5,000 desarrolladores",
       "usersAction": "que lanzaron su marketplace",
-      "imageAlt": "Vista previa del panel de MarketFlex",
+      "imageAlt": "Vista previa del panel de Mi Carrito",
       "feature1": "Código Modular y Adaptable",
       "feature2": "Integraciones Pre-implementadas",
       "feature3": "APIs Extensibles y Personalizables",
@@ -542,7 +624,7 @@
       "trustedBy": "Confiado por Desarrolladores de Marketplaces",
       "testimonials": [
         {
-          "quote": "La arquitectura de MarketFlex me permitió adaptar rápidamente el código para requisitos específicos de nuestro marketplace automotriz. Los patrones de diseño son limpios y fáciles de extender.",
+          "quote": "La arquitectura de Mi Carrito me permitió adaptar rápidamente el código para requisitos específicos de nuestro marketplace automotriz. Los patrones de diseño son limpios y fáciles de extender.",
           "author": "Carlos Rodríguez",
           "role": "Full Stack Developer, AutoMarket"
         },
@@ -552,7 +634,7 @@
           "role": "Tech Lead, PropiedadesYa"
         },
         {
-          "quote": "Como desarrollador, valoro el equilibrio que ofrece MarketFlex entre código preparado y flexibilidad para personalizar. Me ahorró semanas de configuración mientras me daba libertad para implementar funcionalidades específicas.",
+          "quote": "Como desarrollador, valoro el equilibrio que ofrece Mi Carrito entre código preparado y flexibilidad para personalizar. Me ahorró semanas de configuración mientras me daba libertad para implementar funcionalidades específicas.",
           "author": "Juan Pérez",
           "role": "Desarrollador Independiente"
         }
@@ -560,18 +642,18 @@
     },
     "FAQ": {
       "title": "Preguntas Frecuentes",
-      "subtitle": "Todo lo que necesitas saber sobre MarketFlex",
+      "subtitle": "Todo lo que necesitas saber sobre Mi Carrito",
       "questions": [
         {
-          "question": "¿Qué nivel de personalización permite MarketFlex?",
-          "answer": "MarketFlex está diseñado para ser completamente personalizable. Es un boilerplate que proporciona una estructura sólida y componentes funcionales, pero siempre necesitarás programar para adaptarlo a tus necesidades específicas. La ventaja es que el código está bien organizado, documentado y sigue patrones de diseño claros."
+          "question": "¿Qué nivel de personalización permite Mi Carrito?",
+          "answer": "Mi Carrito está diseñado para ser completamente personalizable. Es un boilerplate que proporciona una estructura sólida y componentes funcionales, pero siempre necesitarás programar para adaptarlo a tus necesidades específicas. La ventaja es que el código está bien organizado, documentado y sigue patrones de diseño claros."
         },
         {
-          "question": "¿Qué stack tecnológico utiliza MarketFlex?",
-          "answer": "MarketFlex está construido con Next.js, TypeScript, Supabase (PostgreSQL, Auth, Storage), Shadcn/UI, TailwindCSS, y MercadoPago SDK. Incluye soporte para i18n con next-intl y temas con next-themes. Puedes modificar cualquier parte del stack según tus necesidades."
+          "question": "¿Qué stack tecnológico utiliza Mi Carrito?",
+          "answer": "Mi Carrito está construido con Next.js, TypeScript, Supabase (PostgreSQL, Auth, Storage), Shadcn/UI, TailwindCSS, y MercadoPago SDK. Incluye soporte para i18n con next-intl y temas con next-themes. Puedes modificar cualquier parte del stack según tus necesidades."
         },
         {
-          "question": "¿Qué conocimientos técnicos necesito para utilizar MarketFlex?",
+          "question": "¿Qué conocimientos técnicos necesito para utilizar Mi Carrito?",
           "answer": "Necesitarás experiencia con React/Next.js, TypeScript y conocimientos básicos de PostgreSQL. Experiencia con Supabase es recomendable pero no esencial, ya que la documentación incluye guías detalladas sobre su uso en el proyecto."
         },
         {
@@ -598,25 +680,25 @@
     },
     "About": {
       "badge": "Nuestra Historia",
-      "title": "Construyendo el Futuro de los Marketplaces",
-      "subtitle": "Un boilerplate potente para que los desarrolladores creen marketplaces personalizados con facilidad",
+      "title": "Impulsando la Revolución del Mercado Automotriz",
+      "subtitle": "La plataforma líder para comprar y vender vehículos de calidad en México",
       "mission": {
         "title": "Nuestra Misión",
-        "description": "Nuestra misión es empoderar a los desarrolladores para construir marketplaces escalables más rápido que nunca. MarketFlex proporciona una base sólida sobre la que puedes construir, con todas las características esenciales ya implementadas.",
+        "description": "Nuestra misión es transformar la forma en que las personas compran y venden autos en México. Mi Carrito ofrece una plataforma segura, transparente y fácil de usar que conecta a compradores de vehículos con vendedores confiables.",
         "features": {
           "performance": {
-            "title": "Alto Rendimiento",
-            "description": "Construido con Next.js y optimizado para velocidad, asegurando que tu marketplace funcione sin problemas a escala."
+            "title": "Verificación de Vehículos",
+            "description": "Cada vehículo listado en nuestra plataforma pasa por un proceso de verificación exhaustivo para garantizar su calidad y confiabilidad."
           },
           "security": {
-            "title": "Seguridad Empresarial",
-            "description": "Implementa las mejores prácticas para autenticación, protección de datos y procesamiento de pagos."
+            "title": "Transacciones Seguras",
+            "description": "Medidas de seguridad avanzadas protegen tus datos personales y garantizan pagos seguros durante todo el proceso de compra y venta."
           }
         }
       },
       "tech": {
-        "title": "Impulsado por Stack Tecnológico Moderno",
-        "description": "Construido con las últimas tecnologías para garantizar rendimiento y escalabilidad"
+        "title": "Construido con Tecnología de Vanguardia",
+        "description": "Utilizando tecnologías modernas para ofrecer la mejor experiencia en el mercado de autos"
       }
     }
   },
@@ -635,7 +717,7 @@
   },
   "Cookies": {
     "title": "Política de Cookies",
-    "subtitle": "Entendiendo cómo utilizamos las cookies en nuestra plataforma",
+    "subtitle": "Entendiendo cómo utilizamos las cookies en nuestra plataforma de marketplace de autos",
     "whatAreCookies": {
       "title": "¿Qué son las Cookies?",
       "subtitle": "Entendiendo los conceptos básicos",
@@ -656,12 +738,12 @@
       },
       "functional": {
         "title": "Cookies Funcionales",
-        "description": "Estas cookies permiten funcionalidades mejoradas y personalización, como recordar tus preferencias y configuraciones.",
+        "description": "Estas cookies permiten funcionalidades mejoradas y personalización, como recordar tus preferencias de vehículos y filtros de búsqueda.",
         "required": false
       },
       "marketing": {
         "title": "Cookies de Marketing",
-        "description": "Estas cookies se utilizan para rastrear visitantes a través de sitios web para permitirnos mostrar anuncios relevantes y atractivos.",
+        "description": "Estas cookies se utilizan para rastrear visitantes a través de sitios web para permitirnos mostrar anuncios relevantes de vehículos y promociones.",
         "required": false
       }
     },
@@ -671,9 +753,9 @@
       "description": "Utilizamos cookies para diversos propósitos para mejorar tu experiencia en nuestra plataforma:",
       "items": {
         "improve": "Para mejorar el rendimiento y la experiencia de usuario de nuestro sitio web",
-        "analyze": "Para analizar cómo los visitantes utilizan nuestro sitio web",
-        "personalize": "Para personalizar tu experiencia y recordar tus preferencias",
-        "remember": "Para recordar tu estado de inicio de sesión y otra información importante"
+        "analyze": "Para analizar cómo los visitantes utilizan nuestro sitio web y mejorar nuestros listados de vehículos",
+        "personalize": "Para personalizar tu experiencia y recordar tus preferencias de vehículos",
+        "remember": "Para recordar tu estado de inicio de sesión y búsquedas de vehículos guardadas"
       }
     },
     "management": {
@@ -689,11 +771,11 @@
   },
   "Privacy": {
     "title": "Política de Privacidad",
-    "subtitle": "Cómo protegemos y manejamos tus datos",
+    "subtitle": "Cómo protegemos y manejamos tus datos en nuestro marketplace de autos",
     "introduction": {
       "title": "Introducción",
       "subtitle": "Nuestro compromiso con tu privacidad",
-      "description": "En MarketFlex, nos tomamos tu privacidad muy en serio. Esta política explica cómo recopilamos, utilizamos y protegemos tu información personal cuando usas nuestra plataforma."
+      "description": "En Mi Carrito, nos tomamos tu privacidad muy en serio. Esta política explica cómo recopilamos, utilizamos y protegemos tu información personal cuando usas nuestra plataforma de marketplace de autos."
     },
     "dataCollection": {
       "title": "Recopilación de Datos",
@@ -701,11 +783,11 @@
       "types": {
         "personal": {
           "title": "Información Personal",
-          "description": "Nombre, correo electrónico, número de teléfono y otros datos de contacto que proporcionas al crear una cuenta o realizar una compra."
+          "description": "Nombre, correo electrónico, número de teléfono y otros datos de contacto que proporcionas al crear una cuenta, publicar un vehículo o realizar una compra."
         },
         "usage": {
           "title": "Datos de Uso",
-          "description": "Información sobre cómo interactúas con nuestra plataforma, incluyendo historial de navegación, búsquedas y uso de funciones."
+          "description": "Información sobre cómo interactúas con nuestra plataforma, incluyendo historial de búsqueda de vehículos, listados guardados y uso de funciones."
         },
         "technical": {
           "title": "Datos Técnicos",
@@ -718,10 +800,10 @@
       "subtitle": "Nuestros propósitos de procesamiento de datos",
       "description": "Utilizamos tus datos para diversos propósitos para mejorar nuestros servicios:",
       "purposes": {
-        "service": "Para proporcionar y mantener nuestros servicios",
-        "improvement": "Para mejorar y personalizar tu experiencia",
-        "communication": "Para comunicarnos contigo sobre nuestros servicios",
-        "security": "Para garantizar la seguridad de nuestra plataforma"
+        "service": "Para proporcionar y mantener nuestros servicios de marketplace de autos",
+        "improvement": "Para mejorar y personalizar tu experiencia de compra de vehículos",
+        "communication": "Para comunicarnos contigo sobre vehículos, listados y nuestros servicios",
+        "security": "Para garantizar la seguridad de nuestra plataforma y prevenir fraudes"
       }
     },
     "dataProtection": {
@@ -775,24 +857,24 @@
       "subtitle": "Ponte en contacto sobre tu privacidad",
       "description": "Si tienes alguna pregunta sobre nuestra política de privacidad o tus datos:",
       "details": {
-        "email": "Correo: privacy@marketflex.com",
-        "address": "Dirección: 123 Calle Privacidad, Suite 100, San Francisco, CA 94105",
-        "phone": "Teléfono: +1 (555) 123-4567"
+        "email": "Correo: privacy@micarrito.com",
+        "address": "Dirección: Av. Insurgentes Sur 1602, Ciudad de México",
+        "phone": "Teléfono: +52 55 1234 5678"
       }
     }
   },
   "Terms": {
     "title": "Términos de Servicio",
-    "subtitle": "Entendiendo tus derechos y responsabilidades al usar nuestra plataforma",
+    "subtitle": "Entendiendo tus derechos y responsabilidades al usar nuestro marketplace de autos",
     "introduction": {
       "title": "Introducción",
-      "subtitle": "Bienvenido a MarketFlex",
-      "description": "Estos Términos de Servicio rigen tu uso de MarketFlex y establecen las reglas, pautas y acuerdos que se aplican a todos los usuarios de nuestra plataforma."
+      "subtitle": "Bienvenido a Mi Carrito",
+      "description": "Estos Términos de Servicio rigen tu uso de Mi Carrito y establecen las reglas, pautas y acuerdos que se aplican a todos los usuarios de nuestra plataforma de marketplace de autos."
     },
     "acceptance": {
       "title": "Aceptación de los Términos",
       "subtitle": "Tu acuerdo con estos términos",
-      "description": "Al acceder o usar MarketFlex, aceptas estar sujeto a estos Términos de Servicio. Si no estás de acuerdo con alguna parte de estos términos, no podrás acceder a nuestra plataforma.",
+      "description": "Al acceder o usar Mi Carrito, aceptas estar sujeto a estos Términos de Servicio. Si no estás de acuerdo con alguna parte de estos términos, no podrás acceder a nuestra plataforma.",
       "conditions": {
         "title": "Condiciones de Uso",
         "description": "Debes tener al menos 18 años y tener la capacidad legal para celebrar contratos vinculantes para usar nuestros servicios."
@@ -801,7 +883,7 @@
     "responsibilities": {
       "title": "Responsabilidades del Usuario",
       "subtitle": "Tus obligaciones como usuario",
-      "description": "Como usuario de MarketFlex, tienes ciertas responsabilidades:",
+      "description": "Como usuario de Mi Carrito, tienes ciertas responsabilidades:",
       "items": {
         "account": {
           "title": "Seguridad de la Cuenta",
@@ -809,11 +891,11 @@
         },
         "content": {
           "title": "Pautas de Contenido",
-          "description": "Debes asegurarte de que todo el contenido que publiques o compartas cumpla con nuestras pautas comunitarias y las leyes aplicables."
+          "description": "Debes asegurarte de que todos los listados de vehículos y contenido que publiques cumplan con nuestras pautas comunitarias y las leyes aplicables."
         },
         "conduct": {
           "title": "Conducta del Usuario",
-          "description": "Aceptas usar nuestra plataforma de manera legal, ética y respetuosa con otros usuarios."
+          "description": "Te comprometes a usar nuestra plataforma de manera legal, ética y respetuosa con otros usuarios."
         },
         "security": {
           "title": "Seguridad de la Plataforma",
@@ -824,15 +906,15 @@
     "intellectualProperty": {
       "title": "Propiedad Intelectual",
       "subtitle": "Derechos de propiedad y uso",
-      "description": "Todo el contenido y materiales disponibles en MarketFlex están protegidos por derechos de propiedad intelectual:",
+      "description": "Todo el contenido y materiales disponibles en Mi Carrito están protegidos por derechos de propiedad intelectual:",
       "items": {
         "ownership": {
           "title": "Propiedad de la Plataforma",
-          "description": "MarketFlex y su contenido original, características y funcionalidad son propiedad nuestra y están protegidos por leyes internacionales de derechos de autor, marcas registradas y otras leyes de propiedad intelectual."
+          "description": "Mi Carrito y su contenido original, características y funcionalidad son propiedad nuestra y están protegidos por leyes internacionales de derechos de autor, marcas registradas y otras leyes de propiedad intelectual."
         },
         "licenses": {
           "title": "Licencias de Usuario",
-          "description": "Te otorgamos una licencia limitada, no exclusiva, no transferible para usar nuestra plataforma con fines personales y no comerciales."
+          "description": "Te otorgamos una licencia limitada, no exclusiva, no transferible para usar nuestra plataforma para fines personales, no comerciales."
         },
         "infringement": {
           "title": "Reclamos de Infracción",
@@ -843,10 +925,10 @@
     "liability": {
       "title": "Limitación de Responsabilidad",
       "subtitle": "Entendiendo nuestras responsabilidades legales",
-      "description": "MarketFlex se proporciona 'tal cual' sin garantías ni garantías:",
+      "description": "Mi Carrito se proporciona 'tal cual' sin garantías ni garantías:",
       "disclaimer": {
         "title": "Descargo de Responsabilidad",
-        "description": "No somos responsables por daños indirectos, incidentales, especiales, consecuentes o punitivos que resulten de tu uso o incapacidad para usar nuestra plataforma."
+        "description": "No somos responsables de ningún daño indirecto, incidental, especial, consecuente o punitivo que resulte de tu uso o incapacidad para usar nuestra plataforma."
       }
     },
     "changes": {
@@ -863,16 +945,16 @@
       "subtitle": "Ponte en contacto sobre nuestros términos",
       "description": "Si tienes alguna pregunta sobre estos Términos de Servicio:",
       "details": {
-        "email": "Correo: legal@marketflex.com",
-        "address": "Dirección: 123 Calle Legal, Suite 100, San Francisco, CA 94105",
-        "phone": "Teléfono: +1 (555) 123-4567"
+        "email": "Correo: legal@micarrito.com",
+        "address": "Dirección: Av. Insurgentes Sur 1602, Ciudad de México",
+        "phone": "Teléfono: +52 55 1234 5678"
       }
     }
   },
   "Auth": {
     "signIn": {
-      "title": "Inicia sesión",
-      "subtitle": "Bienvenido de nuevo a MarketFlex",
+      "title": "Iniciar sesión",
+      "subtitle": "Bienvenido de nuevo a Mi Carrito",
       "description": "Inicia sesión en tu cuenta para continuar",
       "notRegistered": "¿No tienes una cuenta?",
       "orContinueWith": "O continua con",
@@ -1093,7 +1175,7 @@
   },
   "Purchases": {
     "pageTitle": "Mis Compras",
-    "pageDescription": "Controla y administra tus compras en MarketFlex",
+    "pageDescription": "Rastrea y gestiona tus compras de vehículos en Mi Carrito",
     "title": "Mis Compras",
     "description": "Ver y administrar tus compras recientes",
     "searchPlaceholder": "Buscar por referencia, estado o vendedor",
@@ -1133,7 +1215,7 @@
   },
   "Sales": {
     "pageTitle": "Mis Ventas",
-    "pageDescription": "Controla y administra tus ventas en MarketFlex",
+    "pageDescription": "Rastrea y gestiona tus ventas de vehículos en Mi Carrito",
     "title": "Mis Ventas",
     "description": "Ver y administrar tus ventas recientes",
     "searchPlaceholder": "Buscar por referencia, estado o comprador",

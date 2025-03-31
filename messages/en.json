@@ -7,31 +7,72 @@
       "title": "Cookie Policy",
       "message": "We use cookies to ensure you get the best experience on our website. By continuing to use our site, you agree to our cookie policy.",
       "learnMore": "Learn More"
-    }
-  },
-  "MainNavbar": {
-    "title": "MarketFlex",
-    "listings": "Listings",
+    },
+    "appTitle": "My Car",
+    "appDescription": "Vehicle Marketplace",
+    "home": "Home",
+    "learn": "Learn",
     "about": "About",
     "contact": "Contact",
-    "dashboard": "Dashboard",
-    "login": "Log In",
+    "back": "Back",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "dark": "Dark",
+    "light": "Light",
+    "system": "System",
+    "locale": "Language",
+    "theme": "Theme",
+    "required": "Required",
+    "delete": "Delete",
+    "edit": "Edit",
+    "update": "Update",
+    "save": "Save",
+    "search": "Search",
+    "loading": "Loading",
+    "name": "Name",
+    "email": "Email",
+    "price": "Price",
+    "cart": "Cart"
+  },
+  "MainNavbar": {
+    "title": "Mi Carrito",
+    "listings": "Vehicles",
+    "about": "About Us",
+    "contact": "Contact",
+    "dashboard": "My Account",
+    "login": "Login",
     "signup": "Sign Up",
     "openMenu": "Open Menu",
     "closeMenu": "Close Menu",
     "home": "Home",
     "mainNavigation": "Main Navigation",
     "subscriptions": "Subscriptions",
-    "documentation": "Documentation"
+    "documentation": "Documentation",
+    "buy": "Buy",
+    "sell": "Sell",
+    "financing": "Financing",
+    "help": "Help",
+    "myAccount": "My Account",
+    "profile": "Profile",
+    "favorites": "Favorites",
+    "signOut": "Sign Out",
+    "allVehicles": "All Vehicles",
+    "sedan": "Sedan",
+    "suv": "SUV",
+    "hatchback": "Hatchback",
+    "pickup": "Pickup",
+    "advancedSearch": "Advanced Search",
+    "sellMyCar": "Sell My Car",
+    "helpCenter": "Help Center"
   },
   "MainFooter": {
-    "title": "MarketFlex"
+    "title": "Mi Carrito"
   },
   "Footer": {
-    "description": "A flexible marketplace platform for various niches, offering customizable listings, secure payments, and a seamless user experience.",
+    "description": "The best marketplace to buy and sell vehicles in Mexico. Thousands of verified cars with warranty and financing available.",
     "quickLinks": "Quick Links",
     "quickLinksAriaLabel": "Quick navigation links",
-    "listings": "Listings",
+    "listings": "Explore Vehicles",
     "about": "About Us",
     "contact": "Contact Us",
     "legal": "Legal",
@@ -42,7 +83,48 @@
     "followUs": "Follow Us",
     "allRightsReserved": "All rights reserved.",
     "madeWith": "Made with",
-    "documentation": "Documentation"
+    "documentation": "Documentation",
+    "categories": "Categories",
+    "sell": "Sell My Car",
+    "financing": "Financing",
+    "blog": "Blog",
+    "sedan": "Sedan",
+    "suv": "SUV",
+    "hatchback": "Hatchback",
+    "pickup": "Pickup",
+    "luxury": "Luxury Cars",
+    "electric": "Electric & Hybrid",
+    "paymentMethods": "Payment Methods",
+    "newsletter": {
+      "title": "Get the Best Deals",
+      "description": "Subscribe to our newsletter and receive alerts about new vehicles and exclusive promotions.",
+      "placeholder": "Your email address",
+      "button": "Subscribe"
+    },
+    "contactInfo": {
+      "address": "Av. Insurgentes Sur 1602, Mexico City",
+      "phone": "+52 55 1234 5678",
+      "email": "contact@mycar.com",
+      "hours": "Mon-Fri: 9am-6pm | Sat: 10am-2pm"
+    },
+    "trustBadges": {
+      "verifiedCars": {
+        "title": "Verified Cars",
+        "description": "150-point mechanical inspection"
+      },
+      "warranty": {
+        "title": "3-Month Warranty",
+        "description": "On all our vehicles"
+      },
+      "delivery": {
+        "title": "Home Delivery",
+        "description": "In major cities"
+      },
+      "inventory": {
+        "title": "+5,000 Available Cars",
+        "description": "Find yours today"
+      }
+    }
   },
   "ThemeSwitcher": {
     "changeTheme": "Change theme",
@@ -55,8 +137,8 @@
   },
   "Docs": {
     "metadata": {
-      "title": "MarketFlex Documentation",
-      "description": "Official documentation for MarketFlex marketplace platform"
+      "title": "Mi Carrito Documentation",
+      "description": "Official documentation for Mi Carrito car marketplace platform"
     },
     "documentation": "Documentation",
     "nav": {
@@ -369,7 +451,7 @@
     "subtitle": "Have questions? We'd love to hear from you.",
     "email": {
       "title": "Email",
-      "value": "support@marketflex.com"
+      "value": "support@micarrito.com"
     },
     "phone": {
       "title": "Phone",
@@ -598,25 +680,25 @@
     },
     "About": {
       "badge": "Our Story",
-      "title": "Building the Future of Marketplaces",
-      "subtitle": "A powerful boilerplate for developers to create custom marketplaces with ease",
+      "title": "Driving the Car Marketplace Revolution",
+      "subtitle": "The premier platform for buying and selling quality vehicles in Mexico",
       "mission": {
         "title": "Our Mission",
-        "description": "We're on a mission to empower developers to build scalable marketplaces faster than ever. MarketFlex provides a solid foundation that you can build upon, with all the essential features already implemented.",
+        "description": "We're on a mission to transform how people buy and sell cars in Mexico. Mi Carrito provides a secure, transparent, and user-friendly platform that connects vehicle buyers with trusted sellers.",
         "features": {
           "performance": {
-            "title": "High Performance",
-            "description": "Built with Next.js and optimized for speed, ensuring your marketplace runs smoothly at scale."
+            "title": "Vehicle Verification",
+            "description": "Every vehicle listed on our platform undergoes a comprehensive verification process to ensure quality and reliability."
           },
           "security": {
-            "title": "Enterprise Security",
-            "description": "Implements best practices for authentication, data protection, and payment processing."
+            "title": "Secure Transactions",
+            "description": "Advanced security measures protect your personal data and ensure safe payments throughout the buying and selling process."
           }
         }
       },
       "tech": {
-        "title": "Powered by Modern Tech Stack",
-        "description": "Built with the latest technologies to ensure performance and scalability"
+        "title": "Built with Cutting-Edge Technology",
+        "description": "Leveraging modern technologies to provide the best car marketplace experience"
       }
     }
   },
@@ -635,7 +717,7 @@
   },
   "Cookies": {
     "title": "Cookie Policy",
-    "subtitle": "Understanding how we use cookies on our platform",
+    "subtitle": "Understanding how we use cookies on our car marketplace platform",
     "whatAreCookies": {
       "title": "What are Cookies?",
       "subtitle": "Understanding the basics",
@@ -656,12 +738,12 @@
       },
       "functional": {
         "title": "Functional Cookies",
-        "description": "These cookies enable enhanced functionality and personalization, such as remembering your preferences and settings.",
+        "description": "These cookies enable enhanced functionality and personalization, such as remembering your vehicle preferences and search filters.",
         "required": false
       },
       "marketing": {
         "title": "Marketing Cookies",
-        "description": "These cookies are used to track visitors across websites to enable us to display relevant and engaging advertisements.",
+        "description": "These cookies are used to track visitors across websites to enable us to display relevant vehicle advertisements and promotions.",
         "required": false
       }
     },
@@ -670,10 +752,10 @@
       "subtitle": "Our cookie usage purposes",
       "description": "We use cookies for various purposes to improve your experience on our platform:",
       "items": {
-        "improve": "To improve our website&apos;s performance and user experience",
-        "analyze": "To analyze how visitors use our website",
-        "personalize": "To personalize your experience and remember your preferences",
-        "remember": "To remember your login status and other important information"
+        "improve": "To improve our website's performance and user experience",
+        "analyze": "To analyze how visitors use our website and improve our vehicle listings",
+        "personalize": "To personalize your experience and remember your vehicle preferences",
+        "remember": "To remember your login status and saved vehicle searches"
       }
     },
     "management": {
@@ -689,11 +771,11 @@
   },
   "Privacy": {
     "title": "Privacy Policy",
-    "subtitle": "How we protect and handle your data",
+    "subtitle": "How we protect and handle your data in our car marketplace",
     "introduction": {
       "title": "Introduction",
       "subtitle": "Our commitment to your privacy",
-      "description": "At MarketFlex, we take your privacy seriously. This policy explains how we collect, use, and protect your personal information when you use our platform."
+      "description": "At Mi Carrito, we take your privacy seriously. This policy explains how we collect, use, and protect your personal information when you use our car marketplace platform."
     },
     "dataCollection": {
       "title": "Data Collection",
@@ -701,11 +783,11 @@
       "types": {
         "personal": {
           "title": "Personal Information",
-          "description": "Name, email, phone number, and other contact details you provide when creating an account or making a purchase."
+          "description": "Name, email, phone number, and other contact details you provide when creating an account, listing a vehicle, or making a purchase."
         },
         "usage": {
           "title": "Usage Data",
-          "description": "Information about how you interact with our platform, including browsing history, search queries, and feature usage."
+          "description": "Information about how you interact with our platform, including vehicle search history, saved listings, and feature usage."
         },
         "technical": {
           "title": "Technical Data",
@@ -718,10 +800,10 @@
       "subtitle": "Our data processing purposes",
       "description": "We use your data for various purposes to improve our services:",
       "purposes": {
-        "service": "To provide and maintain our services",
-        "improvement": "To improve and personalize your experience",
-        "communication": "To communicate with you about our services",
-        "security": "To ensure the security of our platform"
+        "service": "To provide and maintain our car marketplace services",
+        "improvement": "To improve and personalize your vehicle shopping experience",
+        "communication": "To communicate with you about vehicles, listings, and our services",
+        "security": "To ensure the security of our platform and prevent fraud"
       }
     },
     "dataProtection": {
@@ -775,24 +857,24 @@
       "subtitle": "Get in touch about your privacy",
       "description": "If you have any questions about our privacy policy or your data:",
       "details": {
-        "email": "Email: privacy@marketflex.com",
-        "address": "Address: 123 Privacy Street, Suite 100, San Francisco, CA 94105",
-        "phone": "Phone: +1 (555) 123-4567"
+        "email": "Email: privacy@micarrito.com",
+        "address": "Address: Av. Insurgentes Sur 1602, Mexico City",
+        "phone": "Phone: +52 55 1234 5678"
       }
     }
   },
   "Terms": {
     "title": "Terms of Service",
-    "subtitle": "Understanding your rights and responsibilities when using our platform",
+    "subtitle": "Understanding your rights and responsibilities when using our car marketplace",
     "introduction": {
       "title": "Introduction",
-      "subtitle": "Welcome to MarketFlex",
-      "description": "These Terms of Service govern your use of MarketFlex and outline the rules, guidelines, and agreements that apply to all users of our platform."
+      "subtitle": "Welcome to Mi Carrito",
+      "description": "These Terms of Service govern your use of Mi Carrito and outline the rules, guidelines, and agreements that apply to all users of our car marketplace platform."
     },
     "acceptance": {
       "title": "Acceptance of Terms",
       "subtitle": "Your agreement to these terms",
-      "description": "By accessing or using MarketFlex, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our platform.",
+      "description": "By accessing or using Mi Carrito, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our platform.",
       "conditions": {
         "title": "Conditions of Use",
         "description": "You must be at least 18 years old and have the legal capacity to enter into binding contracts to use our services."
@@ -801,7 +883,7 @@
     "responsibilities": {
       "title": "User Responsibilities",
       "subtitle": "Your obligations as a user",
-      "description": "As a user of MarketFlex, you have certain responsibilities:",
+      "description": "As a user of Mi Carrito, you have certain responsibilities:",
       "items": {
         "account": {
           "title": "Account Security",
@@ -809,7 +891,7 @@
         },
         "content": {
           "title": "Content Guidelines",
-          "description": "You must ensure that all content you post or share complies with our community guidelines and applicable laws."
+          "description": "You must ensure that all vehicle listings and content you post comply with our community guidelines and applicable laws."
         },
         "conduct": {
           "title": "User Conduct",
@@ -824,11 +906,11 @@
     "intellectualProperty": {
       "title": "Intellectual Property",
       "subtitle": "Ownership and usage rights",
-      "description": "All content and materials available on MarketFlex are protected by intellectual property rights:",
+      "description": "All content and materials available on Mi Carrito are protected by intellectual property rights:",
       "items": {
         "ownership": {
           "title": "Platform Ownership",
-          "description": "MarketFlex and its original content, features, and functionality are owned by us and are protected by international copyright, trademark, and other intellectual property laws."
+          "description": "Mi Carrito and its original content, features, and functionality are owned by us and are protected by international copyright, trademark, and other intellectual property laws."
         },
         "licenses": {
           "title": "User Licenses",
@@ -843,7 +925,7 @@
     "liability": {
       "title": "Limitation of Liability",
       "subtitle": "Understanding our legal responsibilities",
-      "description": "MarketFlex is provided 'as is' without any warranties or guarantees:",
+      "description": "Mi Carrito is provided 'as is' without any warranties or guarantees:",
       "disclaimer": {
         "title": "Disclaimer",
         "description": "We are not liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use our platform."
@@ -863,16 +945,16 @@
       "subtitle": "Get in touch about our terms",
       "description": "If you have any questions about these Terms of Service:",
       "details": {
-        "email": "Email: legal@marketflex.com",
-        "address": "Address: 123 Legal Street, Suite 100, San Francisco, CA 94105",
-        "phone": "Phone: +1 (555) 123-4567"
+        "email": "Email: legal@micarrito.com",
+        "address": "Address: Av. Insurgentes Sur 1602, Mexico City",
+        "phone": "Phone: +52 55 1234 5678"
       }
     }
   },
   "Auth": {
     "signIn": {
       "title": "Sign in",
-      "subtitle": "Welcome back to MarketFlex",
+      "subtitle": "Welcome back to Mi Carrito",
       "description": "Sign in to your account to continue",
       "notRegistered": "Don't have an account?",
       "orContinueWith": "Or continue with",
@@ -912,7 +994,7 @@
     "common": {
       "welcome": "Welcome back, {email}",
       "dashboard": "Dashboard",
-      "listings": "Listings",
+      "listings": "Vehicles",
       "messages": "Messages",
       "profile": "Profile",
       "settings": "Settings",
@@ -924,8 +1006,8 @@
     },
     "overview": {
       "title": "Dashboard",
-      "totalListings": "Total Listings",
-      "noListings": "No listings yet",
+      "totalListings": "Total Vehicles",
+      "noListings": "No vehicles yet",
       "messagesCount": "Messages",
       "noMessages": "No messages yet",
       "activeSales": "Active Sales",
@@ -945,11 +1027,11 @@
       "reportsData": "Report data will appear here"
     },
     "listings": {
-      "title": "Your Listings",
-      "createNew": "Create New Listing",
-      "allListings": "All Listings",
-      "manageListings": "Manage your products and services",
-      "noListings": "You don't have any listings yet. Create your first listing to get started."
+      "title": "Your Vehicles",
+      "createNew": "Create New Vehicle",
+      "allListings": "All Vehicles",
+      "manageListings": "Manage your vehicles",
+      "noListings": "You don't have any vehicles yet. Create your first vehicle to get started."
     },
     "messages": {
       "title": "Messages",
@@ -1093,7 +1175,7 @@
   },
   "Purchases": {
     "pageTitle": "My Purchases",
-    "pageDescription": "Track and manage your purchases on MarketFlex",
+    "pageDescription": "Track and manage your vehicle purchases on Mi Carrito",
     "title": "My Purchases",
     "description": "View and manage your recent purchases",
     "searchPlaceholder": "Search by reference, status or seller",
@@ -1133,7 +1215,7 @@
   },
   "Sales": {
     "pageTitle": "My Sales",
-    "pageDescription": "Track and manage your sales on MarketFlex",
+    "pageDescription": "Track and manage your vehicle sales on Mi Carrito",
     "title": "My Sales",
     "description": "View and manage your recent sales",
     "searchPlaceholder": "Search by reference, status or buyer",
